@@ -13,15 +13,14 @@ const params = `?client_id=${id}&client_secret=${sec}`
 // ========== GitHub Battle =====================
 
 // Get user's github data
-function getProfile(username) {
-  return axios.get(`https://api.github.com/users/${username}${params}`)
-    .then((user) => (user.data))
+async function getProfile(username) {
+  const profile = await axios.get(`https://api.github.com/users/${username}${params}`)
+  return profile.data
 }
 
 // Get user's github repos
 function getRepos(username) {
   return axios.get(`https://api.github.com/users/${username}/repos${params}&per_page=100`)
-    .then((user) => user.data)
 }
 
 // Get user's total Github repos's stars
@@ -40,14 +39,15 @@ function handleError(error) {
 }
 
 // Compose mini functions into a bigger one.
-function getUserData(player) {
-  return Promise.all([
+async function getUserData(player) {
+  const [profile, repos] = await Promise.all([
     getProfile(player),
     getRepos(player)
-  ]).then(([profile, repos]) => ({
-      profile,
-      score: calculateScore(profile, repos)
-  }))
+  ])
+  return {
+    profile,
+    score: calculateScore(profile, repos),
+  }
 }
 
 // who is the winner (sort descending score). Player 0 is winner. Player 1 is loser.
@@ -56,18 +56,20 @@ function sortPlayers(players) {
 }
 
 // battle!
-export function battle(players) {
-  return Promise.all(players.map(getUserData))
-    .then(sortPlayers)
-    .catch(handleError)
+export async function battle(players) {
+    const results = await Promise.all(players.map(getUserData))
+      .catch(handleError)
+    return results ? sortPlayers(results) : results
 }
 
 // ========== get popular GitHub repository =====================
-export function fetchPopularRepos (language) {
+export async function fetchPopularRepos (language) {
   const encodedURI = window.encodeURI(
     `https://api.github.com/search/repositories?q=stars:>1+language:`+
     `${language}&sort=stars&order=desc&type=Repositories`)
 
-  return axios.get(encodedURI)
-    .then((response) => (response.data.items))
+  const repos = await axios.get(encodedURI)
+    .catch(handleError)
+
+  return repos.data.items
 }
