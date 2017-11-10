@@ -1,5 +1,8 @@
-import axios from 'axios'
-
+// No longer need axios. We are using ES6 fetch instead. from whatwg-fetch dependencies.
+// (fetch is not covered by polyfill). Fetch will be available in the window object.
+// import axios from 'axios'
+// Npte: (fetch) return response.json() === (axios) return reponse.data
+// Note: fetch(...) === axios.get(...)
 // See README for Github oAuth API Client access instruction
 import { getGitHubSecrets } from '../../secrets/githubAPIConfig'
 const {id, sec} = getGitHubSecrets()
@@ -14,13 +17,14 @@ const params = `?client_id=${id}&client_secret=${sec}`
 
 // Get user's github data
 async function getProfile(username) {
-  const profile = await axios.get(`https://api.github.com/users/${username}${params}`)
-  return profile.data
+  const response = await fetch(`https://api.github.com/users/${username}${params}`)
+  return response.json()
 }
 
 // Get user's github repos
-function getRepos(username) {
-  return axios.get(`https://api.github.com/users/${username}/repos${params}&per_page=100`)
+async function getRepos(username) {
+  const response = await fetch (`https://api.github.com/users/${username}/repos${params}&per_page=100`)
+  return response.json()
 }
 
 // Get user's total Github repos's stars
@@ -68,8 +72,9 @@ export async function fetchPopularRepos (language) {
     `https://api.github.com/search/repositories?q=stars:>1+language:`+
     `${language}&sort=stars&order=desc&type=Repositories`)
 
-  const repos = await axios.get(encodedURI)
+  const response = await fetch(encodedURI)
     .catch(handleError)
+  const repos = await response.json()
 
-  return repos.data.items
+  return repos.items
 }
