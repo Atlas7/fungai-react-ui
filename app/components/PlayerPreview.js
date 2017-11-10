@@ -3,7 +3,7 @@ const PropTypes = require('prop-types')
 
 
 // stateless functional component
-function PlayerPreview({ avatar, username, children }) {
+export default function PlayerPreview({ avatar, username, children }) {
   return (
     <div>
       <img className='avatar' src={avatar} alt={`Avatar for ${username}`}/>
@@ -16,6 +16,3 @@ PlayerPreview.propTypes = {
   avatar: PropTypes.string.isRequired,
   username: PropTypes.string.isRequired,
 }
-
-
-module.exports = PlayerPreview
