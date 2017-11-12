@@ -3,7 +3,7 @@
 
 // Given an input array, batch it up.
 // e.g. batchUp(['a', 'b', 'c', 'd'], 2) -> ['a', 'b'], ['c', 'd']
-export function batchUp(items, itemsPerBatch) {
+function batchUp(items, itemsPerBatch) {
   return (
     items.reduce((batches, itemValue, itemIndex) => {
       const batchID = Math.floor( itemIndex / itemsPerBatch)
@@ -16,7 +16,7 @@ export function batchUp(items, itemsPerBatch) {
   )
 }
 
-export function getSamples () {
+function getSamples () {
   return [
     'http://farm4.static.flickr.com/3285/2941813351_dac12c8152.jpg',
     'http://tn3-2.deviantart.com/fs17/300W/i/2007/203/a/b/Amanita_Muscaria_III_by_maadobs_garden.jpg',

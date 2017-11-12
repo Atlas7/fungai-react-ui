@@ -13,14 +13,9 @@ FungPhoto.PropTypes = {
 }
 
 
-// batchedSamples: PropTypes.arrayOf(
-//   PropTypes.arrayOf(
-//     PropTypes.string)
-// ).isRequired,
-
 function PhotosGrid ({photos}) {
-  console.log(photos)
-  console.log(photos instanceof Array)
+  // console.log(photos)
+  // console.log(photos instanceof Array)
   return (
     <ul className='popular-list'>
       {photos.map((photo, index) => (
@@ -54,7 +49,8 @@ class FungTick extends React.Component {
     batchID: null,
     photoBatch: null,
   }
-  componentWillMount = () => {
+  getBatchedSamples = () => {
+    console.log('FungTick: getBatchedSamples')
     const { batchSize } = this.props
     const photoBatches = getBatchedSamples(batchSize)
     this.setState(() => ({
@@ -63,26 +59,36 @@ class FungTick extends React.Component {
       photoBatch: photoBatches[0]
     }))
   }
-  componentDidMount = () => {
+  tick = () => {
+    console.log('FungTick: tick')
     const { speed } = this.props
     this.interval = window.setInterval(() => {
       const stopper = this.state.photoBatches.length - 1
       this.state.batchID >= stopper
         ? this.setState(() => ({
-          batchID: 0,
-          photoBatch: this.state.photoBatches[0]
-        }))
+        batchID: 0,
+        photoBatch: this.state.photoBatches[0]
+      }))
         : this.setState((prevState) => ({
-            batchID: prevState.batchID + 1,
-            photoBatch: this.state.photoBatches[prevState.batchID + 1]
-          }))
+        batchID: prevState.batchID + 1,
+        photoBatch: this.state.photoBatches[prevState.batchID + 1]
+      }))
     }, speed)
   }
+  componentWillMount = () => {
+    console.log('FungTick: componentWillMount')
+    this.getBatchedSamples()
+  }
+  componentDidMount = () => {
+    console.log('FungTick: componentDidMount')
+    this.tick()
+  }
   componentWillUnmount = () => {
+    console.log('FungTick: componentWillUnmount')
     window.clearInterval(this.interval)
   }
-  render() {
-    console.log(this.state)
+  render = () => {
+    console.log('FungTick: render')
     return (
       <div>
         <PhotosGrid photos={this.state.photoBatch}/>
