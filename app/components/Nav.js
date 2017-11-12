@@ -24,6 +24,11 @@ export default function Nav () {
           HelloWorld
         </NavLink>
       </li>
+      <li>
+        <NavLink activeClassName='active' to='/fungshow'>
+          FungShow
+        </NavLink>
+      </li>
     </ul>
   )
 }
