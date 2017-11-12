@@ -89,9 +89,14 @@ class FungTick extends React.Component {
   }
   render = () => {
     console.log('FungTick: render')
+    const { batchID, photoBatches, photoBatch  } = this.state
     return (
       <div>
-        <PhotosGrid photos={this.state.photoBatch}/>
+        <ul className='space-list-items'>
+          <li>Batch Size: {this.props.batchSize}</li>
+          <li>Batch: {batchID + 1} / {photoBatches.length}</li>
+        </ul>
+        <PhotosGrid photos={photoBatch}/>
       </div>
     )
   }
