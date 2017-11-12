@@ -143,3 +143,11 @@ li {
 .reset:hover {
   cursor: pointer;
 }
+
+/*center photo and crop to a square automatically */
+.fungPhoto {
+  object-fit: cover;
+  width: 250px;
+  height: 250px;
+  border-radius: 10%;
+}

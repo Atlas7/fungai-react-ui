@@ -11,7 +11,7 @@ const samples = [
 
 function FungPhoto({imgURL}) {
   return (
-    <img src={imgURL} alt={'FungPhoto: ' + imgURL}/>
+    <img className='fungPhoto' src={imgURL} alt={'FungPhoto: ' + imgURL}/>
   )
 }
 FungPhoto.PropTypes = {
@@ -57,9 +57,9 @@ class FungTick extends React.Component {
     return (
       <div>
         <p>Sample: {index}</p>
-        <p>URL: {url}</p>
-        <h3>Ground Truth: {'Algaric'}</h3>
-        <h3>Prediction: {'Algaric'}</h3>
+        {/*<p>URL: {url}</p>*/}
+        {/*<h3>Ground Truth: {'Algaric'}</h3>*/}
+        {/*<h3>Prediction: {'Algaric'}</h3>*/}
         <FungPhoto imgURL={url}/>
       </div>
     )
