@@ -147,7 +147,7 @@ li {
 /*center photo and crop to a square automatically */
 .fung-photo {
   object-fit: cover;
-  width: 250px;
-  height: 250px;
+  width: 100px;
+  height: 100px;
   border-radius: 10%;
 }

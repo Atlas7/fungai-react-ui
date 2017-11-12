@@ -5,7 +5,7 @@ import { getBatchedSamples } from '../utils/fungAPI'
 
 function FungPhoto({imgURL}) {
   return (
-    <img className='fung-photo' src={imgURL} alt={'FungPhoto: ' + imgURL}/>
+    <img className='fung-photo' src={imgURL} alt={':-('}/>
   )
 }
 FungPhoto.PropTypes = {
@@ -21,7 +21,7 @@ function PhotosGrid ({photos}) {
       {photos.map((photo, index) => (
         <li key={photo} className='popular-item'>
           <div className='popular-rank'>
-            Sample {index + 1}
+            {index + 1}
           </div>
           <FungPhoto imgURL={photo}/>
         </li>
@@ -108,7 +108,7 @@ class FungShow extends React.Component {
     return (
       <div>
         <h1>FungPhoto Page</h1>
-        <FungTick speed={3000} batchSize={2}/>
+        <FungTick speed={10000} batchSize={30}/>
       </div>
     )
   }
