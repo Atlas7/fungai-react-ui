@@ -17,12 +17,12 @@ function PhotosGrid ({photos}) {
   // console.log(photos)
   // console.log(photos instanceof Array)
   return (
-    <ul className='popular-list'>
+    <ul className='fung-list'>
       {photos.map((photo, index) => (
-        <li key={photo} className='popular-item'>
-          <div className='popular-rank'>
-            {index + 1}
-          </div>
+        <li key={photo} className='fung-item'>
+          {/*<div className='popular-rank'>*/}
+            {/*{index + 1}*/}
+          {/*</div>*/}
           <FungPhoto imgURL={photo}/>
         </li>
       ))}
@@ -93,6 +93,7 @@ class FungTick extends React.Component {
     return (
       <div>
         <ul className='space-list-items'>
+          <li>Show new batch every {this.props.speed / 1000} s</li>
           <li>Batch Size: {this.props.batchSize}</li>
           <li>Batch: {batchID + 1} / {photoBatches.length}</li>
         </ul>
@@ -108,7 +109,7 @@ class FungShow extends React.Component {
     return (
       <div>
         <h1>FungPhoto Page</h1>
-        <FungTick speed={10000} batchSize={30}/>
+        <FungTick speed={2000} batchSize={16}/>
       </div>
     )
   }
