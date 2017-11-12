@@ -56,9 +56,11 @@ class FungTick extends React.Component {
     const { index, url } = this.state
     return (
       <div>
+        <p>Sample: {index}</p>
+        <p>URL: {url}</p>
+        <h3>Ground Truth: {'Algaric'}</h3>
+        <h3>Prediction: {'Algaric'}</h3>
         <FungPhoto imgURL={url}/>
-        <p>{index}</p>
-        <p>{url}</p>
       </div>
     )
   }
