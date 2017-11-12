@@ -1,6 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+const samples = [
+  'http://farm4.static.flickr.com/3285/2941813351_dac12c8152.jpg',
+  'http://tn3-2.deviantart.com/fs17/300W/i/2007/203/a/b/Amanita_Muscaria_III_by_maadobs_garden.jpg',
+  'http://farm4.static.flickr.com/3069/2805269839_f394735850.jpg',
+  'http://farm1.static.flickr.com/26/50780931_60c0598f4b.jpg',
+]
+
+
 function FungPhoto({imgURL}) {
   return (
     <img src={imgURL} alt={'FungPhoto: ' + imgURL}/>
@@ -10,13 +18,6 @@ FungPhoto.PropTypes = {
   imgURL: PropTypes.string.isRequired,
 }
 
-
-const samples = [
-  'http://farm4.static.flickr.com/3285/2941813351_dac12c8152.jpg',
-  'http://tn3-2.deviantart.com/fs17/300W/i/2007/203/a/b/Amanita_Muscaria_III_by_maadobs_garden.jpg',
-  'http://farm4.static.flickr.com/3069/2805269839_f394735850.jpg',
-  'http://farm1.static.flickr.com/26/50780931_60c0598f4b.jpg',
-]
 
 class FungTick extends React.Component {
   static propTypes = {
@@ -31,19 +32,18 @@ class FungTick extends React.Component {
   }
 
   componentDidMount = () => {
-    const { speed } = this.props
-
+    const { speed, samples } = this.props
 
     this.interval = window.setInterval(() => {
-      const stopper = this.props.samples.length - 1
+      const stopper = samples.length - 1
       this.state.index >= stopper
         ? this.setState(() => ({
           index: 0,
-          url: this.props.samples[0]
+          url: samples[0]
         }))
         : this.setState((prevState) => ({
             index: prevState.index + 1,
-            url: this.props.samples[prevState.index + 1]
+            url: samples[prevState.index + 1]
           }))
     }, speed)
   }
@@ -53,11 +53,12 @@ class FungTick extends React.Component {
   }
 
   render() {
+    const { index, url } = this.state
     return (
       <div>
-        <FungPhoto imgURL={this.state.url}/>
-        <p>{this.state.index}</p>
-        <p>{this.state.url}</p>
+        <FungPhoto imgURL={url}/>
+        <p>{index}</p>
+        <p>{url}</p>
       </div>
     )
   }
