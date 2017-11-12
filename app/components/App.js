@@ -1,12 +1,13 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import PageNotFound from './PageNotFound'
 import Nav from './Nav'
 import Home from './Home'
 import Battle from './Battle'
 import Results from './Results'
 import Popular from './Popular'
 import HelloWorld from './HelloWorld'
-import PageNotFound from './PageNotFound'
+import FungShow from './FungShow'
 
 // Define a React App component here. A component may have:
 // - state
@@ -24,6 +25,7 @@ class App extends React.Component {
             <Route path='/battle/results' component={Results} />
             <Route path='/popular' component={Popular} />
             <Route path='/helloworld' component={HelloWorld} />
+            <Route path='/fungshow' component={FungShow} />
             <Route component={PageNotFound} />
           </Switch>
         </div>
