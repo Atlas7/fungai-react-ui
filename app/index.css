@@ -143,3 +143,25 @@ li {
 .reset:hover {
   cursor: pointer;
 }
+
+/*center photo and crop to a square automatically */
+.fung-photo {
+  object-fit: cover;
+  width: 200px;
+  height: 200px;
+  border-radius: 10%;
+}
+
+.fung-item {
+  margin: 20px;
+  text-align: center;
+  width: 220px;
+
+}
+
+.fung-list {
+  display: flex;
+  flex-wrap: wrap;
+  /*justify-content: space-around;*/
+  justify-content: left;
+}

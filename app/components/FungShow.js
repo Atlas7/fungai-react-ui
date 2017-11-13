@@ -1,17 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-
-const samples = [
-  'http://farm4.static.flickr.com/3285/2941813351_dac12c8152.jpg',
-  'http://tn3-2.deviantart.com/fs17/300W/i/2007/203/a/b/Amanita_Muscaria_III_by_maadobs_garden.jpg',
-  'http://farm4.static.flickr.com/3069/2805269839_f394735850.jpg',
-  'http://farm1.static.flickr.com/26/50780931_60c0598f4b.jpg',
-]
+import { getBatchedSamples } from '../utils/fungAPI'
 
 
 function FungPhoto({imgURL}) {
   return (
-    <img src={imgURL} alt={'FungPhoto: ' + imgURL}/>
+    <img className='fung-photo' src={imgURL} alt={':-('}/>
   )
 }
 FungPhoto.PropTypes = {
@@ -19,59 +13,103 @@ FungPhoto.PropTypes = {
 }
 
 
+function PhotosGrid ({photos}) {
+  // console.log(photos)
+  // console.log(photos instanceof Array)
+  return (
+    <ul className='fung-list'>
+      {photos.map((photo, index) => (
+        <li key={photo} className='fung-item'>
+          {/*<div className='popular-rank'>*/}
+            {/*{index + 1}*/}
+          {/*</div>*/}
+          <FungPhoto imgURL={photo}/>
+        </li>
+      ))}
+    </ul>
+  )
+}
+PhotosGrid.PropTypes = {
+  photos: PropTypes.array.isRequired,
+}
+
+
+
 class FungTick extends React.Component {
   static propTypes = {
     speed: PropTypes.number.isRequired,
+    batchSize: PropTypes.number.isRequired,
   }
   static defaultProps = {
     speed: 3000,
+    batchSize: 1,
   }
   state = {
-    url: 'http://farm4.static.flickr.com/3285/2941813351_dac12c8152.jpg',
-    index: 0,
+    photoBatches: null,
+    batchID: null,
+    photoBatch: null,
   }
-
-  componentDidMount = () => {
-    const { speed, samples } = this.props
-
+  getBatchedSamples = () => {
+    console.log('FungTick: getBatchedSamples')
+    const { batchSize } = this.props
+    const photoBatches = getBatchedSamples(batchSize)
+    this.setState(() => ({
+      photoBatches: photoBatches,
+      batchID: 0,
+      photoBatch: photoBatches[0]
+    }))
+  }
+  tick = () => {
+    console.log('FungTick: tick')
+    const { speed } = this.props
     this.interval = window.setInterval(() => {
-      const stopper = samples.length - 1
-      this.state.index >= stopper
+      const stopper = this.state.photoBatches.length - 1
+      this.state.batchID >= stopper
         ? this.setState(() => ({
-          index: 0,
-          url: samples[0]
-        }))
+        batchID: 0,
+        photoBatch: this.state.photoBatches[0]
+      }))
         : this.setState((prevState) => ({
-            index: prevState.index + 1,
-            url: samples[prevState.index + 1]
-          }))
+        batchID: prevState.batchID + 1,
+        photoBatch: this.state.photoBatches[prevState.batchID + 1]
+      }))
     }, speed)
   }
-
+  componentWillMount = () => {
+    console.log('FungTick: componentWillMount')
+    this.getBatchedSamples()
+  }
+  componentDidMount = () => {
+    console.log('FungTick: componentDidMount')
+    this.tick()
+  }
   componentWillUnmount = () => {
+    console.log('FungTick: componentWillUnmount')
     window.clearInterval(this.interval)
   }
-
-  render() {
-    const { index, url } = this.state
+  render = () => {
+    console.log('FungTick: render')
+    const { batchID, photoBatches, photoBatch  } = this.state
     return (
       <div>
-        <p>Sample: {index}</p>
-        <p>URL: {url}</p>
-        <h3>Ground Truth: {'Algaric'}</h3>
-        <h3>Prediction: {'Algaric'}</h3>
-        <FungPhoto imgURL={url}/>
+        <ul className='space-list-items'>
+          <li>Show new batch every {this.props.speed / 1000} s</li>
+          <li>Batch Size: {this.props.batchSize}</li>
+          <li>Batch: {batchID + 1} / {photoBatches.length}</li>
+        </ul>
+        <PhotosGrid photos={photoBatch}/>
       </div>
     )
   }
 }
+
 
 class FungShow extends React.Component {
   render = () => {
     return (
       <div>
         <h1>FungPhoto Page</h1>
-        <FungTick speed={3000} samples={samples}/>
+        <FungTick speed={3000} batchSize={16}/>
       </div>
     )
   }
