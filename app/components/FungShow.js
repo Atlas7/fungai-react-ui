@@ -109,7 +109,7 @@ class FungShow extends React.Component {
     return (
       <div>
         <h1>FungPhoto Page</h1>
-        <FungTick speed={2000} batchSize={16}/>
+        <FungTick speed={3000} batchSize={16}/>
       </div>
     )
   }
