@@ -13,7 +13,7 @@ var webpack = require('webpack')
 //     - add config.output.publicPath = '/'
 //     - add config.devServer.historyApiFallback = true
 var config = {
-  entry: ['babel-polyfill', 'whatwg-fetch', './app/index.js'],
+  entry: ['babel-polyfill', 'isomorphic-fetch', './app/index.js'],
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'index_bundle.js',
