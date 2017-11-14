@@ -1,0 +1,2816 @@
+{
+  "classes": [
+    {
+      "id": 1,
+      "wnid": "n13030337",
+      "imagenetName": "Elf cup",
+      "commonName": "Scarlet Elf cup",
+      "latinName": "Sarcoscypha austriaca",
+      "imagenetDescription": "Apothecium of a fungus of the family Pezizaceae"
+    },
+    {
+      "id": 2,
+      "wnid": "n13003061",
+      "imagenetName": "Fly agaric, Amanita muscaria",
+      "commonName": "Fly agaric",
+      "latinName": "Amanita muscaria",
+      "imagenetDescription": "Poisonous (but rarely fatal) woodland fungus having a scarlet cap with white warts and white gills"
+    },
+    {
+      "id": 3,
+      "wnid": "n13040629",
+      "imagenetName": "Common stinkhorn, Phallus impudicus",
+      "commonName": "Common stinkhorn",
+      "latinName": "Phallus impudicus",
+      "imagenetDescription": "A common fungus formerly used in preparing a salve for rheumatism"
+    }
+  ],
+  "images": [
+    {
+      "id": 1,
+      "imageURL": "http://farm4.static.flickr.com/3065/2314893920_01e59007d8.jpg",
+      "class": {
+        "id": 1,
+        "wnid": "n13030337",
+        "imagenetName": "Elf cup",
+        "commonName": "Scarlet Elf cup",
+        "latinName": "Sarcoscypha austriaca",
+        "imagenetDescription": "Apothecium of a fungus of the family Pezizaceae"
+      }
+    },
+    {
+      "id": 2,
+      "imageURL": "http://farm1.static.flickr.com/54/126319195_4959070345.jpg",
+      "class": {
+        "id": 1,
+        "wnid": "n13030337",
+        "imagenetName": "Elf cup",
+        "commonName": "Scarlet Elf cup",
+        "latinName": "Sarcoscypha austriaca",
+        "imagenetDescription": "Apothecium of a fungus of the family Pezizaceae"
+      }
+    },
+    {
+      "id": 3,
+      "imageURL": "http://farm2.static.flickr.com/1372/867359119_2ac18ad226.jpg",
+      "class": {
+        "id": 1,
+        "wnid": "n13030337",
+        "imagenetName": "Elf cup",
+        "commonName": "Scarlet Elf cup",
+        "latinName": "Sarcoscypha austriaca",
+        "imagenetDescription": "Apothecium of a fungus of the family Pezizaceae"
+      }
+    },
+    {
+      "id": 4,
+      "imageURL": "http://farm4.static.flickr.com/3646/3395488503_95e89dd7b4.jpg",
+      "class": {
+        "id": 1,
+        "wnid": "n13030337",
+        "imagenetName": "Elf cup",
+        "commonName": "Scarlet Elf cup",
+        "latinName": "Sarcoscypha austriaca",
+        "imagenetDescription": "Apothecium of a fungus of the family Pezizaceae"
+      }
+    },
+    {
+      "id": 5,
+      "imageURL": "http://farm4.static.flickr.com/3608/3375858691_7656ca8029.jpg",
+      "class": {
+        "id": 1,
+        "wnid": "n13030337",
+        "imagenetName": "Elf cup",
+        "commonName": "Scarlet Elf cup",
+        "latinName": "Sarcoscypha austriaca",
+        "imagenetDescription": "Apothecium of a fungus of the family Pezizaceae"
+      }
+    },
+    {
+      "id": 6,
+      "imageURL": "http://farm5.static.flickr.com/4016/4439724764_b8554ff54e.jpg",
+      "class": {
+        "id": 1,
+        "wnid": "n13030337",
+        "imagenetName": "Elf cup",
+        "commonName": "Scarlet Elf cup",
+        "latinName": "Sarcoscypha austriaca",
+        "imagenetDescription": "Apothecium of a fungus of the family Pezizaceae"
+      }
+    },
+    {
+      "id": 7,
+      "imageURL": "http://farm4.static.flickr.com/3589/3471830910_baa97f20c0.jpg",
+      "class": {
+        "id": 1,
+        "wnid": "n13030337",
+        "imagenetName": "Elf cup",
+        "commonName": "Scarlet Elf cup",
+        "latinName": "Sarcoscypha austriaca",
+        "imagenetDescription": "Apothecium of a fungus of the family Pezizaceae"
+      }
+    },
+    {
+      "id": 8,
+      "imageURL": "http://farm4.static.flickr.com/3404/3618773778_b64cce340e.jpg",
+      "class": {
+        "id": 1,
+        "wnid": "n13030337",
+        "imagenetName": "Elf cup",
+        "commonName": "Scarlet Elf cup",
+        "latinName": "Sarcoscypha austriaca",
+        "imagenetDescription": "Apothecium of a fungus of the family Pezizaceae"
+      }
+    },
+    {
+      "id": 9,
+      "imageURL": "http://farm4.static.flickr.com/3124/3120522634_7fbfe09cf0.jpg",
+      "class": {
+        "id": 1,
+        "wnid": "n13030337",
+        "imagenetName": "Elf cup",
+        "commonName": "Scarlet Elf cup",
+        "latinName": "Sarcoscypha austriaca",
+        "imagenetDescription": "Apothecium of a fungus of the family Pezizaceae"
+      }
+    },
+    {
+      "id": 10,
+      "imageURL": "http://farm3.static.flickr.com/2574/3747495417_336030a83c.jpg",
+      "class": {
+        "id": 1,
+        "wnid": "n13030337",
+        "imagenetName": "Elf cup",
+        "commonName": "Scarlet Elf cup",
+        "latinName": "Sarcoscypha austriaca",
+        "imagenetDescription": "Apothecium of a fungus of the family Pezizaceae"
+      }
+    },
+    {
+      "id": 11,
+      "imageURL": "http://farm4.static.flickr.com/3476/3319597586_df629a80c5.jpg",
+      "class": {
+        "id": 1,
+        "wnid": "n13030337",
+        "imagenetName": "Elf cup",
+        "commonName": "Scarlet Elf cup",
+        "latinName": "Sarcoscypha austriaca",
+        "imagenetDescription": "Apothecium of a fungus of the family Pezizaceae"
+      }
+    },
+    {
+      "id": 12,
+      "imageURL": "http://farm6.static.flickr.com/5176/5474572090_3a4430e1f0.jpg",
+      "class": {
+        "id": 1,
+        "wnid": "n13030337",
+        "imagenetName": "Elf cup",
+        "commonName": "Scarlet Elf cup",
+        "latinName": "Sarcoscypha austriaca",
+        "imagenetDescription": "Apothecium of a fungus of the family Pezizaceae"
+      }
+    },
+    {
+      "id": 13,
+      "imageURL": "http://farm3.static.flickr.com/2726/4481089907_ea860f6720.jpg",
+      "class": {
+        "id": 1,
+        "wnid": "n13030337",
+        "imagenetName": "Elf cup",
+        "commonName": "Scarlet Elf cup",
+        "latinName": "Sarcoscypha austriaca",
+        "imagenetDescription": "Apothecium of a fungus of the family Pezizaceae"
+      }
+    },
+    {
+      "id": 14,
+      "imageURL": "http://farm1.static.flickr.com/174/391526598_5e819fcd01.jpg",
+      "class": {
+        "id": 1,
+        "wnid": "n13030337",
+        "imagenetName": "Elf cup",
+        "commonName": "Scarlet Elf cup",
+        "latinName": "Sarcoscypha austriaca",
+        "imagenetDescription": "Apothecium of a fungus of the family Pezizaceae"
+      }
+    },
+    {
+      "id": 15,
+      "imageURL": "http://farm3.static.flickr.com/2755/4435600063_20f0ca56d2.jpg",
+      "class": {
+        "id": 1,
+        "wnid": "n13030337",
+        "imagenetName": "Elf cup",
+        "commonName": "Scarlet Elf cup",
+        "latinName": "Sarcoscypha austriaca",
+        "imagenetDescription": "Apothecium of a fungus of the family Pezizaceae"
+      }
+    },
+    {
+      "id": 16,
+      "imageURL": "http://farm4.static.flickr.com/3623/3324570197_9e70b55104.jpg",
+      "class": {
+        "id": 1,
+        "wnid": "n13030337",
+        "imagenetName": "Elf cup",
+        "commonName": "Scarlet Elf cup",
+        "latinName": "Sarcoscypha austriaca",
+        "imagenetDescription": "Apothecium of a fungus of the family Pezizaceae"
+      }
+    },
+    {
+      "id": 17,
+      "imageURL": "http://farm4.static.flickr.com/3183/2938245478_cb1417d024.jpg",
+      "class": {
+        "id": 2,
+        "wnid": "n13003061",
+        "imagenetName": "Fly agaric, Amanita muscaria",
+        "commonName": "Fly agaric",
+        "latinName": "Amanita muscaria",
+        "imagenetDescription": "Poisonous (but rarely fatal) woodland fungus having a scarlet cap with white warts and white gills"
+      }
+    },
+    {
+      "id": 18,
+      "imageURL": "http://farm4.static.flickr.com/3112/2872782166_4e7b4220ff.jpg",
+      "class": {
+        "id": 2,
+        "wnid": "n13003061",
+        "imagenetName": "Fly agaric, Amanita muscaria",
+        "commonName": "Fly agaric",
+        "latinName": "Amanita muscaria",
+        "imagenetDescription": "Poisonous (but rarely fatal) woodland fungus having a scarlet cap with white warts and white gills"
+      }
+    },
+    {
+      "id": 19,
+      "imageURL": "http://farm4.static.flickr.com/3285/2941813351_dac12c8152.jpg",
+      "class": {
+        "id": 2,
+        "wnid": "n13003061",
+        "imagenetName": "Fly agaric, Amanita muscaria",
+        "commonName": "Fly agaric",
+        "latinName": "Amanita muscaria",
+        "imagenetDescription": "Poisonous (but rarely fatal) woodland fungus having a scarlet cap with white warts and white gills"
+      }
+    },
+    {
+      "id": 20,
+      "imageURL": "http://farm4.static.flickr.com/3069/2805269839_f394735850.jpg",
+      "class": {
+        "id": 2,
+        "wnid": "n13003061",
+        "imagenetName": "Fly agaric, Amanita muscaria",
+        "commonName": "Fly agaric",
+        "latinName": "Amanita muscaria",
+        "imagenetDescription": "Poisonous (but rarely fatal) woodland fungus having a scarlet cap with white warts and white gills"
+      }
+    },
+    {
+      "id": 21,
+      "imageURL": "http://farm1.static.flickr.com/26/50780931_60c0598f4b.jpg",
+      "class": {
+        "id": 2,
+        "wnid": "n13003061",
+        "imagenetName": "Fly agaric, Amanita muscaria",
+        "commonName": "Fly agaric",
+        "latinName": "Amanita muscaria",
+        "imagenetDescription": "Poisonous (but rarely fatal) woodland fungus having a scarlet cap with white warts and white gills"
+      }
+    },
+    {
+      "id": 22,
+      "imageURL": "http://farm3.static.flickr.com/2211/2100828101_462ca6db68.jpg",
+      "class": {
+        "id": 2,
+        "wnid": "n13003061",
+        "imagenetName": "Fly agaric, Amanita muscaria",
+        "commonName": "Fly agaric",
+        "latinName": "Amanita muscaria",
+        "imagenetDescription": "Poisonous (but rarely fatal) woodland fungus having a scarlet cap with white warts and white gills"
+      }
+    },
+    {
+      "id": 23,
+      "imageURL": "http://farm2.static.flickr.com/1246/846983445_e3049009c7.jpg",
+      "class": {
+        "id": 2,
+        "wnid": "n13003061",
+        "imagenetName": "Fly agaric, Amanita muscaria",
+        "commonName": "Fly agaric",
+        "latinName": "Amanita muscaria",
+        "imagenetDescription": "Poisonous (but rarely fatal) woodland fungus having a scarlet cap with white warts and white gills"
+      }
+    },
+    {
+      "id": 24,
+      "imageURL": "http://farm4.static.flickr.com/3079/2892020729_9719dc8457.jpg",
+      "class": {
+        "id": 2,
+        "wnid": "n13003061",
+        "imagenetName": "Fly agaric, Amanita muscaria",
+        "commonName": "Fly agaric",
+        "latinName": "Amanita muscaria",
+        "imagenetDescription": "Poisonous (but rarely fatal) woodland fungus having a scarlet cap with white warts and white gills"
+      }
+    },
+    {
+      "id": 25,
+      "imageURL": "http://farm3.static.flickr.com/2049/1511277057_57c1c8ad4f.jpg",
+      "class": {
+        "id": 2,
+        "wnid": "n13003061",
+        "imagenetName": "Fly agaric, Amanita muscaria",
+        "commonName": "Fly agaric",
+        "latinName": "Amanita muscaria",
+        "imagenetDescription": "Poisonous (but rarely fatal) woodland fungus having a scarlet cap with white warts and white gills"
+      }
+    },
+    {
+      "id": 26,
+      "imageURL": "http://farm4.static.flickr.com/3194/2886141536_90822b6e64.jpg",
+      "class": {
+        "id": 2,
+        "wnid": "n13003061",
+        "imagenetName": "Fly agaric, Amanita muscaria",
+        "commonName": "Fly agaric",
+        "latinName": "Amanita muscaria",
+        "imagenetDescription": "Poisonous (but rarely fatal) woodland fungus having a scarlet cap with white warts and white gills"
+      }
+    },
+    {
+      "id": 27,
+      "imageURL": "http://farm3.static.flickr.com/2406/1735321751_ded881101e.jpg",
+      "class": {
+        "id": 2,
+        "wnid": "n13003061",
+        "imagenetName": "Fly agaric, Amanita muscaria",
+        "commonName": "Fly agaric",
+        "latinName": "Amanita muscaria",
+        "imagenetDescription": "Poisonous (but rarely fatal) woodland fungus having a scarlet cap with white warts and white gills"
+      }
+    },
+    {
+      "id": 28,
+      "imageURL": "http://farm1.static.flickr.com/112/255879244_fd35de7c73.jpg",
+      "class": {
+        "id": 2,
+        "wnid": "n13003061",
+        "imagenetName": "Fly agaric, Amanita muscaria",
+        "commonName": "Fly agaric",
+        "latinName": "Amanita muscaria",
+        "imagenetDescription": "Poisonous (but rarely fatal) woodland fungus having a scarlet cap with white warts and white gills"
+      }
+    },
+    {
+      "id": 29,
+      "imageURL": "http://farm4.static.flickr.com/3177/2953822860_9085d6893f.jpg",
+      "class": {
+        "id": 2,
+        "wnid": "n13003061",
+        "imagenetName": "Fly agaric, Amanita muscaria",
+        "commonName": "Fly agaric",
+        "latinName": "Amanita muscaria",
+        "imagenetDescription": "Poisonous (but rarely fatal) woodland fungus having a scarlet cap with white warts and white gills"
+      }
+    },
+    {
+      "id": 30,
+      "imageURL": "http://farm4.static.flickr.com/3080/3124321659_2a23c72b92.jpg",
+      "class": {
+        "id": 2,
+        "wnid": "n13003061",
+        "imagenetName": "Fly agaric, Amanita muscaria",
+        "commonName": "Fly agaric",
+        "latinName": "Amanita muscaria",
+        "imagenetDescription": "Poisonous (but rarely fatal) woodland fungus having a scarlet cap with white warts and white gills"
+      }
+    },
+    {
+      "id": 31,
+      "imageURL": "http://farm3.static.flickr.com/2215/2225123717_5c2ee82da7.jpg",
+      "class": {
+        "id": 2,
+        "wnid": "n13003061",
+        "imagenetName": "Fly agaric, Amanita muscaria",
+        "commonName": "Fly agaric",
+        "latinName": "Amanita muscaria",
+        "imagenetDescription": "Poisonous (but rarely fatal) woodland fungus having a scarlet cap with white warts and white gills"
+      }
+    },
+    {
+      "id": 32,
+      "imageURL": "http://farm3.static.flickr.com/2382/2041167051_eb24568022.jpg",
+      "class": {
+        "id": 2,
+        "wnid": "n13003061",
+        "imagenetName": "Fly agaric, Amanita muscaria",
+        "commonName": "Fly agaric",
+        "latinName": "Amanita muscaria",
+        "imagenetDescription": "Poisonous (but rarely fatal) woodland fungus having a scarlet cap with white warts and white gills"
+      }
+    },
+    {
+      "id": 33,
+      "imageURL": "http://farm1.static.flickr.com/97/237795024_a8d267516f.jpg",
+      "class": {
+        "id": 3,
+        "wnid": "n13040629",
+        "imagenetName": "Common stinkhorn, Phallus impudicus",
+        "commonName": "Common stinkhorn",
+        "latinName": "Phallus impudicus",
+        "imagenetDescription": "A common fungus formerly used in preparing a salve for rheumatism"
+      }
+    },
+    {
+      "id": 34,
+      "imageURL": "http://farm1.static.flickr.com/26/36344223_e327ad8add.jpg",
+      "class": {
+        "id": 3,
+        "wnid": "n13040629",
+        "imagenetName": "Common stinkhorn, Phallus impudicus",
+        "commonName": "Common stinkhorn",
+        "latinName": "Phallus impudicus",
+        "imagenetDescription": "A common fungus formerly used in preparing a salve for rheumatism"
+      }
+    },
+    {
+      "id": 35,
+      "imageURL": "http://farm1.static.flickr.com/21/93062880_d497fa686c.jpg",
+      "class": {
+        "id": 3,
+        "wnid": "n13040629",
+        "imagenetName": "Common stinkhorn, Phallus impudicus",
+        "commonName": "Common stinkhorn",
+        "latinName": "Phallus impudicus",
+        "imagenetDescription": "A common fungus formerly used in preparing a salve for rheumatism"
+      }
+    },
+    {
+      "id": 36,
+      "imageURL": "http://farm4.static.flickr.com/3023/2544851714_954ee33356.jpg",
+      "class": {
+        "id": 3,
+        "wnid": "n13040629",
+        "imagenetName": "Common stinkhorn, Phallus impudicus",
+        "commonName": "Common stinkhorn",
+        "latinName": "Phallus impudicus",
+        "imagenetDescription": "A common fungus formerly used in preparing a salve for rheumatism"
+      }
+    },
+    {
+      "id": 37,
+      "imageURL": "http://farm1.static.flickr.com/79/257612455_72d1039cd3.jpg",
+      "class": {
+        "id": 3,
+        "wnid": "n13040629",
+        "imagenetName": "Common stinkhorn, Phallus impudicus",
+        "commonName": "Common stinkhorn",
+        "latinName": "Phallus impudicus",
+        "imagenetDescription": "A common fungus formerly used in preparing a salve for rheumatism"
+      }
+    },
+    {
+      "id": 38,
+      "imageURL": "http://farm2.static.flickr.com/1144/1320850478_629a85e206.jpg",
+      "class": {
+        "id": 3,
+        "wnid": "n13040629",
+        "imagenetName": "Common stinkhorn, Phallus impudicus",
+        "commonName": "Common stinkhorn",
+        "latinName": "Phallus impudicus",
+        "imagenetDescription": "A common fungus formerly used in preparing a salve for rheumatism"
+      }
+    },
+    {
+      "id": 39,
+      "imageURL": "http://farm2.static.flickr.com/1415/1462323689_e17d5b3609.jpg",
+      "class": {
+        "id": 3,
+        "wnid": "n13040629",
+        "imagenetName": "Common stinkhorn, Phallus impudicus",
+        "commonName": "Common stinkhorn",
+        "latinName": "Phallus impudicus",
+        "imagenetDescription": "A common fungus formerly used in preparing a salve for rheumatism"
+      }
+    },
+    {
+      "id": 40,
+      "imageURL": "http://farm4.static.flickr.com/3347/3294013647_78ec1188d1.jpg",
+      "class": {
+        "id": 3,
+        "wnid": "n13040629",
+        "imagenetName": "Common stinkhorn, Phallus impudicus",
+        "commonName": "Common stinkhorn",
+        "latinName": "Phallus impudicus",
+        "imagenetDescription": "A common fungus formerly used in preparing a salve for rheumatism"
+      }
+    },
+    {
+      "id": 41,
+      "imageURL": "http://farm4.static.flickr.com/3125/2406696154_298e10aa92.jpg",
+      "class": {
+        "id": 3,
+        "wnid": "n13040629",
+        "imagenetName": "Common stinkhorn, Phallus impudicus",
+        "commonName": "Common stinkhorn",
+        "latinName": "Phallus impudicus",
+        "imagenetDescription": "A common fungus formerly used in preparing a salve for rheumatism"
+      }
+    },
+    {
+      "id": 42,
+      "imageURL": "http://farm4.static.flickr.com/3182/2935599174_2f45745e47_t.jpg",
+      "class": {
+        "id": 3,
+        "wnid": "n13040629",
+        "imagenetName": "Common stinkhorn, Phallus impudicus",
+        "commonName": "Common stinkhorn",
+        "latinName": "Phallus impudicus",
+        "imagenetDescription": "A common fungus formerly used in preparing a salve for rheumatism"
+      }
+    },
+    {
+      "id": 43,
+      "imageURL": "http://farm3.static.flickr.com/2416/1945247893_a90ce7e3e0.jpg",
+      "class": {
+        "id": 3,
+        "wnid": "n13040629",
+        "imagenetName": "Common stinkhorn, Phallus impudicus",
+        "commonName": "Common stinkhorn",
+        "latinName": "Phallus impudicus",
+        "imagenetDescription": "A common fungus formerly used in preparing a salve for rheumatism"
+      }
+    },
+    {
+      "id": 44,
+      "imageURL": "http://farm4.static.flickr.com/3013/2858332958_736065e4c1.jpg",
+      "class": {
+        "id": 3,
+        "wnid": "n13040629",
+        "imagenetName": "Common stinkhorn, Phallus impudicus",
+        "commonName": "Common stinkhorn",
+        "latinName": "Phallus impudicus",
+        "imagenetDescription": "A common fungus formerly used in preparing a salve for rheumatism"
+      }
+    },
+    {
+      "id": 45,
+      "imageURL": "http://farm3.static.flickr.com/2250/2406694468_ec994d1eb2.jpg",
+      "class": {
+        "id": 3,
+        "wnid": "n13040629",
+        "imagenetName": "Common stinkhorn, Phallus impudicus",
+        "commonName": "Common stinkhorn",
+        "latinName": "Phallus impudicus",
+        "imagenetDescription": "A common fungus formerly used in preparing a salve for rheumatism"
+      }
+    },
+    {
+      "id": 46,
+      "imageURL": "http://farm4.static.flickr.com/3275/2908976749_e1e7149a9e.jpg",
+      "class": {
+        "id": 3,
+        "wnid": "n13040629",
+        "imagenetName": "Common stinkhorn, Phallus impudicus",
+        "commonName": "Common stinkhorn",
+        "latinName": "Phallus impudicus",
+        "imagenetDescription": "A common fungus formerly used in preparing a salve for rheumatism"
+      }
+    },
+    {
+      "id": 47,
+      "imageURL": "http://farm1.static.flickr.com/218/515762340_468291a30c.jpg",
+      "class": {
+        "id": 3,
+        "wnid": "n13040629",
+        "imagenetName": "Common stinkhorn, Phallus impudicus",
+        "commonName": "Common stinkhorn",
+        "latinName": "Phallus impudicus",
+        "imagenetDescription": "A common fungus formerly used in preparing a salve for rheumatism"
+      }
+    },
+    {
+      "id": 48,
+      "imageURL": "http://farm4.static.flickr.com/3316/3294938820_8e6de5935c.jpg",
+      "class": {
+        "id": 3,
+        "wnid": "n13040629",
+        "imagenetName": "Common stinkhorn, Phallus impudicus",
+        "commonName": "Common stinkhorn",
+        "latinName": "Phallus impudicus",
+        "imagenetDescription": "A common fungus formerly used in preparing a salve for rheumatism"
+      }
+    }
+  ],
+  "testPredictions": [
+    {
+      "imageId": 1,
+      "image": {
+        "id": 1,
+        "imageURL": "http://farm4.static.flickr.com/3065/2314893920_01e59007d8.jpg",
+        "class": {
+          "id": 1,
+          "wnid": "n13030337",
+          "imagenetName": "Elf cup",
+          "commonName": "Scarlet Elf cup",
+          "latinName": "Sarcoscypha austriaca",
+          "imagenetDescription": "Apothecium of a fungus of the family Pezizaceae"
+        }
+      },
+      "predictClasses": [
+        {
+          "id": 1,
+          "wnid": "n13030337",
+          "imagenetName": "Elf cup",
+          "commonName": "Scarlet Elf cup",
+          "latinName": "Sarcoscypha austriaca",
+          "imagenetDescription": "Apothecium of a fungus of the family Pezizaceae"
+        },
+        {
+          "id": 2,
+          "wnid": "n13003061",
+          "imagenetName": "Fly agaric, Amanita muscaria",
+          "commonName": "Fly agaric",
+          "latinName": "Amanita muscaria",
+          "imagenetDescription": "Poisonous (but rarely fatal) woodland fungus having a scarlet cap with white warts and white gills"
+        },
+        {
+          "id": 3,
+          "wnid": "n13040629",
+          "imagenetName": "Common stinkhorn, Phallus impudicus",
+          "commonName": "Common stinkhorn",
+          "latinName": "Phallus impudicus",
+          "imagenetDescription": "A common fungus formerly used in preparing a salve for rheumatism"
+        }
+      ],
+      "predictScores": [
+        0.7,
+        0.2,
+        0.1
+      ]
+    },
+    {
+      "imageId": 2,
+      "image": {
+        "id": 2,
+        "imageURL": "http://farm1.static.flickr.com/54/126319195_4959070345.jpg",
+        "class": {
+          "id": 1,
+          "wnid": "n13030337",
+          "imagenetName": "Elf cup",
+          "commonName": "Scarlet Elf cup",
+          "latinName": "Sarcoscypha austriaca",
+          "imagenetDescription": "Apothecium of a fungus of the family Pezizaceae"
+        }
+      },
+      "predictClasses": [
+        {
+          "id": 1,
+          "wnid": "n13030337",
+          "imagenetName": "Elf cup",
+          "commonName": "Scarlet Elf cup",
+          "latinName": "Sarcoscypha austriaca",
+          "imagenetDescription": "Apothecium of a fungus of the family Pezizaceae"
+        },
+        {
+          "id": 2,
+          "wnid": "n13003061",
+          "imagenetName": "Fly agaric, Amanita muscaria",
+          "commonName": "Fly agaric",
+          "latinName": "Amanita muscaria",
+          "imagenetDescription": "Poisonous (but rarely fatal) woodland fungus having a scarlet cap with white warts and white gills"
+        },
+        {
+          "id": 3,
+          "wnid": "n13040629",
+          "imagenetName": "Common stinkhorn, Phallus impudicus",
+          "commonName": "Common stinkhorn",
+          "latinName": "Phallus impudicus",
+          "imagenetDescription": "A common fungus formerly used in preparing a salve for rheumatism"
+        }
+      ],
+      "predictScores": [
+        0.7,
+        0.2,
+        0.1
+      ]
+    },
+    {
+      "imageId": 3,
+      "image": {
+        "id": 3,
+        "imageURL": "http://farm2.static.flickr.com/1372/867359119_2ac18ad226.jpg",
+        "class": {
+          "id": 1,
+          "wnid": "n13030337",
+          "imagenetName": "Elf cup",
+          "commonName": "Scarlet Elf cup",
+          "latinName": "Sarcoscypha austriaca",
+          "imagenetDescription": "Apothecium of a fungus of the family Pezizaceae"
+        }
+      },
+      "predictClasses": [
+        {
+          "id": 1,
+          "wnid": "n13030337",
+          "imagenetName": "Elf cup",
+          "commonName": "Scarlet Elf cup",
+          "latinName": "Sarcoscypha austriaca",
+          "imagenetDescription": "Apothecium of a fungus of the family Pezizaceae"
+        },
+        {
+          "id": 2,
+          "wnid": "n13003061",
+          "imagenetName": "Fly agaric, Amanita muscaria",
+          "commonName": "Fly agaric",
+          "latinName": "Amanita muscaria",
+          "imagenetDescription": "Poisonous (but rarely fatal) woodland fungus having a scarlet cap with white warts and white gills"
+        },
+        {
+          "id": 3,
+          "wnid": "n13040629",
+          "imagenetName": "Common stinkhorn, Phallus impudicus",
+          "commonName": "Common stinkhorn",
+          "latinName": "Phallus impudicus",
+          "imagenetDescription": "A common fungus formerly used in preparing a salve for rheumatism"
+        }
+      ],
+      "predictScores": [
+        0.7,
+        0.2,
+        0.1
+      ]
+    },
+    {
+      "imageId": 4,
+      "image": {
+        "id": 4,
+        "imageURL": "http://farm4.static.flickr.com/3646/3395488503_95e89dd7b4.jpg",
+        "class": {
+          "id": 1,
+          "wnid": "n13030337",
+          "imagenetName": "Elf cup",
+          "commonName": "Scarlet Elf cup",
+          "latinName": "Sarcoscypha austriaca",
+          "imagenetDescription": "Apothecium of a fungus of the family Pezizaceae"
+        }
+      },
+      "predictClasses": [
+        {
+          "id": 1,
+          "wnid": "n13030337",
+          "imagenetName": "Elf cup",
+          "commonName": "Scarlet Elf cup",
+          "latinName": "Sarcoscypha austriaca",
+          "imagenetDescription": "Apothecium of a fungus of the family Pezizaceae"
+        },
+        {
+          "id": 2,
+          "wnid": "n13003061",
+          "imagenetName": "Fly agaric, Amanita muscaria",
+          "commonName": "Fly agaric",
+          "latinName": "Amanita muscaria",
+          "imagenetDescription": "Poisonous (but rarely fatal) woodland fungus having a scarlet cap with white warts and white gills"
+        },
+        {
+          "id": 3,
+          "wnid": "n13040629",
+          "imagenetName": "Common stinkhorn, Phallus impudicus",
+          "commonName": "Common stinkhorn",
+          "latinName": "Phallus impudicus",
+          "imagenetDescription": "A common fungus formerly used in preparing a salve for rheumatism"
+        }
+      ],
+      "predictScores": [
+        0.7,
+        0.2,
+        0.1
+      ]
+    },
+    {
+      "imageId": 5,
+      "image": {
+        "id": 5,
+        "imageURL": "http://farm4.static.flickr.com/3608/3375858691_7656ca8029.jpg",
+        "class": {
+          "id": 1,
+          "wnid": "n13030337",
+          "imagenetName": "Elf cup",
+          "commonName": "Scarlet Elf cup",
+          "latinName": "Sarcoscypha austriaca",
+          "imagenetDescription": "Apothecium of a fungus of the family Pezizaceae"
+        }
+      },
+      "predictClasses": [
+        {
+          "id": 1,
+          "wnid": "n13030337",
+          "imagenetName": "Elf cup",
+          "commonName": "Scarlet Elf cup",
+          "latinName": "Sarcoscypha austriaca",
+          "imagenetDescription": "Apothecium of a fungus of the family Pezizaceae"
+        },
+        {
+          "id": 2,
+          "wnid": "n13003061",
+          "imagenetName": "Fly agaric, Amanita muscaria",
+          "commonName": "Fly agaric",
+          "latinName": "Amanita muscaria",
+          "imagenetDescription": "Poisonous (but rarely fatal) woodland fungus having a scarlet cap with white warts and white gills"
+        },
+        {
+          "id": 3,
+          "wnid": "n13040629",
+          "imagenetName": "Common stinkhorn, Phallus impudicus",
+          "commonName": "Common stinkhorn",
+          "latinName": "Phallus impudicus",
+          "imagenetDescription": "A common fungus formerly used in preparing a salve for rheumatism"
+        }
+      ],
+      "predictScores": [
+        0.7,
+        0.2,
+        0.1
+      ]
+    },
+    {
+      "imageId": 6,
+      "image": {
+        "id": 6,
+        "imageURL": "http://farm5.static.flickr.com/4016/4439724764_b8554ff54e.jpg",
+        "class": {
+          "id": 1,
+          "wnid": "n13030337",
+          "imagenetName": "Elf cup",
+          "commonName": "Scarlet Elf cup",
+          "latinName": "Sarcoscypha austriaca",
+          "imagenetDescription": "Apothecium of a fungus of the family Pezizaceae"
+        }
+      },
+      "predictClasses": [
+        {
+          "id": 1,
+          "wnid": "n13030337",
+          "imagenetName": "Elf cup",
+          "commonName": "Scarlet Elf cup",
+          "latinName": "Sarcoscypha austriaca",
+          "imagenetDescription": "Apothecium of a fungus of the family Pezizaceae"
+        },
+        {
+          "id": 2,
+          "wnid": "n13003061",
+          "imagenetName": "Fly agaric, Amanita muscaria",
+          "commonName": "Fly agaric",
+          "latinName": "Amanita muscaria",
+          "imagenetDescription": "Poisonous (but rarely fatal) woodland fungus having a scarlet cap with white warts and white gills"
+        },
+        {
+          "id": 3,
+          "wnid": "n13040629",
+          "imagenetName": "Common stinkhorn, Phallus impudicus",
+          "commonName": "Common stinkhorn",
+          "latinName": "Phallus impudicus",
+          "imagenetDescription": "A common fungus formerly used in preparing a salve for rheumatism"
+        }
+      ],
+      "predictScores": [
+        0.7,
+        0.2,
+        0.1
+      ]
+    },
+    {
+      "imageId": 7,
+      "image": {
+        "id": 7,
+        "imageURL": "http://farm4.static.flickr.com/3589/3471830910_baa97f20c0.jpg",
+        "class": {
+          "id": 1,
+          "wnid": "n13030337",
+          "imagenetName": "Elf cup",
+          "commonName": "Scarlet Elf cup",
+          "latinName": "Sarcoscypha austriaca",
+          "imagenetDescription": "Apothecium of a fungus of the family Pezizaceae"
+        }
+      },
+      "predictClasses": [
+        {
+          "id": 1,
+          "wnid": "n13030337",
+          "imagenetName": "Elf cup",
+          "commonName": "Scarlet Elf cup",
+          "latinName": "Sarcoscypha austriaca",
+          "imagenetDescription": "Apothecium of a fungus of the family Pezizaceae"
+        },
+        {
+          "id": 2,
+          "wnid": "n13003061",
+          "imagenetName": "Fly agaric, Amanita muscaria",
+          "commonName": "Fly agaric",
+          "latinName": "Amanita muscaria",
+          "imagenetDescription": "Poisonous (but rarely fatal) woodland fungus having a scarlet cap with white warts and white gills"
+        },
+        {
+          "id": 3,
+          "wnid": "n13040629",
+          "imagenetName": "Common stinkhorn, Phallus impudicus",
+          "commonName": "Common stinkhorn",
+          "latinName": "Phallus impudicus",
+          "imagenetDescription": "A common fungus formerly used in preparing a salve for rheumatism"
+        }
+      ],
+      "predictScores": [
+        0.7,
+        0.2,
+        0.1
+      ]
+    },
+    {
+      "imageId": 8,
+      "image": {
+        "id": 8,
+        "imageURL": "http://farm4.static.flickr.com/3404/3618773778_b64cce340e.jpg",
+        "class": {
+          "id": 1,
+          "wnid": "n13030337",
+          "imagenetName": "Elf cup",
+          "commonName": "Scarlet Elf cup",
+          "latinName": "Sarcoscypha austriaca",
+          "imagenetDescription": "Apothecium of a fungus of the family Pezizaceae"
+        }
+      },
+      "predictClasses": [
+        {
+          "id": 1,
+          "wnid": "n13030337",
+          "imagenetName": "Elf cup",
+          "commonName": "Scarlet Elf cup",
+          "latinName": "Sarcoscypha austriaca",
+          "imagenetDescription": "Apothecium of a fungus of the family Pezizaceae"
+        },
+        {
+          "id": 2,
+          "wnid": "n13003061",
+          "imagenetName": "Fly agaric, Amanita muscaria",
+          "commonName": "Fly agaric",
+          "latinName": "Amanita muscaria",
+          "imagenetDescription": "Poisonous (but rarely fatal) woodland fungus having a scarlet cap with white warts and white gills"
+        },
+        {
+          "id": 3,
+          "wnid": "n13040629",
+          "imagenetName": "Common stinkhorn, Phallus impudicus",
+          "commonName": "Common stinkhorn",
+          "latinName": "Phallus impudicus",
+          "imagenetDescription": "A common fungus formerly used in preparing a salve for rheumatism"
+        }
+      ],
+      "predictScores": [
+        0.7,
+        0.2,
+        0.1
+      ]
+    },
+    {
+      "imageId": 9,
+      "image": {
+        "id": 9,
+        "imageURL": "http://farm4.static.flickr.com/3124/3120522634_7fbfe09cf0.jpg",
+        "class": {
+          "id": 1,
+          "wnid": "n13030337",
+          "imagenetName": "Elf cup",
+          "commonName": "Scarlet Elf cup",
+          "latinName": "Sarcoscypha austriaca",
+          "imagenetDescription": "Apothecium of a fungus of the family Pezizaceae"
+        }
+      },
+      "predictClasses": [
+        {
+          "id": 1,
+          "wnid": "n13030337",
+          "imagenetName": "Elf cup",
+          "commonName": "Scarlet Elf cup",
+          "latinName": "Sarcoscypha austriaca",
+          "imagenetDescription": "Apothecium of a fungus of the family Pezizaceae"
+        },
+        {
+          "id": 2,
+          "wnid": "n13003061",
+          "imagenetName": "Fly agaric, Amanita muscaria",
+          "commonName": "Fly agaric",
+          "latinName": "Amanita muscaria",
+          "imagenetDescription": "Poisonous (but rarely fatal) woodland fungus having a scarlet cap with white warts and white gills"
+        },
+        {
+          "id": 3,
+          "wnid": "n13040629",
+          "imagenetName": "Common stinkhorn, Phallus impudicus",
+          "commonName": "Common stinkhorn",
+          "latinName": "Phallus impudicus",
+          "imagenetDescription": "A common fungus formerly used in preparing a salve for rheumatism"
+        }
+      ],
+      "predictScores": [
+        0.7,
+        0.2,
+        0.1
+      ]
+    },
+    {
+      "imageId": 10,
+      "image": {
+        "id": 10,
+        "imageURL": "http://farm3.static.flickr.com/2574/3747495417_336030a83c.jpg",
+        "class": {
+          "id": 1,
+          "wnid": "n13030337",
+          "imagenetName": "Elf cup",
+          "commonName": "Scarlet Elf cup",
+          "latinName": "Sarcoscypha austriaca",
+          "imagenetDescription": "Apothecium of a fungus of the family Pezizaceae"
+        }
+      },
+      "predictClasses": [
+        {
+          "id": 1,
+          "wnid": "n13030337",
+          "imagenetName": "Elf cup",
+          "commonName": "Scarlet Elf cup",
+          "latinName": "Sarcoscypha austriaca",
+          "imagenetDescription": "Apothecium of a fungus of the family Pezizaceae"
+        },
+        {
+          "id": 2,
+          "wnid": "n13003061",
+          "imagenetName": "Fly agaric, Amanita muscaria",
+          "commonName": "Fly agaric",
+          "latinName": "Amanita muscaria",
+          "imagenetDescription": "Poisonous (but rarely fatal) woodland fungus having a scarlet cap with white warts and white gills"
+        },
+        {
+          "id": 3,
+          "wnid": "n13040629",
+          "imagenetName": "Common stinkhorn, Phallus impudicus",
+          "commonName": "Common stinkhorn",
+          "latinName": "Phallus impudicus",
+          "imagenetDescription": "A common fungus formerly used in preparing a salve for rheumatism"
+        }
+      ],
+      "predictScores": [
+        0.7,
+        0.2,
+        0.1
+      ]
+    },
+    {
+      "imageId": 11,
+      "image": {
+        "id": 11,
+        "imageURL": "http://farm4.static.flickr.com/3476/3319597586_df629a80c5.jpg",
+        "class": {
+          "id": 1,
+          "wnid": "n13030337",
+          "imagenetName": "Elf cup",
+          "commonName": "Scarlet Elf cup",
+          "latinName": "Sarcoscypha austriaca",
+          "imagenetDescription": "Apothecium of a fungus of the family Pezizaceae"
+        }
+      },
+      "predictClasses": [
+        {
+          "id": 1,
+          "wnid": "n13030337",
+          "imagenetName": "Elf cup",
+          "commonName": "Scarlet Elf cup",
+          "latinName": "Sarcoscypha austriaca",
+          "imagenetDescription": "Apothecium of a fungus of the family Pezizaceae"
+        },
+        {
+          "id": 2,
+          "wnid": "n13003061",
+          "imagenetName": "Fly agaric, Amanita muscaria",
+          "commonName": "Fly agaric",
+          "latinName": "Amanita muscaria",
+          "imagenetDescription": "Poisonous (but rarely fatal) woodland fungus having a scarlet cap with white warts and white gills"
+        },
+        {
+          "id": 3,
+          "wnid": "n13040629",
+          "imagenetName": "Common stinkhorn, Phallus impudicus",
+          "commonName": "Common stinkhorn",
+          "latinName": "Phallus impudicus",
+          "imagenetDescription": "A common fungus formerly used in preparing a salve for rheumatism"
+        }
+      ],
+      "predictScores": [
+        0.7,
+        0.2,
+        0.1
+      ]
+    },
+    {
+      "imageId": 12,
+      "image": {
+        "id": 12,
+        "imageURL": "http://farm6.static.flickr.com/5176/5474572090_3a4430e1f0.jpg",
+        "class": {
+          "id": 1,
+          "wnid": "n13030337",
+          "imagenetName": "Elf cup",
+          "commonName": "Scarlet Elf cup",
+          "latinName": "Sarcoscypha austriaca",
+          "imagenetDescription": "Apothecium of a fungus of the family Pezizaceae"
+        }
+      },
+      "predictClasses": [
+        {
+          "id": 1,
+          "wnid": "n13030337",
+          "imagenetName": "Elf cup",
+          "commonName": "Scarlet Elf cup",
+          "latinName": "Sarcoscypha austriaca",
+          "imagenetDescription": "Apothecium of a fungus of the family Pezizaceae"
+        },
+        {
+          "id": 2,
+          "wnid": "n13003061",
+          "imagenetName": "Fly agaric, Amanita muscaria",
+          "commonName": "Fly agaric",
+          "latinName": "Amanita muscaria",
+          "imagenetDescription": "Poisonous (but rarely fatal) woodland fungus having a scarlet cap with white warts and white gills"
+        },
+        {
+          "id": 3,
+          "wnid": "n13040629",
+          "imagenetName": "Common stinkhorn, Phallus impudicus",
+          "commonName": "Common stinkhorn",
+          "latinName": "Phallus impudicus",
+          "imagenetDescription": "A common fungus formerly used in preparing a salve for rheumatism"
+        }
+      ],
+      "predictScores": [
+        0.7,
+        0.2,
+        0.1
+      ]
+    },
+    {
+      "imageId": 13,
+      "image": {
+        "id": 13,
+        "imageURL": "http://farm3.static.flickr.com/2726/4481089907_ea860f6720.jpg",
+        "class": {
+          "id": 1,
+          "wnid": "n13030337",
+          "imagenetName": "Elf cup",
+          "commonName": "Scarlet Elf cup",
+          "latinName": "Sarcoscypha austriaca",
+          "imagenetDescription": "Apothecium of a fungus of the family Pezizaceae"
+        }
+      },
+      "predictClasses": [
+        {
+          "id": 1,
+          "wnid": "n13030337",
+          "imagenetName": "Elf cup",
+          "commonName": "Scarlet Elf cup",
+          "latinName": "Sarcoscypha austriaca",
+          "imagenetDescription": "Apothecium of a fungus of the family Pezizaceae"
+        },
+        {
+          "id": 2,
+          "wnid": "n13003061",
+          "imagenetName": "Fly agaric, Amanita muscaria",
+          "commonName": "Fly agaric",
+          "latinName": "Amanita muscaria",
+          "imagenetDescription": "Poisonous (but rarely fatal) woodland fungus having a scarlet cap with white warts and white gills"
+        },
+        {
+          "id": 3,
+          "wnid": "n13040629",
+          "imagenetName": "Common stinkhorn, Phallus impudicus",
+          "commonName": "Common stinkhorn",
+          "latinName": "Phallus impudicus",
+          "imagenetDescription": "A common fungus formerly used in preparing a salve for rheumatism"
+        }
+      ],
+      "predictScores": [
+        0.7,
+        0.2,
+        0.1
+      ]
+    },
+    {
+      "imageId": 14,
+      "image": {
+        "id": 14,
+        "imageURL": "http://farm1.static.flickr.com/174/391526598_5e819fcd01.jpg",
+        "class": {
+          "id": 1,
+          "wnid": "n13030337",
+          "imagenetName": "Elf cup",
+          "commonName": "Scarlet Elf cup",
+          "latinName": "Sarcoscypha austriaca",
+          "imagenetDescription": "Apothecium of a fungus of the family Pezizaceae"
+        }
+      },
+      "predictClasses": [
+        {
+          "id": 2,
+          "wnid": "n13003061",
+          "imagenetName": "Fly agaric, Amanita muscaria",
+          "commonName": "Fly agaric",
+          "latinName": "Amanita muscaria",
+          "imagenetDescription": "Poisonous (but rarely fatal) woodland fungus having a scarlet cap with white warts and white gills"
+        },
+        {
+          "id": 1,
+          "wnid": "n13030337",
+          "imagenetName": "Elf cup",
+          "commonName": "Scarlet Elf cup",
+          "latinName": "Sarcoscypha austriaca",
+          "imagenetDescription": "Apothecium of a fungus of the family Pezizaceae"
+        },
+        {
+          "id": 3,
+          "wnid": "n13040629",
+          "imagenetName": "Common stinkhorn, Phallus impudicus",
+          "commonName": "Common stinkhorn",
+          "latinName": "Phallus impudicus",
+          "imagenetDescription": "A common fungus formerly used in preparing a salve for rheumatism"
+        }
+      ],
+      "predictScores": [
+        0.7,
+        0.2,
+        0.1
+      ]
+    },
+    {
+      "imageId": 15,
+      "image": {
+        "id": 15,
+        "imageURL": "http://farm3.static.flickr.com/2755/4435600063_20f0ca56d2.jpg",
+        "class": {
+          "id": 1,
+          "wnid": "n13030337",
+          "imagenetName": "Elf cup",
+          "commonName": "Scarlet Elf cup",
+          "latinName": "Sarcoscypha austriaca",
+          "imagenetDescription": "Apothecium of a fungus of the family Pezizaceae"
+        }
+      },
+      "predictClasses": [
+        {
+          "id": 2,
+          "wnid": "n13003061",
+          "imagenetName": "Fly agaric, Amanita muscaria",
+          "commonName": "Fly agaric",
+          "latinName": "Amanita muscaria",
+          "imagenetDescription": "Poisonous (but rarely fatal) woodland fungus having a scarlet cap with white warts and white gills"
+        },
+        {
+          "id": 1,
+          "wnid": "n13030337",
+          "imagenetName": "Elf cup",
+          "commonName": "Scarlet Elf cup",
+          "latinName": "Sarcoscypha austriaca",
+          "imagenetDescription": "Apothecium of a fungus of the family Pezizaceae"
+        },
+        {
+          "id": 3,
+          "wnid": "n13040629",
+          "imagenetName": "Common stinkhorn, Phallus impudicus",
+          "commonName": "Common stinkhorn",
+          "latinName": "Phallus impudicus",
+          "imagenetDescription": "A common fungus formerly used in preparing a salve for rheumatism"
+        }
+      ],
+      "predictScores": [
+        0.7,
+        0.2,
+        0.1
+      ]
+    },
+    {
+      "imageId": 16,
+      "image": {
+        "id": 16,
+        "imageURL": "http://farm4.static.flickr.com/3623/3324570197_9e70b55104.jpg",
+        "class": {
+          "id": 1,
+          "wnid": "n13030337",
+          "imagenetName": "Elf cup",
+          "commonName": "Scarlet Elf cup",
+          "latinName": "Sarcoscypha austriaca",
+          "imagenetDescription": "Apothecium of a fungus of the family Pezizaceae"
+        }
+      },
+      "predictClasses": [
+        {
+          "id": 3,
+          "wnid": "n13040629",
+          "imagenetName": "Common stinkhorn, Phallus impudicus",
+          "commonName": "Common stinkhorn",
+          "latinName": "Phallus impudicus",
+          "imagenetDescription": "A common fungus formerly used in preparing a salve for rheumatism"
+        },
+        {
+          "id": 2,
+          "wnid": "n13003061",
+          "imagenetName": "Fly agaric, Amanita muscaria",
+          "commonName": "Fly agaric",
+          "latinName": "Amanita muscaria",
+          "imagenetDescription": "Poisonous (but rarely fatal) woodland fungus having a scarlet cap with white warts and white gills"
+        },
+        {
+          "id": 1,
+          "wnid": "n13030337",
+          "imagenetName": "Elf cup",
+          "commonName": "Scarlet Elf cup",
+          "latinName": "Sarcoscypha austriaca",
+          "imagenetDescription": "Apothecium of a fungus of the family Pezizaceae"
+        }
+      ],
+      "predictScores": [
+        0.7,
+        0.2,
+        0.1
+      ]
+    },
+    {
+      "imageId": 17,
+      "image": {
+        "id": 17,
+        "imageURL": "http://farm4.static.flickr.com/3183/2938245478_cb1417d024.jpg",
+        "class": {
+          "id": 2,
+          "wnid": "n13003061",
+          "imagenetName": "Fly agaric, Amanita muscaria",
+          "commonName": "Fly agaric",
+          "latinName": "Amanita muscaria",
+          "imagenetDescription": "Poisonous (but rarely fatal) woodland fungus having a scarlet cap with white warts and white gills"
+        }
+      },
+      "predictClasses": [
+        {
+          "id": 2,
+          "wnid": "n13003061",
+          "imagenetName": "Fly agaric, Amanita muscaria",
+          "commonName": "Fly agaric",
+          "latinName": "Amanita muscaria",
+          "imagenetDescription": "Poisonous (but rarely fatal) woodland fungus having a scarlet cap with white warts and white gills"
+        },
+        {
+          "id": 1,
+          "wnid": "n13030337",
+          "imagenetName": "Elf cup",
+          "commonName": "Scarlet Elf cup",
+          "latinName": "Sarcoscypha austriaca",
+          "imagenetDescription": "Apothecium of a fungus of the family Pezizaceae"
+        },
+        {
+          "id": 3,
+          "wnid": "n13040629",
+          "imagenetName": "Common stinkhorn, Phallus impudicus",
+          "commonName": "Common stinkhorn",
+          "latinName": "Phallus impudicus",
+          "imagenetDescription": "A common fungus formerly used in preparing a salve for rheumatism"
+        }
+      ],
+      "predictScores": [
+        0.7,
+        0.2,
+        0.1
+      ]
+    },
+    {
+      "imageId": 18,
+      "image": {
+        "id": 18,
+        "imageURL": "http://farm4.static.flickr.com/3112/2872782166_4e7b4220ff.jpg",
+        "class": {
+          "id": 2,
+          "wnid": "n13003061",
+          "imagenetName": "Fly agaric, Amanita muscaria",
+          "commonName": "Fly agaric",
+          "latinName": "Amanita muscaria",
+          "imagenetDescription": "Poisonous (but rarely fatal) woodland fungus having a scarlet cap with white warts and white gills"
+        }
+      },
+      "predictClasses": [
+        {
+          "id": 2,
+          "wnid": "n13003061",
+          "imagenetName": "Fly agaric, Amanita muscaria",
+          "commonName": "Fly agaric",
+          "latinName": "Amanita muscaria",
+          "imagenetDescription": "Poisonous (but rarely fatal) woodland fungus having a scarlet cap with white warts and white gills"
+        },
+        {
+          "id": 1,
+          "wnid": "n13030337",
+          "imagenetName": "Elf cup",
+          "commonName": "Scarlet Elf cup",
+          "latinName": "Sarcoscypha austriaca",
+          "imagenetDescription": "Apothecium of a fungus of the family Pezizaceae"
+        },
+        {
+          "id": 3,
+          "wnid": "n13040629",
+          "imagenetName": "Common stinkhorn, Phallus impudicus",
+          "commonName": "Common stinkhorn",
+          "latinName": "Phallus impudicus",
+          "imagenetDescription": "A common fungus formerly used in preparing a salve for rheumatism"
+        }
+      ],
+      "predictScores": [
+        0.7,
+        0.2,
+        0.1
+      ]
+    },
+    {
+      "imageId": 19,
+      "image": {
+        "id": 19,
+        "imageURL": "http://farm4.static.flickr.com/3285/2941813351_dac12c8152.jpg",
+        "class": {
+          "id": 2,
+          "wnid": "n13003061",
+          "imagenetName": "Fly agaric, Amanita muscaria",
+          "commonName": "Fly agaric",
+          "latinName": "Amanita muscaria",
+          "imagenetDescription": "Poisonous (but rarely fatal) woodland fungus having a scarlet cap with white warts and white gills"
+        }
+      },
+      "predictClasses": [
+        {
+          "id": 2,
+          "wnid": "n13003061",
+          "imagenetName": "Fly agaric, Amanita muscaria",
+          "commonName": "Fly agaric",
+          "latinName": "Amanita muscaria",
+          "imagenetDescription": "Poisonous (but rarely fatal) woodland fungus having a scarlet cap with white warts and white gills"
+        },
+        {
+          "id": 1,
+          "wnid": "n13030337",
+          "imagenetName": "Elf cup",
+          "commonName": "Scarlet Elf cup",
+          "latinName": "Sarcoscypha austriaca",
+          "imagenetDescription": "Apothecium of a fungus of the family Pezizaceae"
+        },
+        {
+          "id": 3,
+          "wnid": "n13040629",
+          "imagenetName": "Common stinkhorn, Phallus impudicus",
+          "commonName": "Common stinkhorn",
+          "latinName": "Phallus impudicus",
+          "imagenetDescription": "A common fungus formerly used in preparing a salve for rheumatism"
+        }
+      ],
+      "predictScores": [
+        0.7,
+        0.2,
+        0.1
+      ]
+    },
+    {
+      "imageId": 20,
+      "image": {
+        "id": 20,
+        "imageURL": "http://farm4.static.flickr.com/3069/2805269839_f394735850.jpg",
+        "class": {
+          "id": 2,
+          "wnid": "n13003061",
+          "imagenetName": "Fly agaric, Amanita muscaria",
+          "commonName": "Fly agaric",
+          "latinName": "Amanita muscaria",
+          "imagenetDescription": "Poisonous (but rarely fatal) woodland fungus having a scarlet cap with white warts and white gills"
+        }
+      },
+      "predictClasses": [
+        {
+          "id": 2,
+          "wnid": "n13003061",
+          "imagenetName": "Fly agaric, Amanita muscaria",
+          "commonName": "Fly agaric",
+          "latinName": "Amanita muscaria",
+          "imagenetDescription": "Poisonous (but rarely fatal) woodland fungus having a scarlet cap with white warts and white gills"
+        },
+        {
+          "id": 1,
+          "wnid": "n13030337",
+          "imagenetName": "Elf cup",
+          "commonName": "Scarlet Elf cup",
+          "latinName": "Sarcoscypha austriaca",
+          "imagenetDescription": "Apothecium of a fungus of the family Pezizaceae"
+        },
+        {
+          "id": 3,
+          "wnid": "n13040629",
+          "imagenetName": "Common stinkhorn, Phallus impudicus",
+          "commonName": "Common stinkhorn",
+          "latinName": "Phallus impudicus",
+          "imagenetDescription": "A common fungus formerly used in preparing a salve for rheumatism"
+        }
+      ],
+      "predictScores": [
+        0.7,
+        0.2,
+        0.1
+      ]
+    },
+    {
+      "imageId": 21,
+      "image": {
+        "id": 21,
+        "imageURL": "http://farm1.static.flickr.com/26/50780931_60c0598f4b.jpg",
+        "class": {
+          "id": 2,
+          "wnid": "n13003061",
+          "imagenetName": "Fly agaric, Amanita muscaria",
+          "commonName": "Fly agaric",
+          "latinName": "Amanita muscaria",
+          "imagenetDescription": "Poisonous (but rarely fatal) woodland fungus having a scarlet cap with white warts and white gills"
+        }
+      },
+      "predictClasses": [
+        {
+          "id": 2,
+          "wnid": "n13003061",
+          "imagenetName": "Fly agaric, Amanita muscaria",
+          "commonName": "Fly agaric",
+          "latinName": "Amanita muscaria",
+          "imagenetDescription": "Poisonous (but rarely fatal) woodland fungus having a scarlet cap with white warts and white gills"
+        },
+        {
+          "id": 1,
+          "wnid": "n13030337",
+          "imagenetName": "Elf cup",
+          "commonName": "Scarlet Elf cup",
+          "latinName": "Sarcoscypha austriaca",
+          "imagenetDescription": "Apothecium of a fungus of the family Pezizaceae"
+        },
+        {
+          "id": 3,
+          "wnid": "n13040629",
+          "imagenetName": "Common stinkhorn, Phallus impudicus",
+          "commonName": "Common stinkhorn",
+          "latinName": "Phallus impudicus",
+          "imagenetDescription": "A common fungus formerly used in preparing a salve for rheumatism"
+        }
+      ],
+      "predictScores": [
+        0.7,
+        0.2,
+        0.1
+      ]
+    },
+    {
+      "imageId": 22,
+      "image": {
+        "id": 22,
+        "imageURL": "http://farm3.static.flickr.com/2211/2100828101_462ca6db68.jpg",
+        "class": {
+          "id": 2,
+          "wnid": "n13003061",
+          "imagenetName": "Fly agaric, Amanita muscaria",
+          "commonName": "Fly agaric",
+          "latinName": "Amanita muscaria",
+          "imagenetDescription": "Poisonous (but rarely fatal) woodland fungus having a scarlet cap with white warts and white gills"
+        }
+      },
+      "predictClasses": [
+        {
+          "id": 2,
+          "wnid": "n13003061",
+          "imagenetName": "Fly agaric, Amanita muscaria",
+          "commonName": "Fly agaric",
+          "latinName": "Amanita muscaria",
+          "imagenetDescription": "Poisonous (but rarely fatal) woodland fungus having a scarlet cap with white warts and white gills"
+        },
+        {
+          "id": 1,
+          "wnid": "n13030337",
+          "imagenetName": "Elf cup",
+          "commonName": "Scarlet Elf cup",
+          "latinName": "Sarcoscypha austriaca",
+          "imagenetDescription": "Apothecium of a fungus of the family Pezizaceae"
+        },
+        {
+          "id": 3,
+          "wnid": "n13040629",
+          "imagenetName": "Common stinkhorn, Phallus impudicus",
+          "commonName": "Common stinkhorn",
+          "latinName": "Phallus impudicus",
+          "imagenetDescription": "A common fungus formerly used in preparing a salve for rheumatism"
+        }
+      ],
+      "predictScores": [
+        0.7,
+        0.2,
+        0.1
+      ]
+    },
+    {
+      "imageId": 23,
+      "image": {
+        "id": 23,
+        "imageURL": "http://farm2.static.flickr.com/1246/846983445_e3049009c7.jpg",
+        "class": {
+          "id": 2,
+          "wnid": "n13003061",
+          "imagenetName": "Fly agaric, Amanita muscaria",
+          "commonName": "Fly agaric",
+          "latinName": "Amanita muscaria",
+          "imagenetDescription": "Poisonous (but rarely fatal) woodland fungus having a scarlet cap with white warts and white gills"
+        }
+      },
+      "predictClasses": [
+        {
+          "id": 2,
+          "wnid": "n13003061",
+          "imagenetName": "Fly agaric, Amanita muscaria",
+          "commonName": "Fly agaric",
+          "latinName": "Amanita muscaria",
+          "imagenetDescription": "Poisonous (but rarely fatal) woodland fungus having a scarlet cap with white warts and white gills"
+        },
+        {
+          "id": 1,
+          "wnid": "n13030337",
+          "imagenetName": "Elf cup",
+          "commonName": "Scarlet Elf cup",
+          "latinName": "Sarcoscypha austriaca",
+          "imagenetDescription": "Apothecium of a fungus of the family Pezizaceae"
+        },
+        {
+          "id": 3,
+          "wnid": "n13040629",
+          "imagenetName": "Common stinkhorn, Phallus impudicus",
+          "commonName": "Common stinkhorn",
+          "latinName": "Phallus impudicus",
+          "imagenetDescription": "A common fungus formerly used in preparing a salve for rheumatism"
+        }
+      ],
+      "predictScores": [
+        0.7,
+        0.2,
+        0.1
+      ]
+    },
+    {
+      "imageId": 24,
+      "image": {
+        "id": 24,
+        "imageURL": "http://farm4.static.flickr.com/3079/2892020729_9719dc8457.jpg",
+        "class": {
+          "id": 2,
+          "wnid": "n13003061",
+          "imagenetName": "Fly agaric, Amanita muscaria",
+          "commonName": "Fly agaric",
+          "latinName": "Amanita muscaria",
+          "imagenetDescription": "Poisonous (but rarely fatal) woodland fungus having a scarlet cap with white warts and white gills"
+        }
+      },
+      "predictClasses": [
+        {
+          "id": 2,
+          "wnid": "n13003061",
+          "imagenetName": "Fly agaric, Amanita muscaria",
+          "commonName": "Fly agaric",
+          "latinName": "Amanita muscaria",
+          "imagenetDescription": "Poisonous (but rarely fatal) woodland fungus having a scarlet cap with white warts and white gills"
+        },
+        {
+          "id": 1,
+          "wnid": "n13030337",
+          "imagenetName": "Elf cup",
+          "commonName": "Scarlet Elf cup",
+          "latinName": "Sarcoscypha austriaca",
+          "imagenetDescription": "Apothecium of a fungus of the family Pezizaceae"
+        },
+        {
+          "id": 3,
+          "wnid": "n13040629",
+          "imagenetName": "Common stinkhorn, Phallus impudicus",
+          "commonName": "Common stinkhorn",
+          "latinName": "Phallus impudicus",
+          "imagenetDescription": "A common fungus formerly used in preparing a salve for rheumatism"
+        }
+      ],
+      "predictScores": [
+        0.7,
+        0.2,
+        0.1
+      ]
+    },
+    {
+      "imageId": 25,
+      "image": {
+        "id": 25,
+        "imageURL": "http://farm3.static.flickr.com/2049/1511277057_57c1c8ad4f.jpg",
+        "class": {
+          "id": 2,
+          "wnid": "n13003061",
+          "imagenetName": "Fly agaric, Amanita muscaria",
+          "commonName": "Fly agaric",
+          "latinName": "Amanita muscaria",
+          "imagenetDescription": "Poisonous (but rarely fatal) woodland fungus having a scarlet cap with white warts and white gills"
+        }
+      },
+      "predictClasses": [
+        {
+          "id": 2,
+          "wnid": "n13003061",
+          "imagenetName": "Fly agaric, Amanita muscaria",
+          "commonName": "Fly agaric",
+          "latinName": "Amanita muscaria",
+          "imagenetDescription": "Poisonous (but rarely fatal) woodland fungus having a scarlet cap with white warts and white gills"
+        },
+        {
+          "id": 1,
+          "wnid": "n13030337",
+          "imagenetName": "Elf cup",
+          "commonName": "Scarlet Elf cup",
+          "latinName": "Sarcoscypha austriaca",
+          "imagenetDescription": "Apothecium of a fungus of the family Pezizaceae"
+        },
+        {
+          "id": 3,
+          "wnid": "n13040629",
+          "imagenetName": "Common stinkhorn, Phallus impudicus",
+          "commonName": "Common stinkhorn",
+          "latinName": "Phallus impudicus",
+          "imagenetDescription": "A common fungus formerly used in preparing a salve for rheumatism"
+        }
+      ],
+      "predictScores": [
+        0.7,
+        0.2,
+        0.1
+      ]
+    },
+    {
+      "imageId": 26,
+      "image": {
+        "id": 26,
+        "imageURL": "http://farm4.static.flickr.com/3194/2886141536_90822b6e64.jpg",
+        "class": {
+          "id": 2,
+          "wnid": "n13003061",
+          "imagenetName": "Fly agaric, Amanita muscaria",
+          "commonName": "Fly agaric",
+          "latinName": "Amanita muscaria",
+          "imagenetDescription": "Poisonous (but rarely fatal) woodland fungus having a scarlet cap with white warts and white gills"
+        }
+      },
+      "predictClasses": [
+        {
+          "id": 2,
+          "wnid": "n13003061",
+          "imagenetName": "Fly agaric, Amanita muscaria",
+          "commonName": "Fly agaric",
+          "latinName": "Amanita muscaria",
+          "imagenetDescription": "Poisonous (but rarely fatal) woodland fungus having a scarlet cap with white warts and white gills"
+        },
+        {
+          "id": 1,
+          "wnid": "n13030337",
+          "imagenetName": "Elf cup",
+          "commonName": "Scarlet Elf cup",
+          "latinName": "Sarcoscypha austriaca",
+          "imagenetDescription": "Apothecium of a fungus of the family Pezizaceae"
+        },
+        {
+          "id": 3,
+          "wnid": "n13040629",
+          "imagenetName": "Common stinkhorn, Phallus impudicus",
+          "commonName": "Common stinkhorn",
+          "latinName": "Phallus impudicus",
+          "imagenetDescription": "A common fungus formerly used in preparing a salve for rheumatism"
+        }
+      ],
+      "predictScores": [
+        0.7,
+        0.2,
+        0.1
+      ]
+    },
+    {
+      "imageId": 27,
+      "image": {
+        "id": 27,
+        "imageURL": "http://farm3.static.flickr.com/2406/1735321751_ded881101e.jpg",
+        "class": {
+          "id": 2,
+          "wnid": "n13003061",
+          "imagenetName": "Fly agaric, Amanita muscaria",
+          "commonName": "Fly agaric",
+          "latinName": "Amanita muscaria",
+          "imagenetDescription": "Poisonous (but rarely fatal) woodland fungus having a scarlet cap with white warts and white gills"
+        }
+      },
+      "predictClasses": [
+        {
+          "id": 2,
+          "wnid": "n13003061",
+          "imagenetName": "Fly agaric, Amanita muscaria",
+          "commonName": "Fly agaric",
+          "latinName": "Amanita muscaria",
+          "imagenetDescription": "Poisonous (but rarely fatal) woodland fungus having a scarlet cap with white warts and white gills"
+        },
+        {
+          "id": 1,
+          "wnid": "n13030337",
+          "imagenetName": "Elf cup",
+          "commonName": "Scarlet Elf cup",
+          "latinName": "Sarcoscypha austriaca",
+          "imagenetDescription": "Apothecium of a fungus of the family Pezizaceae"
+        },
+        {
+          "id": 3,
+          "wnid": "n13040629",
+          "imagenetName": "Common stinkhorn, Phallus impudicus",
+          "commonName": "Common stinkhorn",
+          "latinName": "Phallus impudicus",
+          "imagenetDescription": "A common fungus formerly used in preparing a salve for rheumatism"
+        }
+      ],
+      "predictScores": [
+        0.7,
+        0.2,
+        0.1
+      ]
+    },
+    {
+      "imageId": 28,
+      "image": {
+        "id": 28,
+        "imageURL": "http://farm1.static.flickr.com/112/255879244_fd35de7c73.jpg",
+        "class": {
+          "id": 2,
+          "wnid": "n13003061",
+          "imagenetName": "Fly agaric, Amanita muscaria",
+          "commonName": "Fly agaric",
+          "latinName": "Amanita muscaria",
+          "imagenetDescription": "Poisonous (but rarely fatal) woodland fungus having a scarlet cap with white warts and white gills"
+        }
+      },
+      "predictClasses": [
+        {
+          "id": 2,
+          "wnid": "n13003061",
+          "imagenetName": "Fly agaric, Amanita muscaria",
+          "commonName": "Fly agaric",
+          "latinName": "Amanita muscaria",
+          "imagenetDescription": "Poisonous (but rarely fatal) woodland fungus having a scarlet cap with white warts and white gills"
+        },
+        {
+          "id": 1,
+          "wnid": "n13030337",
+          "imagenetName": "Elf cup",
+          "commonName": "Scarlet Elf cup",
+          "latinName": "Sarcoscypha austriaca",
+          "imagenetDescription": "Apothecium of a fungus of the family Pezizaceae"
+        },
+        {
+          "id": 3,
+          "wnid": "n13040629",
+          "imagenetName": "Common stinkhorn, Phallus impudicus",
+          "commonName": "Common stinkhorn",
+          "latinName": "Phallus impudicus",
+          "imagenetDescription": "A common fungus formerly used in preparing a salve for rheumatism"
+        }
+      ],
+      "predictScores": [
+        0.7,
+        0.2,
+        0.1
+      ]
+    },
+    {
+      "imageId": 29,
+      "image": {
+        "id": 29,
+        "imageURL": "http://farm4.static.flickr.com/3177/2953822860_9085d6893f.jpg",
+        "class": {
+          "id": 2,
+          "wnid": "n13003061",
+          "imagenetName": "Fly agaric, Amanita muscaria",
+          "commonName": "Fly agaric",
+          "latinName": "Amanita muscaria",
+          "imagenetDescription": "Poisonous (but rarely fatal) woodland fungus having a scarlet cap with white warts and white gills"
+        }
+      },
+      "predictClasses": [
+        {
+          "id": 2,
+          "wnid": "n13003061",
+          "imagenetName": "Fly agaric, Amanita muscaria",
+          "commonName": "Fly agaric",
+          "latinName": "Amanita muscaria",
+          "imagenetDescription": "Poisonous (but rarely fatal) woodland fungus having a scarlet cap with white warts and white gills"
+        },
+        {
+          "id": 1,
+          "wnid": "n13030337",
+          "imagenetName": "Elf cup",
+          "commonName": "Scarlet Elf cup",
+          "latinName": "Sarcoscypha austriaca",
+          "imagenetDescription": "Apothecium of a fungus of the family Pezizaceae"
+        },
+        {
+          "id": 3,
+          "wnid": "n13040629",
+          "imagenetName": "Common stinkhorn, Phallus impudicus",
+          "commonName": "Common stinkhorn",
+          "latinName": "Phallus impudicus",
+          "imagenetDescription": "A common fungus formerly used in preparing a salve for rheumatism"
+        }
+      ],
+      "predictScores": [
+        0.7,
+        0.2,
+        0.1
+      ]
+    },
+    {
+      "imageId": 30,
+      "image": {
+        "id": 30,
+        "imageURL": "http://farm4.static.flickr.com/3080/3124321659_2a23c72b92.jpg",
+        "class": {
+          "id": 2,
+          "wnid": "n13003061",
+          "imagenetName": "Fly agaric, Amanita muscaria",
+          "commonName": "Fly agaric",
+          "latinName": "Amanita muscaria",
+          "imagenetDescription": "Poisonous (but rarely fatal) woodland fungus having a scarlet cap with white warts and white gills"
+        }
+      },
+      "predictClasses": [
+        {
+          "id": 1,
+          "wnid": "n13030337",
+          "imagenetName": "Elf cup",
+          "commonName": "Scarlet Elf cup",
+          "latinName": "Sarcoscypha austriaca",
+          "imagenetDescription": "Apothecium of a fungus of the family Pezizaceae"
+        },
+        {
+          "id": 2,
+          "wnid": "n13003061",
+          "imagenetName": "Fly agaric, Amanita muscaria",
+          "commonName": "Fly agaric",
+          "latinName": "Amanita muscaria",
+          "imagenetDescription": "Poisonous (but rarely fatal) woodland fungus having a scarlet cap with white warts and white gills"
+        },
+        {
+          "id": 3,
+          "wnid": "n13040629",
+          "imagenetName": "Common stinkhorn, Phallus impudicus",
+          "commonName": "Common stinkhorn",
+          "latinName": "Phallus impudicus",
+          "imagenetDescription": "A common fungus formerly used in preparing a salve for rheumatism"
+        }
+      ],
+      "predictScores": [
+        0.7,
+        0.2,
+        0.1
+      ]
+    },
+    {
+      "imageId": 31,
+      "image": {
+        "id": 31,
+        "imageURL": "http://farm3.static.flickr.com/2215/2225123717_5c2ee82da7.jpg",
+        "class": {
+          "id": 2,
+          "wnid": "n13003061",
+          "imagenetName": "Fly agaric, Amanita muscaria",
+          "commonName": "Fly agaric",
+          "latinName": "Amanita muscaria",
+          "imagenetDescription": "Poisonous (but rarely fatal) woodland fungus having a scarlet cap with white warts and white gills"
+        }
+      },
+      "predictClasses": [
+        {
+          "id": 1,
+          "wnid": "n13030337",
+          "imagenetName": "Elf cup",
+          "commonName": "Scarlet Elf cup",
+          "latinName": "Sarcoscypha austriaca",
+          "imagenetDescription": "Apothecium of a fungus of the family Pezizaceae"
+        },
+        {
+          "id": 2,
+          "wnid": "n13003061",
+          "imagenetName": "Fly agaric, Amanita muscaria",
+          "commonName": "Fly agaric",
+          "latinName": "Amanita muscaria",
+          "imagenetDescription": "Poisonous (but rarely fatal) woodland fungus having a scarlet cap with white warts and white gills"
+        },
+        {
+          "id": 3,
+          "wnid": "n13040629",
+          "imagenetName": "Common stinkhorn, Phallus impudicus",
+          "commonName": "Common stinkhorn",
+          "latinName": "Phallus impudicus",
+          "imagenetDescription": "A common fungus formerly used in preparing a salve for rheumatism"
+        }
+      ],
+      "predictScores": [
+        0.7,
+        0.2,
+        0.1
+      ]
+    },
+    {
+      "imageId": 32,
+      "image": {
+        "id": 32,
+        "imageURL": "http://farm3.static.flickr.com/2382/2041167051_eb24568022.jpg",
+        "class": {
+          "id": 2,
+          "wnid": "n13003061",
+          "imagenetName": "Fly agaric, Amanita muscaria",
+          "commonName": "Fly agaric",
+          "latinName": "Amanita muscaria",
+          "imagenetDescription": "Poisonous (but rarely fatal) woodland fungus having a scarlet cap with white warts and white gills"
+        }
+      },
+      "predictClasses": [
+        {
+          "id": 2,
+          "wnid": "n13003061",
+          "imagenetName": "Fly agaric, Amanita muscaria",
+          "commonName": "Fly agaric",
+          "latinName": "Amanita muscaria",
+          "imagenetDescription": "Poisonous (but rarely fatal) woodland fungus having a scarlet cap with white warts and white gills"
+        },
+        {
+          "id": 3,
+          "wnid": "n13040629",
+          "imagenetName": "Common stinkhorn, Phallus impudicus",
+          "commonName": "Common stinkhorn",
+          "latinName": "Phallus impudicus",
+          "imagenetDescription": "A common fungus formerly used in preparing a salve for rheumatism"
+        },
+        {
+          "id": 1,
+          "wnid": "n13030337",
+          "imagenetName": "Elf cup",
+          "commonName": "Scarlet Elf cup",
+          "latinName": "Sarcoscypha austriaca",
+          "imagenetDescription": "Apothecium of a fungus of the family Pezizaceae"
+        }
+      ],
+      "predictScores": [
+        0.7,
+        0.2,
+        0.1
+      ]
+    },
+    {
+      "imageId": 33,
+      "image": {
+        "id": 33,
+        "imageURL": "http://farm1.static.flickr.com/97/237795024_a8d267516f.jpg",
+        "class": {
+          "id": 3,
+          "wnid": "n13040629",
+          "imagenetName": "Common stinkhorn, Phallus impudicus",
+          "commonName": "Common stinkhorn",
+          "latinName": "Phallus impudicus",
+          "imagenetDescription": "A common fungus formerly used in preparing a salve for rheumatism"
+        }
+      },
+      "predictClasses": [
+        {
+          "id": 3,
+          "wnid": "n13040629",
+          "imagenetName": "Common stinkhorn, Phallus impudicus",
+          "commonName": "Common stinkhorn",
+          "latinName": "Phallus impudicus",
+          "imagenetDescription": "A common fungus formerly used in preparing a salve for rheumatism"
+        },
+        {
+          "id": 1,
+          "wnid": "n13030337",
+          "imagenetName": "Elf cup",
+          "commonName": "Scarlet Elf cup",
+          "latinName": "Sarcoscypha austriaca",
+          "imagenetDescription": "Apothecium of a fungus of the family Pezizaceae"
+        },
+        {
+          "id": 2,
+          "wnid": "n13003061",
+          "imagenetName": "Fly agaric, Amanita muscaria",
+          "commonName": "Fly agaric",
+          "latinName": "Amanita muscaria",
+          "imagenetDescription": "Poisonous (but rarely fatal) woodland fungus having a scarlet cap with white warts and white gills"
+        }
+      ],
+      "predictScores": [
+        0.7,
+        0.2,
+        0.1
+      ]
+    },
+    {
+      "imageId": 34,
+      "image": {
+        "id": 34,
+        "imageURL": "http://farm1.static.flickr.com/26/36344223_e327ad8add.jpg",
+        "class": {
+          "id": 3,
+          "wnid": "n13040629",
+          "imagenetName": "Common stinkhorn, Phallus impudicus",
+          "commonName": "Common stinkhorn",
+          "latinName": "Phallus impudicus",
+          "imagenetDescription": "A common fungus formerly used in preparing a salve for rheumatism"
+        }
+      },
+      "predictClasses": [
+        {
+          "id": 3,
+          "wnid": "n13040629",
+          "imagenetName": "Common stinkhorn, Phallus impudicus",
+          "commonName": "Common stinkhorn",
+          "latinName": "Phallus impudicus",
+          "imagenetDescription": "A common fungus formerly used in preparing a salve for rheumatism"
+        },
+        {
+          "id": 1,
+          "wnid": "n13030337",
+          "imagenetName": "Elf cup",
+          "commonName": "Scarlet Elf cup",
+          "latinName": "Sarcoscypha austriaca",
+          "imagenetDescription": "Apothecium of a fungus of the family Pezizaceae"
+        },
+        {
+          "id": 2,
+          "wnid": "n13003061",
+          "imagenetName": "Fly agaric, Amanita muscaria",
+          "commonName": "Fly agaric",
+          "latinName": "Amanita muscaria",
+          "imagenetDescription": "Poisonous (but rarely fatal) woodland fungus having a scarlet cap with white warts and white gills"
+        }
+      ],
+      "predictScores": [
+        0.7,
+        0.2,
+        0.1
+      ]
+    },
+    {
+      "imageId": 35,
+      "image": {
+        "id": 35,
+        "imageURL": "http://farm1.static.flickr.com/21/93062880_d497fa686c.jpg",
+        "class": {
+          "id": 3,
+          "wnid": "n13040629",
+          "imagenetName": "Common stinkhorn, Phallus impudicus",
+          "commonName": "Common stinkhorn",
+          "latinName": "Phallus impudicus",
+          "imagenetDescription": "A common fungus formerly used in preparing a salve for rheumatism"
+        }
+      },
+      "predictClasses": [
+        {
+          "id": 3,
+          "wnid": "n13040629",
+          "imagenetName": "Common stinkhorn, Phallus impudicus",
+          "commonName": "Common stinkhorn",
+          "latinName": "Phallus impudicus",
+          "imagenetDescription": "A common fungus formerly used in preparing a salve for rheumatism"
+        },
+        {
+          "id": 1,
+          "wnid": "n13030337",
+          "imagenetName": "Elf cup",
+          "commonName": "Scarlet Elf cup",
+          "latinName": "Sarcoscypha austriaca",
+          "imagenetDescription": "Apothecium of a fungus of the family Pezizaceae"
+        },
+        {
+          "id": 2,
+          "wnid": "n13003061",
+          "imagenetName": "Fly agaric, Amanita muscaria",
+          "commonName": "Fly agaric",
+          "latinName": "Amanita muscaria",
+          "imagenetDescription": "Poisonous (but rarely fatal) woodland fungus having a scarlet cap with white warts and white gills"
+        }
+      ],
+      "predictScores": [
+        0.7,
+        0.2,
+        0.1
+      ]
+    },
+    {
+      "imageId": 36,
+      "image": {
+        "id": 36,
+        "imageURL": "http://farm4.static.flickr.com/3023/2544851714_954ee33356.jpg",
+        "class": {
+          "id": 3,
+          "wnid": "n13040629",
+          "imagenetName": "Common stinkhorn, Phallus impudicus",
+          "commonName": "Common stinkhorn",
+          "latinName": "Phallus impudicus",
+          "imagenetDescription": "A common fungus formerly used in preparing a salve for rheumatism"
+        }
+      },
+      "predictClasses": [
+        {
+          "id": 3,
+          "wnid": "n13040629",
+          "imagenetName": "Common stinkhorn, Phallus impudicus",
+          "commonName": "Common stinkhorn",
+          "latinName": "Phallus impudicus",
+          "imagenetDescription": "A common fungus formerly used in preparing a salve for rheumatism"
+        },
+        {
+          "id": 1,
+          "wnid": "n13030337",
+          "imagenetName": "Elf cup",
+          "commonName": "Scarlet Elf cup",
+          "latinName": "Sarcoscypha austriaca",
+          "imagenetDescription": "Apothecium of a fungus of the family Pezizaceae"
+        },
+        {
+          "id": 2,
+          "wnid": "n13003061",
+          "imagenetName": "Fly agaric, Amanita muscaria",
+          "commonName": "Fly agaric",
+          "latinName": "Amanita muscaria",
+          "imagenetDescription": "Poisonous (but rarely fatal) woodland fungus having a scarlet cap with white warts and white gills"
+        }
+      ],
+      "predictScores": [
+        0.7,
+        0.2,
+        0.1
+      ]
+    },
+    {
+      "imageId": 37,
+      "image": {
+        "id": 37,
+        "imageURL": "http://farm1.static.flickr.com/79/257612455_72d1039cd3.jpg",
+        "class": {
+          "id": 3,
+          "wnid": "n13040629",
+          "imagenetName": "Common stinkhorn, Phallus impudicus",
+          "commonName": "Common stinkhorn",
+          "latinName": "Phallus impudicus",
+          "imagenetDescription": "A common fungus formerly used in preparing a salve for rheumatism"
+        }
+      },
+      "predictClasses": [
+        {
+          "id": 3,
+          "wnid": "n13040629",
+          "imagenetName": "Common stinkhorn, Phallus impudicus",
+          "commonName": "Common stinkhorn",
+          "latinName": "Phallus impudicus",
+          "imagenetDescription": "A common fungus formerly used in preparing a salve for rheumatism"
+        },
+        {
+          "id": 1,
+          "wnid": "n13030337",
+          "imagenetName": "Elf cup",
+          "commonName": "Scarlet Elf cup",
+          "latinName": "Sarcoscypha austriaca",
+          "imagenetDescription": "Apothecium of a fungus of the family Pezizaceae"
+        },
+        {
+          "id": 2,
+          "wnid": "n13003061",
+          "imagenetName": "Fly agaric, Amanita muscaria",
+          "commonName": "Fly agaric",
+          "latinName": "Amanita muscaria",
+          "imagenetDescription": "Poisonous (but rarely fatal) woodland fungus having a scarlet cap with white warts and white gills"
+        }
+      ],
+      "predictScores": [
+        0.7,
+        0.2,
+        0.1
+      ]
+    },
+    {
+      "imageId": 38,
+      "image": {
+        "id": 38,
+        "imageURL": "http://farm2.static.flickr.com/1144/1320850478_629a85e206.jpg",
+        "class": {
+          "id": 3,
+          "wnid": "n13040629",
+          "imagenetName": "Common stinkhorn, Phallus impudicus",
+          "commonName": "Common stinkhorn",
+          "latinName": "Phallus impudicus",
+          "imagenetDescription": "A common fungus formerly used in preparing a salve for rheumatism"
+        }
+      },
+      "predictClasses": [
+        {
+          "id": 3,
+          "wnid": "n13040629",
+          "imagenetName": "Common stinkhorn, Phallus impudicus",
+          "commonName": "Common stinkhorn",
+          "latinName": "Phallus impudicus",
+          "imagenetDescription": "A common fungus formerly used in preparing a salve for rheumatism"
+        },
+        {
+          "id": 1,
+          "wnid": "n13030337",
+          "imagenetName": "Elf cup",
+          "commonName": "Scarlet Elf cup",
+          "latinName": "Sarcoscypha austriaca",
+          "imagenetDescription": "Apothecium of a fungus of the family Pezizaceae"
+        },
+        {
+          "id": 2,
+          "wnid": "n13003061",
+          "imagenetName": "Fly agaric, Amanita muscaria",
+          "commonName": "Fly agaric",
+          "latinName": "Amanita muscaria",
+          "imagenetDescription": "Poisonous (but rarely fatal) woodland fungus having a scarlet cap with white warts and white gills"
+        }
+      ],
+      "predictScores": [
+        0.7,
+        0.2,
+        0.1
+      ]
+    },
+    {
+      "imageId": 39,
+      "image": {
+        "id": 39,
+        "imageURL": "http://farm2.static.flickr.com/1415/1462323689_e17d5b3609.jpg",
+        "class": {
+          "id": 3,
+          "wnid": "n13040629",
+          "imagenetName": "Common stinkhorn, Phallus impudicus",
+          "commonName": "Common stinkhorn",
+          "latinName": "Phallus impudicus",
+          "imagenetDescription": "A common fungus formerly used in preparing a salve for rheumatism"
+        }
+      },
+      "predictClasses": [
+        {
+          "id": 3,
+          "wnid": "n13040629",
+          "imagenetName": "Common stinkhorn, Phallus impudicus",
+          "commonName": "Common stinkhorn",
+          "latinName": "Phallus impudicus",
+          "imagenetDescription": "A common fungus formerly used in preparing a salve for rheumatism"
+        },
+        {
+          "id": 1,
+          "wnid": "n13030337",
+          "imagenetName": "Elf cup",
+          "commonName": "Scarlet Elf cup",
+          "latinName": "Sarcoscypha austriaca",
+          "imagenetDescription": "Apothecium of a fungus of the family Pezizaceae"
+        },
+        {
+          "id": 2,
+          "wnid": "n13003061",
+          "imagenetName": "Fly agaric, Amanita muscaria",
+          "commonName": "Fly agaric",
+          "latinName": "Amanita muscaria",
+          "imagenetDescription": "Poisonous (but rarely fatal) woodland fungus having a scarlet cap with white warts and white gills"
+        }
+      ],
+      "predictScores": [
+        0.7,
+        0.2,
+        0.1
+      ]
+    },
+    {
+      "imageId": 40,
+      "image": {
+        "id": 40,
+        "imageURL": "http://farm4.static.flickr.com/3347/3294013647_78ec1188d1.jpg",
+        "class": {
+          "id": 3,
+          "wnid": "n13040629",
+          "imagenetName": "Common stinkhorn, Phallus impudicus",
+          "commonName": "Common stinkhorn",
+          "latinName": "Phallus impudicus",
+          "imagenetDescription": "A common fungus formerly used in preparing a salve for rheumatism"
+        }
+      },
+      "predictClasses": [
+        {
+          "id": 3,
+          "wnid": "n13040629",
+          "imagenetName": "Common stinkhorn, Phallus impudicus",
+          "commonName": "Common stinkhorn",
+          "latinName": "Phallus impudicus",
+          "imagenetDescription": "A common fungus formerly used in preparing a salve for rheumatism"
+        },
+        {
+          "id": 1,
+          "wnid": "n13030337",
+          "imagenetName": "Elf cup",
+          "commonName": "Scarlet Elf cup",
+          "latinName": "Sarcoscypha austriaca",
+          "imagenetDescription": "Apothecium of a fungus of the family Pezizaceae"
+        },
+        {
+          "id": 2,
+          "wnid": "n13003061",
+          "imagenetName": "Fly agaric, Amanita muscaria",
+          "commonName": "Fly agaric",
+          "latinName": "Amanita muscaria",
+          "imagenetDescription": "Poisonous (but rarely fatal) woodland fungus having a scarlet cap with white warts and white gills"
+        }
+      ],
+      "predictScores": [
+        0.7,
+        0.2,
+        0.1
+      ]
+    },
+    {
+      "imageId": 41,
+      "image": {
+        "id": 41,
+        "imageURL": "http://farm4.static.flickr.com/3125/2406696154_298e10aa92.jpg",
+        "class": {
+          "id": 3,
+          "wnid": "n13040629",
+          "imagenetName": "Common stinkhorn, Phallus impudicus",
+          "commonName": "Common stinkhorn",
+          "latinName": "Phallus impudicus",
+          "imagenetDescription": "A common fungus formerly used in preparing a salve for rheumatism"
+        }
+      },
+      "predictClasses": [
+        {
+          "id": 3,
+          "wnid": "n13040629",
+          "imagenetName": "Common stinkhorn, Phallus impudicus",
+          "commonName": "Common stinkhorn",
+          "latinName": "Phallus impudicus",
+          "imagenetDescription": "A common fungus formerly used in preparing a salve for rheumatism"
+        },
+        {
+          "id": 1,
+          "wnid": "n13030337",
+          "imagenetName": "Elf cup",
+          "commonName": "Scarlet Elf cup",
+          "latinName": "Sarcoscypha austriaca",
+          "imagenetDescription": "Apothecium of a fungus of the family Pezizaceae"
+        },
+        {
+          "id": 2,
+          "wnid": "n13003061",
+          "imagenetName": "Fly agaric, Amanita muscaria",
+          "commonName": "Fly agaric",
+          "latinName": "Amanita muscaria",
+          "imagenetDescription": "Poisonous (but rarely fatal) woodland fungus having a scarlet cap with white warts and white gills"
+        }
+      ],
+      "predictScores": [
+        0.7,
+        0.2,
+        0.1
+      ]
+    },
+    {
+      "imageId": 42,
+      "image": {
+        "id": 42,
+        "imageURL": "http://farm4.static.flickr.com/3182/2935599174_2f45745e47_t.jpg",
+        "class": {
+          "id": 3,
+          "wnid": "n13040629",
+          "imagenetName": "Common stinkhorn, Phallus impudicus",
+          "commonName": "Common stinkhorn",
+          "latinName": "Phallus impudicus",
+          "imagenetDescription": "A common fungus formerly used in preparing a salve for rheumatism"
+        }
+      },
+      "predictClasses": [
+        {
+          "id": 3,
+          "wnid": "n13040629",
+          "imagenetName": "Common stinkhorn, Phallus impudicus",
+          "commonName": "Common stinkhorn",
+          "latinName": "Phallus impudicus",
+          "imagenetDescription": "A common fungus formerly used in preparing a salve for rheumatism"
+        },
+        {
+          "id": 1,
+          "wnid": "n13030337",
+          "imagenetName": "Elf cup",
+          "commonName": "Scarlet Elf cup",
+          "latinName": "Sarcoscypha austriaca",
+          "imagenetDescription": "Apothecium of a fungus of the family Pezizaceae"
+        },
+        {
+          "id": 2,
+          "wnid": "n13003061",
+          "imagenetName": "Fly agaric, Amanita muscaria",
+          "commonName": "Fly agaric",
+          "latinName": "Amanita muscaria",
+          "imagenetDescription": "Poisonous (but rarely fatal) woodland fungus having a scarlet cap with white warts and white gills"
+        }
+      ],
+      "predictScores": [
+        0.7,
+        0.2,
+        0.1
+      ]
+    },
+    {
+      "imageId": 43,
+      "image": {
+        "id": 43,
+        "imageURL": "http://farm3.static.flickr.com/2416/1945247893_a90ce7e3e0.jpg",
+        "class": {
+          "id": 3,
+          "wnid": "n13040629",
+          "imagenetName": "Common stinkhorn, Phallus impudicus",
+          "commonName": "Common stinkhorn",
+          "latinName": "Phallus impudicus",
+          "imagenetDescription": "A common fungus formerly used in preparing a salve for rheumatism"
+        }
+      },
+      "predictClasses": [
+        {
+          "id": 3,
+          "wnid": "n13040629",
+          "imagenetName": "Common stinkhorn, Phallus impudicus",
+          "commonName": "Common stinkhorn",
+          "latinName": "Phallus impudicus",
+          "imagenetDescription": "A common fungus formerly used in preparing a salve for rheumatism"
+        },
+        {
+          "id": 1,
+          "wnid": "n13030337",
+          "imagenetName": "Elf cup",
+          "commonName": "Scarlet Elf cup",
+          "latinName": "Sarcoscypha austriaca",
+          "imagenetDescription": "Apothecium of a fungus of the family Pezizaceae"
+        },
+        {
+          "id": 2,
+          "wnid": "n13003061",
+          "imagenetName": "Fly agaric, Amanita muscaria",
+          "commonName": "Fly agaric",
+          "latinName": "Amanita muscaria",
+          "imagenetDescription": "Poisonous (but rarely fatal) woodland fungus having a scarlet cap with white warts and white gills"
+        }
+      ],
+      "predictScores": [
+        0.7,
+        0.2,
+        0.1
+      ]
+    },
+    {
+      "imageId": 44,
+      "image": {
+        "id": 44,
+        "imageURL": "http://farm4.static.flickr.com/3013/2858332958_736065e4c1.jpg",
+        "class": {
+          "id": 3,
+          "wnid": "n13040629",
+          "imagenetName": "Common stinkhorn, Phallus impudicus",
+          "commonName": "Common stinkhorn",
+          "latinName": "Phallus impudicus",
+          "imagenetDescription": "A common fungus formerly used in preparing a salve for rheumatism"
+        }
+      },
+      "predictClasses": [
+        {
+          "id": 3,
+          "wnid": "n13040629",
+          "imagenetName": "Common stinkhorn, Phallus impudicus",
+          "commonName": "Common stinkhorn",
+          "latinName": "Phallus impudicus",
+          "imagenetDescription": "A common fungus formerly used in preparing a salve for rheumatism"
+        },
+        {
+          "id": 1,
+          "wnid": "n13030337",
+          "imagenetName": "Elf cup",
+          "commonName": "Scarlet Elf cup",
+          "latinName": "Sarcoscypha austriaca",
+          "imagenetDescription": "Apothecium of a fungus of the family Pezizaceae"
+        },
+        {
+          "id": 2,
+          "wnid": "n13003061",
+          "imagenetName": "Fly agaric, Amanita muscaria",
+          "commonName": "Fly agaric",
+          "latinName": "Amanita muscaria",
+          "imagenetDescription": "Poisonous (but rarely fatal) woodland fungus having a scarlet cap with white warts and white gills"
+        }
+      ],
+      "predictScores": [
+        0.7,
+        0.2,
+        0.1
+      ]
+    },
+    {
+      "imageId": 45,
+      "image": {
+        "id": 45,
+        "imageURL": "http://farm3.static.flickr.com/2250/2406694468_ec994d1eb2.jpg",
+        "class": {
+          "id": 3,
+          "wnid": "n13040629",
+          "imagenetName": "Common stinkhorn, Phallus impudicus",
+          "commonName": "Common stinkhorn",
+          "latinName": "Phallus impudicus",
+          "imagenetDescription": "A common fungus formerly used in preparing a salve for rheumatism"
+        }
+      },
+      "predictClasses": [
+        {
+          "id": 3,
+          "wnid": "n13040629",
+          "imagenetName": "Common stinkhorn, Phallus impudicus",
+          "commonName": "Common stinkhorn",
+          "latinName": "Phallus impudicus",
+          "imagenetDescription": "A common fungus formerly used in preparing a salve for rheumatism"
+        },
+        {
+          "id": 1,
+          "wnid": "n13030337",
+          "imagenetName": "Elf cup",
+          "commonName": "Scarlet Elf cup",
+          "latinName": "Sarcoscypha austriaca",
+          "imagenetDescription": "Apothecium of a fungus of the family Pezizaceae"
+        },
+        {
+          "id": 2,
+          "wnid": "n13003061",
+          "imagenetName": "Fly agaric, Amanita muscaria",
+          "commonName": "Fly agaric",
+          "latinName": "Amanita muscaria",
+          "imagenetDescription": "Poisonous (but rarely fatal) woodland fungus having a scarlet cap with white warts and white gills"
+        }
+      ],
+      "predictScores": [
+        0.7,
+        0.2,
+        0.1
+      ]
+    },
+    {
+      "imageId": 46,
+      "image": {
+        "id": 46,
+        "imageURL": "http://farm4.static.flickr.com/3275/2908976749_e1e7149a9e.jpg",
+        "class": {
+          "id": 3,
+          "wnid": "n13040629",
+          "imagenetName": "Common stinkhorn, Phallus impudicus",
+          "commonName": "Common stinkhorn",
+          "latinName": "Phallus impudicus",
+          "imagenetDescription": "A common fungus formerly used in preparing a salve for rheumatism"
+        }
+      },
+      "predictClasses": [
+        {
+          "id": 3,
+          "wnid": "n13040629",
+          "imagenetName": "Common stinkhorn, Phallus impudicus",
+          "commonName": "Common stinkhorn",
+          "latinName": "Phallus impudicus",
+          "imagenetDescription": "A common fungus formerly used in preparing a salve for rheumatism"
+        },
+        {
+          "id": 2,
+          "wnid": "n13003061",
+          "imagenetName": "Fly agaric, Amanita muscaria",
+          "commonName": "Fly agaric",
+          "latinName": "Amanita muscaria",
+          "imagenetDescription": "Poisonous (but rarely fatal) woodland fungus having a scarlet cap with white warts and white gills"
+        },
+        {
+          "id": 1,
+          "wnid": "n13030337",
+          "imagenetName": "Elf cup",
+          "commonName": "Scarlet Elf cup",
+          "latinName": "Sarcoscypha austriaca",
+          "imagenetDescription": "Apothecium of a fungus of the family Pezizaceae"
+        }
+      ],
+      "predictScores": [
+        0.7,
+        0.2,
+        0.1
+      ]
+    },
+    {
+      "imageId": 47,
+      "image": {
+        "id": 47,
+        "imageURL": "http://farm1.static.flickr.com/218/515762340_468291a30c.jpg",
+        "class": {
+          "id": 3,
+          "wnid": "n13040629",
+          "imagenetName": "Common stinkhorn, Phallus impudicus",
+          "commonName": "Common stinkhorn",
+          "latinName": "Phallus impudicus",
+          "imagenetDescription": "A common fungus formerly used in preparing a salve for rheumatism"
+        }
+      },
+      "predictClasses": [
+        {
+          "id": 3,
+          "wnid": "n13040629",
+          "imagenetName": "Common stinkhorn, Phallus impudicus",
+          "commonName": "Common stinkhorn",
+          "latinName": "Phallus impudicus",
+          "imagenetDescription": "A common fungus formerly used in preparing a salve for rheumatism"
+        },
+        {
+          "id": 2,
+          "wnid": "n13003061",
+          "imagenetName": "Fly agaric, Amanita muscaria",
+          "commonName": "Fly agaric",
+          "latinName": "Amanita muscaria",
+          "imagenetDescription": "Poisonous (but rarely fatal) woodland fungus having a scarlet cap with white warts and white gills"
+        },
+        {
+          "id": 1,
+          "wnid": "n13030337",
+          "imagenetName": "Elf cup",
+          "commonName": "Scarlet Elf cup",
+          "latinName": "Sarcoscypha austriaca",
+          "imagenetDescription": "Apothecium of a fungus of the family Pezizaceae"
+        }
+      ],
+      "predictScores": [
+        0.7,
+        0.2,
+        0.1
+      ]
+    },
+    {
+      "imageId": 48,
+      "image": {
+        "id": 48,
+        "imageURL": "http://farm4.static.flickr.com/3316/3294938820_8e6de5935c.jpg",
+        "class": {
+          "id": 3,
+          "wnid": "n13040629",
+          "imagenetName": "Common stinkhorn, Phallus impudicus",
+          "commonName": "Common stinkhorn",
+          "latinName": "Phallus impudicus",
+          "imagenetDescription": "A common fungus formerly used in preparing a salve for rheumatism"
+        }
+      },
+      "predictClasses": [
+        {
+          "id": 1,
+          "wnid": "n13030337",
+          "imagenetName": "Elf cup",
+          "commonName": "Scarlet Elf cup",
+          "latinName": "Sarcoscypha austriaca",
+          "imagenetDescription": "Apothecium of a fungus of the family Pezizaceae"
+        },
+        {
+          "id": 3,
+          "wnid": "n13040629",
+          "imagenetName": "Common stinkhorn, Phallus impudicus",
+          "commonName": "Common stinkhorn",
+          "latinName": "Phallus impudicus",
+          "imagenetDescription": "A common fungus formerly used in preparing a salve for rheumatism"
+        },
+        {
+          "id": 2,
+          "wnid": "n13003061",
+          "imagenetName": "Fly agaric, Amanita muscaria",
+          "commonName": "Fly agaric",
+          "latinName": "Amanita muscaria",
+          "imagenetDescription": "Poisonous (but rarely fatal) woodland fungus having a scarlet cap with white warts and white gills"
+        }
+      ],
+      "predictScores": [
+        0.7,
+        0.2,
+        0.1
+      ]
+    }
+  ]
+}
