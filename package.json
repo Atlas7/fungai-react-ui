@@ -4,7 +4,8 @@
   "description": "ReactJS app that uses GitHub API and more",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --open",
+    "start-app": "webpack-dev-server --open",
+    "start-api": "json-server --watch fakeServer/db.json",
     "build": "NODE_ENV='production' webpack -p",
     "build-dev": "webpack",
     "deploy": "npm run build && firebase deploy",
