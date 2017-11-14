@@ -189,6 +189,35 @@ Hosting URL: https://react-github-battle-2017.firebaseapp.com
 
 Here is the demo link: [https://react-github-battle-2017.firebaseapp.com/](https://react-github-battle-2017.firebaseapp.com/)
 
+### New: Start a fake backend API server with json-server (for Fungi ID project)
+
+In a new terminal do this:
+
+```
+json-server --watch fakeServer/db.json
+```
+
+This will create a fake API defined by `fakeServer/db.json`. Accessible via
+[http://localhost:3000/](http://localhost:3000/). This is handy for developing font-end applications in the
+absence of a proper backend API server. 
+
+The current `db.json` file enables us to access sample resources like this:
+
+```
+http://localhost:3000/classes
+http://localhost:3000/images
+http://localhost:3000/testPredictions
+```
+
+See [json-server](https://github.com/typicode/json-server) doc for more info on things like:
+
+- filter
+- sort
+- pagination and limit
+- API verbs
+- etc.
+
+
 # References
 
 Check out this more (original and) comprehensive
