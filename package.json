@@ -9,7 +9,7 @@
     "build-dev": "webpack",
     "deploy": "npm run build && firebase deploy",
     "firebase-init": "firebase login && firebase init",
-    "test": "mocha --compilers js:babel-core/register --require ./test/testHelper.js  --recursive",
+    "test": "mocha --require babel-core/register --require ./test/testHelper.js  --recursive",
     "test:watch": "npm run test -- --watch"
   },
   "babel": {
@@ -18,7 +18,9 @@
       "react"
     ],
     "plugins": [
-      "transform-class-properties"
+      "transform-class-properties",
+      "syntax-async-functions",
+      "transform-regenerator"
     ]
   },
   "author": "Johnny Chan",
@@ -26,21 +28,25 @@
   "dependencies": {
     "axios": "^0.17.0",
     "babel-polyfill": "^6.26.0",
+    "es6-promise": "^4.1.1",
     "immutable": "^3.8.2",
+    "isomorphic-fetch": "^2.2.1",
     "prop-types": "^15.6.0",
     "query-string": "^5.0.1",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
-    "react-router-dom": "^4.2.2",
-    "whatwg-fetch": "^2.0.3"
+    "react-router-dom": "^4.2.2"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
+    "babel-plugin-syntax-async-functions": "^6.13.0",
     "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-regenerator": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
     "chai-immutable": "^1.6.0",
     "css-loader": "^0.28.7",
     "firebase-tools": "^3.14.0",
