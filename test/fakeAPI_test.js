@@ -1,17 +1,12 @@
 import { assert } from 'chai'
+import { fetchResource, imagesURI } from '../app/utils/fakeAPI'
 
 const server = 'http://localhost:3000'
 
 
-describe("jsonServer_test.js", () => {
+describe("fakeAPI_test.js", () => {
 
-  describe('async fetch dummies', () => {
-
-    // params is an string. return a promise
-    async function fetchResource (encodedUri) {
-      const response = await fetch(encodedUri)
-      return response.json()
-    }
+  describe('async fetch 5 dummies', () => {
 
     it(`fetch 5 dummies`, async () => {
       const uri = encodeURI(`${server}/dummies?_limit=5`)

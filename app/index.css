@@ -165,3 +165,14 @@ li {
   /*justify-content: space-around;*/
   justify-content: left;
 }
+
+.wnids {
+  display: flex;
+  justify-content: center;
+}
+
+.wnids li {
+  margin: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}

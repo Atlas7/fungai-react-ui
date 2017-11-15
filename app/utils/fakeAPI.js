@@ -11,7 +11,18 @@ const classesURI = `${server}/classes`
 const imagesURI = `${server}/images`
 const testPredictionsURI = `${server}/testPredictions`
 
-async function fetchResource (encodedUri) {
+// generic fetch. Return a promise.
+export async function fetchResource (encodedUri) {
   const response = await fetch(encodedUri)
   return response.json()
+}
+
+// image fetch. Return images array
+export async function fetchImages (wnid) {
+  const wnidFilter = (wnid === 'all')
+    ? ''
+    : `id=${wnid}`
+  const encodedUri = `${imagesURI}?${wnidFilter}`
+  const images = await fetchResource(encodedUri)
+  return images
 }
