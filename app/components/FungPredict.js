@@ -1,5 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { wait, fetchImages } from '../utils/fakeAPI'
+import Loading from './Loading'
 
 
 function SelectWnid (props) {
@@ -23,58 +25,73 @@ function SelectWnid (props) {
 
 class FungPredict extends React.Component {
   state = {
-    wnid: 'all'
+    selectedWnid: 'all',
+    images: null,
+    loadingText: "badger badger badger badger",
+    lyricsIndex: 0,
+    loadingImage: `https://media.giphy.com/media/rF0jfK42BQWDS/giphy.gif`
   }
-  updateWnid = (wnid) => {
+
+  componentDidMount = () => {
+    this.updateWnid(this.state.selectedWnid)
+  }
+
+  updateWnid = async (wnid) => {
     this.setState({
-      wnid: wnid
+      wnid: wnid,
+      images: null
+    })
+    const images = await fetchImages(wnid)
+    // artificial delay
+    await wait(3000)
+    this.setState({
+      images: images
+    })
+
+    this.updateLoadingText()
+  }
+
+  updateLoadingText = () => {
+    const lyrics = [
+      {text: "badger badger badger badger", image: `https://media.giphy.com/media/rF0jfK42BQWDS/giphy.gif`},
+      {text: "mushroom mushroom", image: `https://i.imgur.com/T4TJ5eb.gif`}
+    ]
+
+    const { lyricsIndex, loadingText} = this.state
+    const newLyricsIndex = lyricsIndex + 1 >=lyrics.length ? 0 : lyricsIndex + 1
+    const newLyrics = lyrics[newLyricsIndex]
+
+    this.setState({
+      lyricsIndex: newLyricsIndex,
+      loadingText: lyrics[newLyricsIndex].text,
+      loadingImage: lyrics[newLyricsIndex].image,
     })
   }
+
+  increment = (number) => number + 1
+
   render = () => {
     return (
         <div>
+          <h1>FungPredict</h1>
           <SelectWnid
-            selectedWnid={this.state.wnid}
+            selectedWnid={this.state.selectedWnid}
             onSelect={this.updateWnid}
           />
-          FungPredict
+
+          {
+            this.state.images
+              ? JSON.stringify(this.state.images, null, 2)
+              : <div className='loading-box'>
+                  <img className='loading-image' src={this.state.loadingImage} />
+                  <Loading text={this.state.loadingText} speed={100} />
+                  <img className='loading-image' src={this.state.loadingImage} />
+                </div>
+
+          }
         </div>
       )
   }
 }
-
-
-
-// class FungPredict extends React.Component {
-//   state = {
-//     selectedWnid: 'all',
-//     images: null,
-//   }
-//   componentDidMount = () => {
-//     this.updateWnid(this.state.selectedWnid)
-//   }
-//   updateWnid = async (wnid) => {
-//     this.setState(() =>({
-//       selectedWnid: wnid,
-//       images: null,
-//     }))
-//     const images = await fetchImages(wnid)
-//     this.setState(() => ({images: images}))
-//   }
-//   render = () => {
-//     return (
-//       <div>
-//         <SelectWnid
-//           onSelect={this.updateWnid}
-//           selectedWnid={this.state.selectedWnid}
-//         />
-//         {/*{JSON.stringify(this.state.repos, null, 2)}*/}
-//         {this.state.images
-//           ? <ImagesGrid images={this.state.images}/>
-//           : <Loading text={"woo saa"} speed={100} />}
-//       </div>
-//     )
-//   }
-// }
 
 module.exports = FungPredict
