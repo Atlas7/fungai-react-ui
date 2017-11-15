@@ -1,4 +1,71 @@
 {
+  "dummies": [
+    {
+      "id": 1,
+      "name": "dummy1",
+      "age": 20,
+      "bodyParts": {
+        "head": true,
+        "body": true,
+        "arms": {
+          "left": true,
+          "right": true
+        }
+      }
+    },
+    {
+      "id": 2,
+      "name": "dummy2",
+      "age": 40,
+      "bodyParts": {
+        "head": true,
+        "body": true,
+        "arms": {
+          "left": true,
+          "right": false
+        }
+      }
+    },
+    {
+      "id": 3,
+      "name": "dummy3",
+      "age": 10,
+      "bodyParts": {
+        "head": false,
+        "body": true,
+        "arms": {
+          "left": true,
+          "right": true
+        }
+      }
+    },
+    {
+      "id": 4,
+      "name": "dummy4",
+      "age": 50,
+      "bodyParts": {
+        "head": true,
+        "body": false,
+        "arms": {
+          "left": true,
+          "right": true
+        }
+      }
+    },
+    {
+      "id": 5,
+      "name": "dummy5",
+      "age": 20,
+      "bodyParts": {
+        "head": false,
+        "body": true,
+        "arms": {
+          "left": true,
+          "right": true
+        }
+      }
+    }
+  ],
   "classes": [
     {
       "id": 1,

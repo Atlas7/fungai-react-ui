@@ -3,12 +3,15 @@
 // - top level is resource
 // - sub levels may be used for querying
 //
-const backendServer = 'http:/localhost:3000'
 
-export async function getImages () {
-  const limit = 10
-  const params = `_limit=${limit}`
-  const response = await fetch(`${backendServer}/images?${params}`)
-  const imagest = response.json()
-  return images
+const server = 'http://localhost:3000'
+
+const dummiesURI = `${server}/dummies`
+const classesURI = `${server}/classes`
+const imagesURI = `${server}/images`
+const testPredictionsURI = `${server}/testPredictions`
+
+async function fetchResource (encodedUri) {
+  const response = await fetch(encodedUri)
+  return response.json()
 }
