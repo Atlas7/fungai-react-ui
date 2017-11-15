@@ -4,7 +4,7 @@ import { wait, fetchImages } from '../utils/fakeAPI'
 import Loading from './Loading'
 
 
-function SelectWnid (props) {
+function SelectWnid ({onSelect, selectedWnid}) {
   const wnids = ['all', 'n13030337', 'n13003061', 'n13040629']
   return (
       <ul className='wnids'>
@@ -12,10 +12,9 @@ function SelectWnid (props) {
           return (
             <li
               key={wnid}
-              style={wnid === props.selectedWnid ? {color: '#d0021b'} : null}
-              onClick={props.onSelect.bind(null, wnid)}
-            >
-              {wnid}
+              style={wnid === selectedWnid ? {color: '#d0021b'} : null}
+              onClick={onSelect.bind(null, wnid)}>
+                {wnid}
             </li>
           )
         })}
@@ -38,16 +37,15 @@ class FungPredict extends React.Component {
 
   updateWnid = async (wnid) => {
     this.setState({
-      wnid: wnid,
+      selectedWnid: wnid,
       images: null
     })
-    const images = await fetchImages(wnid)
     // artificial delay
-    await wait(3000)
+    await wait(1000)
+    const images = await fetchImages(wnid)
     this.setState({
       images: images
     })
-
     this.updateLoadingText()
   }
 
@@ -59,7 +57,6 @@ class FungPredict extends React.Component {
 
     const { lyricsIndex, loadingText} = this.state
     const newLyricsIndex = lyricsIndex + 1 >=lyrics.length ? 0 : lyricsIndex + 1
-    const newLyrics = lyrics[newLyricsIndex]
 
     this.setState({
       lyricsIndex: newLyricsIndex,

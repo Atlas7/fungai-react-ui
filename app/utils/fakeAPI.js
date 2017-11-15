@@ -35,6 +35,7 @@ export async function fetchImages (wnid) {
     ? ''
     : `class.wnid=${wnid}`
   const encodedUri = `${imagesURI}?${wnidFilter}`
+  // console.log(encodedUri)
   const images = await fetchResource(encodedUri)
   return images
 }
