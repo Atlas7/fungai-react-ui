@@ -4,3 +4,14 @@
 // - sub levels may be used for querying
 //
 
+const server = 'http://localhost:3000'
+
+const dummiesURI = `${server}/dummies`
+const classesURI = `${server}/classes`
+const imagesURI = `${server}/images`
+const testPredictionsURI = `${server}/testPredictions`
+
+async function fetchResource (encodedUri) {
+  const response = await fetch(encodedUri)
+  return response.json()
+}
