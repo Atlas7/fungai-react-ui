@@ -4,6 +4,88 @@ import { wait, fetchPredictions } from '../utils/fakeAPI'
 import Loading from './Loading'
 
 
+
+function ItemLabel ({index}) {
+  return (
+    <div className='popular-rank'>
+      #{index + 1}
+    </div>
+  )
+}
+TruthBox.PropTypes = {
+  index: PropTypes.number.isRequired,
+}
+
+
+
+function TruthBox ({pred, index}) {
+  return (
+    <div>
+      <ul className='space-list-items'>
+        <img
+          className='fung-photo '
+          src={pred.image.imageURL}
+          alt={':-('}
+        />
+        <li><a href={pred.image.imageURL}>source</a></li>
+        <li>{`Truth: ${pred.image.class.commonName}`}</li>
+      </ul>
+    </div>
+  )
+}
+TruthBox.PropTypes = {
+  pred: PropTypes.object.isRequired,
+}
+
+
+function PredBox ({pred}) {
+  return (
+    <div class="pred-box">
+      <div class="pred-class">
+        <ul>
+          {pred.predictClasses.map((predictClass, index) => (
+            <li
+              style={
+                {
+                  background: `linear-gradient(90deg, green 50%, white 50%)`,
+                  color: `black`
+                }
+              }
+            >{`${predictClass.commonName}`}</li>
+          ))}
+        </ul>
+      </div>
+      <div class="pred-score">
+        <ul>
+          {pred.predictScores.map((predictScore, index) => (
+            <li>{`${predictScore}`}</li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  )
+}
+
+
+function PredsGrid ({preds}) {
+  return (
+    <div className='preds-grid'>
+      <ul className='popular-list'>
+        {preds.map((pred, index) => (
+          <li key={pred.imageId} className='pred-item'>
+            <ItemLabel index={index} />
+            <TruthBox pred={pred} />
+            <PredBox pred={pred}  />
+          </li>
+        ))}
+      </ul>
+    </div>
+  )
+}
+PredsGrid.PropTypes = {
+  preds: PropTypes.array.isRequired,
+}
+
 function SelectWnid ({onSelect, selectedWnid}) {
   const wnids = ['all', 'n13030337', 'n13003061', 'n13040629']
   return (
@@ -78,7 +160,8 @@ class FungPredict extends React.Component {
 
           {
             this.state.testPredictions
-              ? JSON.stringify(this.state.testPredictions, null, 2)
+                // JSON.stringify(this.state.testPredictions, null, 2)
+              ? <PredsGrid preds={this.state.testPredictions} />
               : <div className='loading-box'>
                   <img className='loading-image' src={this.state.loadingImage} />
                   <Loading text={this.state.loadingText} speed={100} />

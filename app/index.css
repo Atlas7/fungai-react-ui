@@ -147,9 +147,10 @@ li {
 /*center photo and crop to a square automatically */
 .fung-photo {
   object-fit: cover;
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   border-radius: 10%;
+  margin: 10%;
 }
 
 .fung-item {
@@ -188,3 +189,75 @@ li {
   display: flex;
   justify-content: center;
 }
+
+
+.preds-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border-style: solid;
+  border-color: black;
+}
+
+.pred-item {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  border-style: solid;
+  border-color: black;
+}
+
+
+.pred-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.pred-class {
+  border-style: solid;
+  border-color: black;
+  margin-left: 15px;
+  text-align: left;
+  width: 200px;
+}
+
+.pred-class ul{
+  margin-right: 50px;
+}
+
+.pred-score {
+  border-style: solid;
+  border-color: black;
+  margin-right: 15px;
+  text-align: left;
+  width: 100px;
+  color: black;
+}
+
+.pred-score ul{
+  margin-left: 20px;
+}
+
+
+/* https://stackoverflow.com/questions/19104018/how-to-expand-an-image-in-html-by-clicking-on-it*/
+.fung-photo:hover{
+  color: #424242;
+  -webkit-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+  -ms-transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+  opacity: 1;
+  transform: scale(1.15);
+  -ms-transform: scale(1.15); /* IE 9 */
+  -webkit-transform: scale(1.15); /* Safari and Chrome */
+
+}
+
