@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { wait, fetchImages } from '../utils/fakeAPI'
+import { wait, fetchPredictions } from '../utils/fakeAPI'
 import Loading from './Loading'
 
 
@@ -25,7 +25,7 @@ function SelectWnid ({onSelect, selectedWnid}) {
 class FungPredict extends React.Component {
   state = {
     selectedWnid: 'all',
-    images: null,
+    testPredictions: null,
     loadingText: "badger badger badger badger",
     lyricsIndex: 0,
     loadingImage: `https://media.giphy.com/media/rF0jfK42BQWDS/giphy.gif`
@@ -38,13 +38,13 @@ class FungPredict extends React.Component {
   updateWnid = async (wnid) => {
     this.setState({
       selectedWnid: wnid,
-      images: null
+      testPredictions: null
     })
     // artificial delay
     await wait(1000)
-    const images = await fetchImages(wnid)
+    const testPredictions = await fetchPredictions(wnid)
     this.setState({
-      images: images
+      testPredictions,
     })
     this.updateLoadingText()
   }
@@ -77,8 +77,8 @@ class FungPredict extends React.Component {
           />
 
           {
-            this.state.images
-              ? JSON.stringify(this.state.images, null, 2)
+            this.state.testPredictions
+              ? JSON.stringify(this.state.testPredictions, null, 2)
               : <div className='loading-box'>
                   <img className='loading-image' src={this.state.loadingImage} />
                   <Loading text={this.state.loadingText} speed={100} />

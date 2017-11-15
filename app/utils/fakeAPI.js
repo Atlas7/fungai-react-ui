@@ -40,3 +40,13 @@ export async function fetchImages (wnid) {
   return images
 }
 
+
+export async function fetchPredictions (wnid) {
+  const wnidFilter = (wnid === 'all')
+    ? ''
+    : `image.class.wnid=${wnid}`
+  const encodedUri = `${testPredictionsURI}?${wnidFilter}`
+  // console.log(encodedUri)
+  const testPredictions = await fetchResource(encodedUri)
+  return testPredictions
+}
