@@ -4,6 +4,18 @@ import { wait, fetchPredictions } from '../utils/fakeAPI'
 import Loading from './Loading'
 
 
+function PredJSON ({pred}) {
+  return (
+    <div>
+      {JSON.stringify(pred, null, 2)}
+    </div>
+  )
+}
+TruthBox.PropTypes = {
+  pred: PropTypes.object.isRequired,
+}
+
+
 function ItemLabel ({index}) {
   return (
     <div className='item-label'>
@@ -191,7 +203,9 @@ class FungPredict extends React.Component {
       {text: "mushroom mushroom", image: `https://i.imgur.com/T4TJ5eb.gif`}
     ]
     const { lyricsIndex } = this.state
-    const newLyricsIndex = lyricsIndex + 1 >=lyrics.length ? 0 : lyricsIndex + 1
+    const newLyricsIndex = this.increment(lyricsIndex) >= lyrics.length
+      ? 0
+      : this.increment(lyricsIndex)
     this.setState({
       lyricsIndex: newLyricsIndex,
       loadingText: lyrics[newLyricsIndex].text,
@@ -207,7 +221,6 @@ class FungPredict extends React.Component {
           <SelectWnid selectedWnid={selectedWnid} onSelect={this.updateWnid}/>
           {
             preds
-                // JSON.stringify(this.state.testPredictions, null, 2)
               ? <PredsGrid preds={preds} />
               : <PredsLoading
                   loadingText={loadingText}
@@ -220,4 +233,4 @@ class FungPredict extends React.Component {
 }
 
 
-module.exports = FungPredict
+export default FungPredict

@@ -115,4 +115,4 @@ class FungShow extends React.Component {
   }
 }
 
-module.exports = FungShow
+export default FungShow
