@@ -18,6 +18,8 @@ TruthBox.PropTypes = {
 
 
 
+
+
 function TruthBox ({pred, index}) {
   return (
     <div>
@@ -39,6 +41,9 @@ TruthBox.PropTypes = {
 
 
 function PredBox ({pred}) {
+  // TODO
+  // zip pred classes and scores
+  // then display both in one row (split across two sub divs)
   return (
     <div class="pred-box">
       <div class="pred-class">
