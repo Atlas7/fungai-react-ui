@@ -153,6 +153,20 @@ li {
   margin: 10%;
 }
 
+/* https://stackoverflow.com/questions/19104018/how-to-expand-an-image-in-html-by-clicking-on-it*/
+.fung-photo:hover{
+  color: #424242;
+  -webkit-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+  -ms-transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+  opacity: 1;
+  transform: scale(1.15);
+  -ms-transform: scale(1.15); /* IE 9 */
+  -webkit-transform: scale(1.15); /* Safari and Chrome */
+}
+
 .fung-item {
   margin: 20px;
   text-align: center;
@@ -166,17 +180,18 @@ li {
   /*justify-content: space-around;*/
   justify-content: left;
 }
-
 .wnids {
   display: flex;
   justify-content: center;
+  /*border-style: solid;*/
 }
-
 .wnids li {
   margin: 10px;
   font-weight: bold;
   cursor: pointer;
+
 }
+
 
 .loading-image {
   object-fit: cover;
@@ -184,13 +199,14 @@ li {
   height: 200px;
   border-radius: 10%;
 }
-
 .loading-box {
   display: flex;
   justify-content: center;
+  margin: 20px;
 }
 
 
+/*PredsGrid*/
 .preds-grid {
   display: flex;
   flex-direction: row;
@@ -199,7 +215,6 @@ li {
   border-style: solid;
   border-color: black;
 }
-
 .pred-item {
   display: flex;
   flex-direction: column;
@@ -212,14 +227,18 @@ li {
   border-width: 1px;
   border-color: black;
 }
+.item-label {
+  font-size: 20px;
+  margin: 2px;
+}
+.truth-box {
 
-
+}
 .pred-box {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
  }
-
 .pred-box-item {
   border-style: solid;
   border-color: black;
@@ -229,14 +248,12 @@ li {
   wrap: nowrap;
   margin: 2px;
 }
-
 .pred-class {
   position: relative;
   /*border-style: solid;*/
   /*border-color: red;*/
   width: 200px;
 }
-
 .pred-class-bar {
   /*background-color: green;*/
   position: absolute;
@@ -246,33 +263,17 @@ li {
   width: 70%;
   height: 100%;
 }
-
 .pred-class-text {
   position: absolute;
   left: 0; top: 0;
   width: 100%;
   height: 100%;
   text-align: left;
+  padding-left: 3px;
 }
-
 .pred-score {
   /*border-style: solid;*/
   /*border-color: blue;*/
   width: 50px;
-}
-
-/* https://stackoverflow.com/questions/19104018/how-to-expand-an-image-in-html-by-clicking-on-it*/
-.fung-photo:hover{
-  color: #424242;
-  -webkit-transition: all .3s ease-in;
-  -moz-transition: all .3s ease-in;
-  -ms-transition: all .3s ease-in;
-  -o-transition: all .3s ease-in;
-  transition: all .3s ease-in;
-  opacity: 1;
-  transform: scale(1.15);
-  -ms-transform: scale(1.15); /* IE 9 */
-  -webkit-transform: scale(1.15); /* Safari and Chrome */
-
 }
 

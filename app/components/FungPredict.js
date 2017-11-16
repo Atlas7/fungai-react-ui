@@ -4,10 +4,9 @@ import { wait, fetchPredictions } from '../utils/fakeAPI'
 import Loading from './Loading'
 
 
-
 function ItemLabel ({index}) {
   return (
-    <div className='popular-rank'>
+    <div className='item-label'>
       #{index + 1}
     </div>
   )
@@ -17,17 +16,17 @@ TruthBox.PropTypes = {
 }
 
 
-function TruthBox ({pred, index}) {
+function TruthBox ({pred}) {
+  const {image} = pred
   return (
-    <div>
+    <div className="truth-box">
       <ul className='space-list-items'>
         <img
-          className='fung-photo '
-          src={pred.image.imageURL}
+          className='fung-photo'
+          src={image.imageURL}
           alt={':-('}
         />
-        <li><a href={pred.image.imageURL}>source</a></li>
-        <li>{`Truth: ${pred.image.class.commonName}`}</li>
+        <li><a href={image.imageURL}>source</a></li>
       </ul>
     </div>
   )
@@ -38,9 +37,6 @@ TruthBox.PropTypes = {
 
 
 function PredBox ({pred}) {
-  // TODO
-  // zip pred classes and scores
-  // then display both in one row (split across two sub divs)
   const trueClass  = pred.image.class
   const { predictClasses, predictScores } = pred
   const predObjects = predictClasses.map((e, i) => ({
@@ -49,33 +45,29 @@ function PredBox ({pred}) {
     trueClass: trueClass,
     predCorrect: e.wnid === trueClass.wnid
   }))
-  console.log(predObjects)
   return (
-    <div class="pred-box">
+    <ul className="pred-box">
         {
-          predObjects.map(({predScore, predClass, trueClass, predCorrect}, index) => {
+          predObjects.map(({predScore, predClass, predCorrect}, index) => {
             const barColor = predCorrect? "green" : "red"
             const barWidth = `${predScore*100}%`
             return (
-              <div class="pred-box-item">
-                <div class="pred-class">
-                  <div class="pred-class-text">{predClass.commonName}</div>
+              <li className="pred-box-item" key={index}>
+                <div className="pred-class">
+                  <div className="pred-class-text">{predClass.commonName}</div>
                   <div
-                    class="pred-class-bar"
-                    style={
-                      {
-                        "background-color": `${barColor}`,
-                        "width": `${barWidth}`,
-                      }
-                    }
-                  />
+                    className="pred-class-bar"
+                    style={{
+                      "backgroundColor": `${barColor}`,
+                      "width": `${barWidth}`,
+                    }}/>
                 </div>
-                <div class="pred-score">{predScore}</div>
-              </div>
+                <div className="pred-score">{predScore}</div>
+              </li>
             )
           })
         }
-    </div>
+    </ul>
   )
 }
 
@@ -99,92 +91,133 @@ PredsGrid.PropTypes = {
   preds: PropTypes.array.isRequired,
 }
 
+
 function SelectWnid ({onSelect, selectedWnid}) {
   const wnids = ['all', 'n13030337', 'n13003061', 'n13040629']
+  const commonNames = ['all', 'Scarlet Elf cup', 'Fly Agaric', 'Common stinkhorn']
+  const wnidObjects = wnids.map((e, i) => ({
+    wnid: e,
+    commonNames: commonNames[i]
+  }))
   return (
       <ul className='wnids'>
-        {wnids.map((wnid) => {
+        {wnidObjects.map(({wnid, commonNames}) => {
           return (
             <li
               key={wnid}
               style={wnid === selectedWnid ? {color: '#d0021b'} : null}
               onClick={onSelect.bind(null, wnid)}>
-                {wnid}
+                {`${commonNames}`}
             </li>
           )
         })}
       </ul>
   )
 }
+SelectWnid.propTypes = {
+  onSelect: PropTypes.func.isRequired,
+  selectedWnid: PropTypes.string.isRequired,
+}
+
+
+function PredsLoading ({loadingText, loadingImage, speed}) {
+  return (
+    <div className='loading-box'>
+      <img className='loading-image' src={loadingImage} />
+      <Loading text={loadingText} speed={speed} />
+      <img className='loading-image' src={loadingImage} />
+    </div>
+  )
+}
+PredsLoading.propTypes = {
+  loadingText: PropTypes.string.isRequired,
+  loadingImage: PropTypes.string.isRequired,
+  speed: PropTypes.number.isRequired,
+}
+PredsLoading.defaultProps = {
+  loadingText: "badger badger badger badger",
+  loadingImage: "https://media.giphy.com/media/rF0jfK42BQWDS/giphy.gif",
+}
+
+
+function Intro ({wnid}) {
+  return (
+    <div>
+      <h1>Fungi Classification</h1>
+      <ul>
+        <li>Ground Truth vs Prediction</li>
+        <li>Image source: Imagenet</li>
+        <li>Selected WordsNet ID (wnid): {wnid}</li>
+      </ul>
+    </div>
+  )
+}
+Intro.propTypes = {
+  wnid: PropTypes.string.isRequired
+}
+
 
 class FungPredict extends React.Component {
   state = {
     selectedWnid: 'all',
-    testPredictions: null,
+    preds: null,
     loadingText: "badger badger badger badger",
     lyricsIndex: 0,
     loadingImage: `https://media.giphy.com/media/rF0jfK42BQWDS/giphy.gif`
   }
-
   componentDidMount = () => {
     this.updateWnid(this.state.selectedWnid)
   }
-
   updateWnid = async (wnid) => {
+    const delay = 500
     this.setState({
       selectedWnid: wnid,
-      testPredictions: null
+      preds: null
     })
     // artificial delay
-    // await wait(1000)
-    const testPredictions = await fetchPredictions(wnid)
+    await wait(delay)
+    const preds = await fetchPredictions(wnid)
+    // artificial randomness
+    const shuffledPreds = this.shuffleArray(preds)
     this.setState({
-      testPredictions,
+      preds: shuffledPreds,
     })
     this.updateLoadingText()
   }
-
+  shuffleArray = (arr) => (arr.sort(() => Math.random() - 0.5))
   updateLoadingText = () => {
     const lyrics = [
       {text: "badger badger badger badger", image: `https://media.giphy.com/media/rF0jfK42BQWDS/giphy.gif`},
       {text: "mushroom mushroom", image: `https://i.imgur.com/T4TJ5eb.gif`}
     ]
-
-    const { lyricsIndex, loadingText} = this.state
+    const { lyricsIndex } = this.state
     const newLyricsIndex = lyricsIndex + 1 >=lyrics.length ? 0 : lyricsIndex + 1
-
     this.setState({
       lyricsIndex: newLyricsIndex,
       loadingText: lyrics[newLyricsIndex].text,
       loadingImage: lyrics[newLyricsIndex].image,
     })
   }
-
   increment = (number) => number + 1
-
   render = () => {
+    const {selectedWnid, preds, loadingText, loadingImage} = this.state
     return (
         <div>
-          <h1>FungPredict</h1>
-          <SelectWnid
-            selectedWnid={this.state.selectedWnid}
-            onSelect={this.updateWnid}
-          />
-
+          <Intro wnid={selectedWnid} />
+          <SelectWnid selectedWnid={selectedWnid} onSelect={this.updateWnid}/>
           {
-            this.state.testPredictions
+            preds
                 // JSON.stringify(this.state.testPredictions, null, 2)
-              ? <PredsGrid preds={this.state.testPredictions} />
-              : <div className='loading-box'>
-                  <img className='loading-image' src={this.state.loadingImage} />
-                  <Loading text={this.state.loadingText} speed={100} />
-                  <img className='loading-image' src={this.state.loadingImage} />
-                </div>
-
+              ? <PredsGrid preds={preds} />
+              : <PredsLoading
+                  loadingText={loadingText}
+                  loadingImage={loadingImage}
+                  speed={150}/>
           }
         </div>
       )
   }
 }
+
 
 module.exports = FungPredict

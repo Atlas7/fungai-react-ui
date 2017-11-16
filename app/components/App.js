@@ -3,8 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 import Nav from './Nav'
 import PageNotFound from './PageNotFound'
-import HelloWorld from './HelloWorld'
-import FungShow from './FungShow'
+import About from './About'
 import FungPredict from './FungPredict'
 
 // Define a React App component here. A component may have:
@@ -18,9 +17,8 @@ class App extends React.Component {
         <div className='container'>
           <Nav />
           <Switch>
-            <Route exact path='/' component={HelloWorld} />
-            <Route path='/helloworld' component={HelloWorld} />
-            <Route path='/fungshow' component={FungShow} />
+            <Route exact path='/' component={FungPredict} />
+            <Route path='/about' component={About} />
             <Route path='/fungpredict' component={FungPredict} />
             <Route component={PageNotFound} />
           </Switch>
