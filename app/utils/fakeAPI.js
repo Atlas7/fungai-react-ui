@@ -4,6 +4,8 @@
 // - sub levels may be used for querying
 //
 
+// import Promise from 'es6-promise'
+
 const server = 'http://localhost:3000'
 
 const dummiesURI = `${server}/dummies`
@@ -11,7 +13,40 @@ const classesURI = `${server}/classes`
 const imagesURI = `${server}/images`
 const testPredictionsURI = `${server}/testPredictions`
 
-async function fetchResource (encodedUri) {
+// generic fetch. Return a promise.
+export async function fetchResource (encodedUri) {
   const response = await fetch(encodedUri)
   return response.json()
+}
+
+// artificial delay. Return a promise
+export async function wait (ms) {
+  const hello = new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve('hello')
+    }, ms)
+  })
+  return hello
+}
+
+// image fetch. Return images array
+export async function fetchImages (wnid) {
+  const wnidFilter = (wnid === 'all')
+    ? ''
+    : `class.wnid=${wnid}`
+  const encodedUri = `${imagesURI}?${wnidFilter}`
+  // console.log(encodedUri)
+  const images = await fetchResource(encodedUri)
+  return images
+}
+
+
+export async function fetchPredictions (wnid) {
+  const wnidFilter = (wnid === 'all')
+    ? ''
+    : `image.class.wnid=${wnid}`
+  const encodedUri = `${testPredictionsURI}?${wnidFilter}`
+  // console.log(encodedUri)
+  const testPredictions = await fetchResource(encodedUri)
+  return testPredictions
 }
