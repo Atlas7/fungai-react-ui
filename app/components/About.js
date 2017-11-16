@@ -1,13 +1,15 @@
 import React from 'react'
+import ModalButton from './ModalButton'
 
 class About extends React.Component {
   render = () => {
     return (
       <div>
-        About
+        Hello
+        <ModalButton />
       </div>
     )
   }
 }
 
-module.exports = About
+export default About
