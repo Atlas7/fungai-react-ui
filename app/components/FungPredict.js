@@ -17,9 +17,6 @@ TruthBox.PropTypes = {
 }
 
 
-
-
-
 function TruthBox ({pred, index}) {
   return (
     <div>
