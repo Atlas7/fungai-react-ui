@@ -153,6 +153,20 @@ li {
   margin: 10%;
 }
 
+/* https://stackoverflow.com/questions/19104018/how-to-expand-an-image-in-html-by-clicking-on-it*/
+.fung-photo:hover{
+  color: #424242;
+  -webkit-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+  -ms-transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+  opacity: 1;
+  transform: scale(1.15);
+  -ms-transform: scale(1.15); /* IE 9 */
+  -webkit-transform: scale(1.15); /* Safari and Chrome */
+}
+
 .fung-item {
   margin: 20px;
   text-align: center;
@@ -169,11 +183,13 @@ li {
 .wnids {
   display: flex;
   justify-content: center;
+  /*border-style: solid;*/
 }
 .wnids li {
   margin: 10px;
   font-weight: bold;
   cursor: pointer;
+
 }
 
 
@@ -261,16 +277,3 @@ li {
   width: 50px;
 }
 
-/* https://stackoverflow.com/questions/19104018/how-to-expand-an-image-in-html-by-clicking-on-it*/
-.fung-photo:hover{
-  color: #424242;
-  -webkit-transition: all .3s ease-in;
-  -moz-transition: all .3s ease-in;
-  -ms-transition: all .3s ease-in;
-  -o-transition: all .3s ease-in;
-  transition: all .3s ease-in;
-  opacity: 1;
-  transform: scale(1.15);
-  -ms-transform: scale(1.15); /* IE 9 */
-  -webkit-transform: scale(1.15); /* Safari and Chrome */
-}

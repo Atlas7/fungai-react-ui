@@ -94,15 +94,20 @@ PredsGrid.PropTypes = {
 
 function SelectWnid ({onSelect, selectedWnid}) {
   const wnids = ['all', 'n13030337', 'n13003061', 'n13040629']
+  const commonNames = ['all', 'Scarlet Elf cup', 'Fly Agaric', 'Common stinkhorn']
+  const wnidObjects = wnids.map((e, i) => ({
+    wnid: e,
+    commonNames: commonNames[i]
+  }))
   return (
       <ul className='wnids'>
-        {wnids.map((wnid) => {
+        {wnidObjects.map(({wnid, commonNames}) => {
           return (
             <li
               key={wnid}
               style={wnid === selectedWnid ? {color: '#d0021b'} : null}
               onClick={onSelect.bind(null, wnid)}>
-                {wnid}
+                {`${commonNames}`}
             </li>
           )
         })}
@@ -132,6 +137,23 @@ PredsLoading.propTypes = {
 PredsLoading.defaultProps = {
   loadingText: "badger badger badger badger",
   loadingImage: "https://media.giphy.com/media/rF0jfK42BQWDS/giphy.gif",
+}
+
+
+function Intro ({wnid}) {
+  return (
+    <div>
+      <h1>Fungi Classification</h1>
+      <ul>
+        <li>Ground Truth vs Prediction</li>
+        <li>Image source: Imagenet</li>
+        <li>Selected WordsNet ID (wnid): {wnid}</li>
+      </ul>
+    </div>
+  )
+}
+Intro.propTypes = {
+  wnid: PropTypes.string.isRequired
 }
 
 
@@ -181,7 +203,7 @@ class FungPredict extends React.Component {
     const {selectedWnid, preds, loadingText, loadingImage} = this.state
     return (
         <div>
-          <h1>FungPredict</h1>
+          <Intro wnid={selectedWnid} />
           <SelectWnid selectedWnid={selectedWnid} onSelect={this.updateWnid}/>
           {
             preds

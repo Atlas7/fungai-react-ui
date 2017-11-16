@@ -1,13 +1,13 @@
 import React from 'react'
 
-class HelloWorld extends React.Component {
+class About extends React.Component {
   render = () => {
     return (
       <div>
-        Hello World!
+        About
       </div>
     )
   }
 }
 
-module.exports = HelloWorld
+module.exports = About
