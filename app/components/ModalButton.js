@@ -1,14 +1,8 @@
 import React from 'react'
-import { Button, Modal, OverlayTrigger } from 'react-bootstrap'
+import { Button, Modal, OverlayTrigger, Popover, Tooltip} from 'react-bootstrap'
 
 
-class ModalButton extends React.Component () {
-  // constructor(props) {
-  //   super(props)
-  //   this.state = {
-  //     showModal: false
-  //   }
-  // }
+class ModalButton extends React.Component {
   state = {
     showModal: false
   }
@@ -81,4 +75,4 @@ class ModalButton extends React.Component () {
   }
 }
 
-  export default ModalButton
+export default ModalButton
