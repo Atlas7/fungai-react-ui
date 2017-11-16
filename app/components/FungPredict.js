@@ -17,9 +17,6 @@ TruthBox.PropTypes = {
 }
 
 
-
-
-
 function TruthBox ({pred, index}) {
   return (
     <div>
@@ -44,29 +41,40 @@ function PredBox ({pred}) {
   // TODO
   // zip pred classes and scores
   // then display both in one row (split across two sub divs)
+  const trueClass  = pred.image.class
+  const { predictClasses, predictScores } = pred
+  const predObjects = predictClasses.map((e, i) => ({
+    predClass: e,
+    predScore: predictScores[i],
+    trueClass: trueClass,
+    predCorrect: e.wnid === trueClass.wnid
+  }))
+  console.log(predObjects)
   return (
     <div class="pred-box">
-      <div class="pred-class">
-        <ul>
-          {pred.predictClasses.map((predictClass, index) => (
-            <li
-              style={
-                {
-                  background: `linear-gradient(90deg, green 50%, white 50%)`,
-                  color: `black`
-                }
-              }
-            >{`${predictClass.commonName}`}</li>
-          ))}
-        </ul>
-      </div>
-      <div class="pred-score">
-        <ul>
-          {pred.predictScores.map((predictScore, index) => (
-            <li>{`${predictScore}`}</li>
-          ))}
-        </ul>
-      </div>
+        {
+          predObjects.map(({predScore, predClass, trueClass, predCorrect}, index) => {
+            const barColor = predCorrect? "green" : "red"
+            const barWidth = `${predScore*100}%`
+            return (
+              <div class="pred-box-item">
+                <div class="pred-class">
+                  <div class="pred-class-text">{predClass.commonName}</div>
+                  <div
+                    class="pred-class-bar"
+                    style={
+                      {
+                        "background-color": `${barColor}`,
+                        "width": `${barWidth}`,
+                      }
+                    }
+                  />
+                </div>
+                <div class="pred-score">{predScore}</div>
+              </div>
+            )
+          })
+        }
     </div>
   )
 }
@@ -128,7 +136,7 @@ class FungPredict extends React.Component {
       testPredictions: null
     })
     // artificial delay
-    await wait(1000)
+    // await wait(1000)
     const testPredictions = await fetchPredictions(wnid)
     this.setState({
       testPredictions,
