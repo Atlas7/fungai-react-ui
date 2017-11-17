@@ -6,7 +6,6 @@ class About extends React.Component {
     return (
       <div>
         Hello
-        <ModalButtonExample />
       </div>
     )
   }

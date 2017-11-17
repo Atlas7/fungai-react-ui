@@ -6,17 +6,20 @@ import Loading from './Loading'
 
 //
 // TODO
-// Make Grid Images click-able to summary
+// done - Make Grid Images click-able to summary
+// done - hyperlink to imagenet via wnid
+// done - add text under the predictions section in modal box
+// proper about page
+
+
+// correct prediction in top 1 / 2 / 3 bucket - display in summary modal page
+// save a copy of the images and store away somewhere
+
+
 // update scores in database to make appear more random (less uniform)
 // deploy API
 // deploy front-end
-// proper about page
 // github code sharing
-// tooltip on probability bars
-// hyperlink to imagenet via wnid
-// correct prediction in top 1 / 2 / 3 bucket - display in summary modal page
-// save a copy of the images and store away somewhere
-// add text under the predictions section in modal box
 
 // utility function
 function zipPredClassesScores (pred) {
@@ -33,6 +36,11 @@ function zipPredClassesScores (pred) {
 
 
 class PredItemModal extends React.Component {
+  static propTypes = {
+    pred: PropTypes.object.isRequired,
+  }
+  static defaultProps = {
+  }
   state = {
     showModal: false
   }
@@ -47,29 +55,31 @@ class PredItemModal extends React.Component {
     })
   }
   render = () => {
-    const popover = (
-      <Popover id="modal-popover" title="popover">
-        very popover. such engagement
-      </Popover>
-    )
-    const tooltip = (
-      <Tooltip id="modal-tooltip">
-        wow.
-      </Tooltip>
-    )
-    const { pred } = this.props
+    // const popover = (
+    //   <Popover id="modal-popover" title="popover">
+    //     very popover. such engagement
+    //   </Popover>
+    // )
+    // const tooltip = (
+    //   <Tooltip id="modal-tooltip">
+    //     wow.
+    //   </Tooltip>
+    // )
+    const { pred, children } = this.props
     const { imageId, image, predictClasses, predictScores } = this.props.pred
     const { imageURL } = image
     return (
       <div>
-        <Button
-          bsStyle="primary"
-          bsSize="small"
-          onClick={this.open}
-        >
-          more info
-        </Button>
-
+        {children &&
+          <div onClick={this.open}>
+            {children}
+          </div>
+        }
+        {!children &&
+          <Button bsStyle="primary" bsSize="large" onClick={this.open}>
+            more info
+          </Button>
+        }
         <Modal show={this.state.showModal} onHide={this.close} bsSize="large">
           <Modal.Header closeButton>
             <Modal.Title>Image Classification Summary</Modal.Title>
@@ -79,19 +89,21 @@ class PredItemModal extends React.Component {
               <div className="column">
                 <h4>Test Image</h4>
                 <img className='fung-photo-cover-2' src={imageURL} alt={':-('} />
-                <p><a href={imageURL} target="_blank">Image Source</a></p>
+                <LinkWithTooltip tooltip="View source image" href={imageURL} id="tooltip-1" placement="right">
+                  Image Source
+                </LinkWithTooltip>
               </div>
               <div className="column">
                 <h4>Ground Truth</h4>
                 <TruthTable pred={pred} />
               </div>
             </div>
-
             <hr />
-
             <h4>Predictions</h4>
-            <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget
-              quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+            <p>{
+              `Based on image pixel features and a pre-trained classification model, we believe ` +
+              `the test image corresponds to one of the following categories - ordered by prediction score. `
+            }</p>
             <PredictTables pred={pred}/>
           </Modal.Body>
           <Modal.Footer>
@@ -139,7 +151,23 @@ function FungPhoto ({imageURL}) {
 }
 
 
+function LinkWithTooltip ({id, tooltip, children, href, placement}) {
+  let myTooltip = <Tooltip id={id}>{tooltip}</Tooltip>
+  return (
+    <OverlayTrigger
+      overlay={myTooltip}
+      placement={placement}
+      delayShow={300}
+      delayHide={150}
+    >
+      <a href={href} target="_blank">{children}</a>
+    </OverlayTrigger>
+  )
+}
+
 function PredictTable({predScore, predClass, predCorrect}) {
+  const {wnid, commonName, latinName, imagenetName, imagenetDescription} = predClass
+  const encodedURL = encodeURI(`http://www.image-net.org/synset?wnid=${wnid}`)
   return (
     <table
       className='predict-table'
@@ -158,23 +186,27 @@ function PredictTable({predScore, predClass, predCorrect}) {
       <tbody>
       <tr>
         <th>{`Common Name`}</th>
-        <td>{predClass.commonName}</td>
+        <td>{commonName}</td>
       </tr>
       <tr>
         <th>{`Latin Name`}</th>
-        <td>{predClass.latinName}</td>
+        <td>{latinName}</td>
       </tr>
       <tr>
         <th>{`ImageNet Name`}</th>
-        <td>{predClass.imagenetName}</td>
+        <td>{imagenetName}</td>
       </tr>
       <tr>
         <th>{`Imagenet Description`}</th>
-        <td>{predClass.imagenetDescription}</td>
+        <td>{imagenetDescription}</td>
       </tr>
       <tr>
         <th>{`WordNet ID (wnid)`}</th>
-        <td>{predClass.wnid}</td>
+        <td>
+          <LinkWithTooltip tooltip="View in ImageNet" href={encodedURL} id="tooltip-1" placement="right">
+            {predClass.wnid}
+          </LinkWithTooltip>
+        </td>
       </tr>
       <tr>
         <th>{`Prediction Score`}</th>
@@ -217,8 +249,8 @@ PredictTables.PropTypes = {
 
 function TruthTable ({pred}) {
   const { image } = pred
-  const { imageURL } = image
   const { wnid, imagenetName, commonName, latinName, imagenetDescription } = image.class
+  const encodedURL = encodeURI(`http://www.image-net.org/synset?wnid=${wnid}`)
   return (
     <div className="truth-box">
       <table>
@@ -241,7 +273,11 @@ function TruthTable ({pred}) {
           </tr>
           <tr>
             <th>{`WordNet ID (wnid)`}</th>
-            <td>{wnid}</td>
+            <td>
+              <LinkWithTooltip tooltip="View in ImageNet" href={encodedURL} id="tooltip-1" placement="right">
+                {wnid}
+              </LinkWithTooltip>
+            </td>
           </tr>
         </tbody>
       </table>
@@ -252,32 +288,47 @@ TruthTable.PropTypes = {
   pred: PropTypes.object.isRequired,
 }
 
+function PredBarPopover ({id, tooltip, children, href, placement}) {
+  let myPopover = <Tooltip id={id}>{tooltip}</Tooltip>
+  return (
+    <OverlayTrigger
+      overlay={myTooltip}
+      placement={placement}
+      delayShow={300}
+      delayHide={150}
+    >
+      <a href={href} target="_blank">{children}</a>
+    </OverlayTrigger>
+  )
+}
+
 
 function PredBox ({pred}) {
   const predObjects = zipPredClassesScores(pred)
   return (
-    <ul className="pred-box">
-        {
-          predObjects.map(({predScore, predClass, predCorrect}, index) => {
-            const barColor = predCorrect? "green" : "red"
-            const barWidth = `${predScore*100}%`
-            return (
-              <li className="pred-box-item" key={index}>
-                <div className="pred-class">
-                  <div className="pred-class-text">{predClass.commonName}</div>
-                  <div
-                    className="pred-class-bar"
-                    style={{
-                      "backgroundColor": `${barColor}`,
-                      "width": `${barWidth}`,
-                    }}/>
-                </div>
-                <div className="pred-score">{predScore}</div>
-              </li>
-            )
-          })
-        }
-    </ul>
+    <div className="pred-box">
+      {
+        predObjects.map(({predScore, predClass, predCorrect}, index) => {
+          const barColor = predCorrect? "green" : "red"
+          const barWidth = `${predScore*100}%`
+          return (
+            <div className="pred-box-item" key={index}>
+              <div className="pred-class">
+                <div className="pred-class-text">{predClass.commonName}</div>
+                <div
+                  className="pred-class-bar"
+                  style={{
+                    "backgroundColor": `${barColor}`,
+                    "width": `${barWidth}`
+                  }}
+                />
+              </div>
+              <div className="pred-score">{predScore}</div>
+            </div>
+          )
+        })
+      }
+    </div>
   )
 }
 
@@ -285,9 +336,15 @@ function PredBox ({pred}) {
 function PredItem({pred}) {
   return (
     <div>
-      <FungPhoto imageURL={pred.image.imageURL} />
-      <PredItemModal pred={pred} />
-      <PredBox pred={pred}  />
+      <PredItemModal pred={pred}>
+        <FungPhoto imageURL={pred.image.imageURL} />
+      </PredItemModal>
+      <PredItemModal pred={pred}>
+        <Button bsStyle="primary" bsSize="small">
+          more Info
+        </Button>
+      </PredItemModal>
+      <PredBox pred={pred} />
     </div>
   )
 }
