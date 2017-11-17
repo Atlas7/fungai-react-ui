@@ -7,14 +7,15 @@ import Loading from './Loading'
 //
 // TODO
 // done - Make Grid Images click-able to summary
-// hyperlink to imagenet via wnid
+// done - hyperlink to imagenet via wnid
+// done - add text under the predictions section in modal box
+// tooltip on probability bars
 // proper about page
 
-// tooltip on probability bars
 
 // correct prediction in top 1 / 2 / 3 bucket - display in summary modal page
 // save a copy of the images and store away somewhere
-// add text under the predictions section in modal box
+
 
 // update scores in database to make appear more random (less uniform)
 // deploy API
@@ -98,8 +99,10 @@ class PredItemModal extends React.Component {
             </div>
             <hr />
             <h4>Predictions</h4>
-            <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget
-              quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+            <p>{
+              `Based on image pixel features and a pre-trained classification model, we believe ` +
+              `the test image corresponds to one of the following categories - ordered by prediction score. `
+            }</p>
             <PredictTables pred={pred}/>
           </Modal.Body>
           <Modal.Footer>
