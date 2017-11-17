@@ -1,12 +1,12 @@
 import React from 'react'
-import ModalButton from './ModalButton'
+import ModalButtonExample from './ModalButtonExample'
 
 class About extends React.Component {
   render = () => {
     return (
       <div>
         Hello
-        <ModalButton />
+        <ModalButtonExample />
       </div>
     )
   }
