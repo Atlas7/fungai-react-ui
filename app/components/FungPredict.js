@@ -9,7 +9,6 @@ import Loading from './Loading'
 // done - Make Grid Images click-able to summary
 // done - hyperlink to imagenet via wnid
 // done - add text under the predictions section in modal box
-// tooltip on probability bars
 // proper about page
 
 
@@ -289,32 +288,47 @@ TruthTable.PropTypes = {
   pred: PropTypes.object.isRequired,
 }
 
+function PredBarPopover ({id, tooltip, children, href, placement}) {
+  let myPopover = <Tooltip id={id}>{tooltip}</Tooltip>
+  return (
+    <OverlayTrigger
+      overlay={myTooltip}
+      placement={placement}
+      delayShow={300}
+      delayHide={150}
+    >
+      <a href={href} target="_blank">{children}</a>
+    </OverlayTrigger>
+  )
+}
+
 
 function PredBox ({pred}) {
   const predObjects = zipPredClassesScores(pred)
   return (
-    <ul className="pred-box">
-        {
-          predObjects.map(({predScore, predClass, predCorrect}, index) => {
-            const barColor = predCorrect? "green" : "red"
-            const barWidth = `${predScore*100}%`
-            return (
-              <li className="pred-box-item" key={index}>
-                <div className="pred-class">
-                  <div className="pred-class-text">{predClass.commonName}</div>
-                  <div
-                    className="pred-class-bar"
-                    style={{
-                      "backgroundColor": `${barColor}`,
-                      "width": `${barWidth}`,
-                    }}/>
-                </div>
-                <div className="pred-score">{predScore}</div>
-              </li>
-            )
-          })
-        }
-    </ul>
+    <div className="pred-box">
+      {
+        predObjects.map(({predScore, predClass, predCorrect}, index) => {
+          const barColor = predCorrect? "green" : "red"
+          const barWidth = `${predScore*100}%`
+          return (
+            <div className="pred-box-item" key={index}>
+              <div className="pred-class">
+                <div className="pred-class-text">{predClass.commonName}</div>
+                <div
+                  className="pred-class-bar"
+                  style={{
+                    "backgroundColor": `${barColor}`,
+                    "width": `${barWidth}`
+                  }}
+                />
+              </div>
+              <div className="pred-score">{predScore}</div>
+            </div>
+          )
+        })
+      }
+    </div>
   )
 }
 
