@@ -6,17 +6,20 @@ import Loading from './Loading'
 
 //
 // TODO
-// Make Grid Images click-able to summary
-// update scores in database to make appear more random (less uniform)
-// deploy API
-// deploy front-end
-// proper about page
-// github code sharing
-// tooltip on probability bars
+// done - Make Grid Images click-able to summary
 // hyperlink to imagenet via wnid
+// proper about page
+
+// tooltip on probability bars
+
 // correct prediction in top 1 / 2 / 3 bucket - display in summary modal page
 // save a copy of the images and store away somewhere
 // add text under the predictions section in modal box
+
+// update scores in database to make appear more random (less uniform)
+// deploy API
+// deploy front-end
+// github code sharing
 
 // utility function
 function zipPredClassesScores (pred) {
@@ -33,6 +36,11 @@ function zipPredClassesScores (pred) {
 
 
 class PredItemModal extends React.Component {
+  static propTypes = {
+    pred: PropTypes.object.isRequired,
+  }
+  static defaultProps = {
+  }
   state = {
     showModal: false
   }
@@ -47,29 +55,31 @@ class PredItemModal extends React.Component {
     })
   }
   render = () => {
-    const popover = (
-      <Popover id="modal-popover" title="popover">
-        very popover. such engagement
-      </Popover>
-    )
-    const tooltip = (
-      <Tooltip id="modal-tooltip">
-        wow.
-      </Tooltip>
-    )
-    const { pred } = this.props
+    // const popover = (
+    //   <Popover id="modal-popover" title="popover">
+    //     very popover. such engagement
+    //   </Popover>
+    // )
+    // const tooltip = (
+    //   <Tooltip id="modal-tooltip">
+    //     wow.
+    //   </Tooltip>
+    // )
+    const { pred, children } = this.props
     const { imageId, image, predictClasses, predictScores } = this.props.pred
     const { imageURL } = image
     return (
       <div>
-        <Button
-          bsStyle="primary"
-          bsSize="small"
-          onClick={this.open}
-        >
-          more info
-        </Button>
-
+        {children &&
+          <div onClick={this.open}>
+            {children}
+          </div>
+        }
+        {!children &&
+          <Button bsStyle="primary" bsSize="large" onClick={this.open}>
+            more info
+          </Button>
+        }
         <Modal show={this.state.showModal} onHide={this.close} bsSize="large">
           <Modal.Header closeButton>
             <Modal.Title>Image Classification Summary</Modal.Title>
@@ -86,9 +96,7 @@ class PredItemModal extends React.Component {
                 <TruthTable pred={pred} />
               </div>
             </div>
-
             <hr />
-
             <h4>Predictions</h4>
             <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget
               quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
@@ -285,9 +293,15 @@ function PredBox ({pred}) {
 function PredItem({pred}) {
   return (
     <div>
-      <FungPhoto imageURL={pred.image.imageURL} />
-      <PredItemModal pred={pred} />
-      <PredBox pred={pred}  />
+      <PredItemModal pred={pred}>
+        <FungPhoto imageURL={pred.image.imageURL} />
+      </PredItemModal>
+      <PredItemModal pred={pred}>
+        <Button bsStyle="primary" bsSize="small">
+          more Info
+        </Button>
+      </PredItemModal>
+      <PredBox pred={pred} />
     </div>
   )
 }
