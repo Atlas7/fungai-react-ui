@@ -148,6 +148,8 @@ function FungPhoto ({imageURL}) {
 
 
 function PredictTable({predScore, predClass, predCorrect}) {
+  const {wnid, commonName, latinName, imagenetName, imagenetDescription} = predClass
+  const encodedURL = encodeURI(`http://www.image-net.org/synset?wnid=${wnid}`)
   return (
     <table
       className='predict-table'
@@ -166,23 +168,27 @@ function PredictTable({predScore, predClass, predCorrect}) {
       <tbody>
       <tr>
         <th>{`Common Name`}</th>
-        <td>{predClass.commonName}</td>
+        <td>{commonName}</td>
       </tr>
       <tr>
         <th>{`Latin Name`}</th>
-        <td>{predClass.latinName}</td>
+        <td>{latinName}</td>
       </tr>
       <tr>
         <th>{`ImageNet Name`}</th>
-        <td>{predClass.imagenetName}</td>
+        <td>{imagenetName}</td>
       </tr>
       <tr>
         <th>{`Imagenet Description`}</th>
-        <td>{predClass.imagenetDescription}</td>
+        <td>{imagenetDescription}</td>
       </tr>
       <tr>
         <th>{`WordNet ID (wnid)`}</th>
-        <td>{predClass.wnid}</td>
+        <td>
+          <a href={encodedURL} target="_blank">
+            {predClass.wnid}
+          </a>
+        </td>
       </tr>
       <tr>
         <th>{`Prediction Score`}</th>
@@ -225,8 +231,8 @@ PredictTables.PropTypes = {
 
 function TruthTable ({pred}) {
   const { image } = pred
-  const { imageURL } = image
   const { wnid, imagenetName, commonName, latinName, imagenetDescription } = image.class
+  const encodedURL = encodeURI(`http://www.image-net.org/synset?wnid=${wnid}`)
   return (
     <div className="truth-box">
       <table>
@@ -249,7 +255,11 @@ function TruthTable ({pred}) {
           </tr>
           <tr>
             <th>{`WordNet ID (wnid)`}</th>
-            <td>{wnid}</td>
+            <td>
+              <a href={encodedURL} target="_blank">
+                {wnid}
+              </a>
+            </td>
           </tr>
         </tbody>
       </table>
