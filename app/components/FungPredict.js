@@ -60,7 +60,7 @@ class PredItemModal extends React.Component {
           <Modal.Header closeButton>
             <Modal.Title>Image Classification Summary</Modal.Title>
           </Modal.Header>
-          <Modal.Body>
+          <Modal.Body className="pred-summary-modal-body">
             <div className="row">
               <div className="column">
                 <h4>Test Image</h4>
@@ -125,51 +125,71 @@ function FungPhoto ({imageURL}) {
 }
 
 
+function PredictTable({predScore, predClass, predCorrect}) {
+  return (
+    <table
+      className='predict-table'
+      style = {
+        predCorrect ? {
+          "borderStyle": "solid",
+          "borderWidth": "10px",
+          "borderColor": "green"
+        } : {
+          "borderStyle": "solid",
+          "borderWidth": "10px",
+          "borderColor": "red"
+        }
+      }
+    >
+      <tbody>
+      <tr>
+        <th>{`Common Name`}</th>
+        <td>{predClass.commonName}</td>
+      </tr>
+      <tr>
+        <th>{`Latin Name`}</th>
+        <td>{predClass.latinName}</td>
+      </tr>
+      <tr>
+        <th>{`ImageNet Name`}</th>
+        <td>{predClass.imagenetName}</td>
+      </tr>
+      <tr>
+        <th>{`Imagenet Description`}</th>
+        <td>{predClass.imagenetDescription}</td>
+      </tr>
+      <tr>
+        <th>{`WordNet ID (wnid)`}</th>
+        <td>{predClass.wnid}</td>
+      </tr>
+      <tr>
+        <th>{`Prediction Score`}</th>
+        <td>{predScore}</td>
+      </tr>
+      <tr>
+        <th>{`Correct Prediction?`}</th>
+        <td>{predCorrect.toString()}</td>
+      </tr>
+      </tbody>
+    </table>
+  )
+}
+PredictTable.PropTypes = {
+  predScore: PropTypes.number.isRequired,
+  predClass: PropTypes.object.isRequired,
+  predCorrect: PropTypes.bool.isRequired,
+}
+
+
 function PredictTables({pred}) {
   const predObjects = zipPredClassesScores(pred)
   return (
-    <ul>
+    <ul className='predict-tables'>
       {predObjects.map(({predScore, predClass, predCorrect}, index)=> (
         <li key={index}>
-          <div>
+          <div className='predict-table-div'>
             <h5>{`Prediction #${index+1} / Score: ${predScore}`}</h5>
-            <table
-              className='predict-table'
-              style = {
-                predCorrect ? {
-                  "borderStyle": "solid",
-                  "borderWidth": "10px",
-                  "borderColor": "green"
-                } : {
-                  "borderStyle": "solid",
-                  "borderWidth": "10px",
-                  "borderColor": "red"
-                }
-              }
-            >
-              <tbody>
-                <tr>
-                  <th>{`Common Name`}</th>
-                  <td>{predClass.commonName}</td>
-                </tr>
-                <tr>
-                  <th>{`Latin Name`}</th>
-                  <td>{predClass.latinName}</td>
-                </tr>
-                <tr>
-                  <th>{`ImageNet Name`}</th>
-                  <td>{predClass.imagenetName}</td>
-                </tr>
-                <tr>
-                  <th>{`Imagenet Description`}</th>
-                  <td>{predClass.imagenetDescription}</td>
-                </tr>
-                <tr>
-                  <th>{`WordNet ID (wnid)`}</th>
-                  <td>{predClass.wnid}</td>
-                </tr>
-              </tbody>
-            </table>
+            <PredictTable predScore={predScore} predClass={predClass} predCorrect={predCorrect}/>
           </div>
         </li>
       ))}

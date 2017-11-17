@@ -298,6 +298,24 @@ td, th {
   width: 50px;
 }
 
+
+.pred-summary-modal-body {
+  margin: auto;
+  width: 90%;
+}
+
 .predict-table {
-  border-style: solid;
+}
+
+.predict-table-div {
+  margin: 20px;
+}
+
+.predict-table-div h5{
+  text-align: center;
+}
+
+.predict-tables {
+  margin: auto;
+  width: 95%;
 }
