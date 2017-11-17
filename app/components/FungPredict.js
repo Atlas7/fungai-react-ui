@@ -90,7 +90,9 @@ class PredItemModal extends React.Component {
               <div className="column">
                 <h4>Test Image</h4>
                 <img className='fung-photo-cover-2' src={imageURL} alt={':-('} />
-                <p><a href={imageURL} target="_blank">Image Source</a></p>
+                <LinkWithTooltip tooltip="View source image" href={imageURL} id="tooltip-1" placement="right">
+                  Image Source
+                </LinkWithTooltip>
               </div>
               <div className="column">
                 <h4>Ground Truth</h4>
@@ -150,6 +152,20 @@ function FungPhoto ({imageURL}) {
 }
 
 
+function LinkWithTooltip ({id, tooltip, children, href, placement}) {
+  let myTooltip = <Tooltip id={id}>{tooltip}</Tooltip>
+  return (
+    <OverlayTrigger
+      overlay={myTooltip}
+      placement={placement}
+      delayShow={300}
+      delayHide={150}
+    >
+      <a href={href} target="_blank">{children}</a>
+    </OverlayTrigger>
+  )
+}
+
 function PredictTable({predScore, predClass, predCorrect}) {
   const {wnid, commonName, latinName, imagenetName, imagenetDescription} = predClass
   const encodedURL = encodeURI(`http://www.image-net.org/synset?wnid=${wnid}`)
@@ -188,9 +204,9 @@ function PredictTable({predScore, predClass, predCorrect}) {
       <tr>
         <th>{`WordNet ID (wnid)`}</th>
         <td>
-          <a href={encodedURL} target="_blank">
+          <LinkWithTooltip tooltip="View in ImageNet" href={encodedURL} id="tooltip-1" placement="right">
             {predClass.wnid}
-          </a>
+          </LinkWithTooltip>
         </td>
       </tr>
       <tr>
@@ -259,9 +275,9 @@ function TruthTable ({pred}) {
           <tr>
             <th>{`WordNet ID (wnid)`}</th>
             <td>
-              <a href={encodedURL} target="_blank">
+              <LinkWithTooltip tooltip="View in ImageNet" href={encodedURL} id="tooltip-1" placement="right">
                 {wnid}
-              </a>
+              </LinkWithTooltip>
             </td>
           </tr>
         </tbody>
