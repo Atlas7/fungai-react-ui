@@ -16,6 +16,7 @@ import Loading from './Loading'
 // hyperlink to imagenet via wnid
 // correct prediction in top 1 / 2 / 3 bucket - display in summary modal page
 // save a copy of the images and store away somewhere
+// add text under the predictions section in modal box
 
 // utility function
 function zipPredClassesScores (pred) {
