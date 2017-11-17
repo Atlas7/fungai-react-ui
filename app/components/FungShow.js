@@ -5,7 +5,7 @@ import { getBatchedSamples } from '../utils/fungAPI'
 
 function FungPhoto({imgURL}) {
   return (
-    <img className='fung-photo' src={imgURL} alt={':-('}/>
+    <img className='fung-photo-cover' src={imgURL} alt={':-('}/>
   )
 }
 FungPhoto.PropTypes = {

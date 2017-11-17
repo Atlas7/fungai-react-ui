@@ -21,6 +21,19 @@ li {
   list-style-type: none;
 }
 
+table {
+  /*font-family: arial, sans-serif;*/
+  /*border-collapse: collapse;*/
+  width: 90%;
+  margin: auto;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
 .button {
   color: #e6e6e6;
   background: #0a0a0a;
@@ -145,16 +158,16 @@ li {
 }
 
 /*center photo and crop to a square automatically */
-.fung-photo {
+.fung-photo-cover {
   object-fit: cover;
   width: 150px;
   height: 150px;
   border-radius: 10%;
-  margin: 10%;
+  margin: 15px;
 }
 
 /* https://stackoverflow.com/questions/19104018/how-to-expand-an-image-in-html-by-clicking-on-it*/
-.fung-photo:hover{
+.fung-photo-cover:hover{
   color: #424242;
   -webkit-transition: all .3s ease-in;
   -moz-transition: all .3s ease-in;
@@ -165,6 +178,14 @@ li {
   transform: scale(1.15);
   -ms-transform: scale(1.15); /* IE 9 */
   -webkit-transform: scale(1.15); /* Safari and Chrome */
+}
+
+.fung-photo-cover-2 {
+  object-fit: cover;
+  width: 250px;
+  height: 250px;
+  border-radius: 10%;
+  margin: 10px;
 }
 
 .fung-item {
@@ -277,3 +298,24 @@ li {
   width: 50px;
 }
 
+
+.pred-summary-modal-body {
+  margin: auto;
+  width: 90%;
+}
+
+.predict-table {
+}
+
+.predict-table-div {
+  margin: 20px;
+}
+
+.predict-table-div h5{
+  text-align: center;
+}
+
+.predict-tables {
+  margin: auto;
+  width: 95%;
+}

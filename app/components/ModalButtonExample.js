@@ -2,7 +2,7 @@ import React from 'react'
 import { Button, Modal, OverlayTrigger, Popover, Tooltip} from 'react-bootstrap'
 
 
-class ModalButton extends React.Component {
+class ModalButtonExample extends React.Component {
   state = {
     showModal: false
   }
@@ -39,7 +39,7 @@ class ModalButton extends React.Component {
           Launch demo modal
         </Button>
 
-        <Modal show={this.state.showModal} onHide={this.close}>
+        <Modal show={this.state.showModal} onHide={this.close} bsSize="large">
           <Modal.Header closeButton>
             <Modal.Title>Modal heading</Modal.Title>
           </Modal.Header>
@@ -75,4 +75,4 @@ class ModalButton extends React.Component {
   }
 }
 
-export default ModalButton
+export default ModalButtonExample
