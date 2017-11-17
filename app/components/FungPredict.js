@@ -4,6 +4,19 @@ import { Button, Modal, OverlayTrigger, Popover, Tooltip} from 'react-bootstrap'
 import { wait, fetchPredictions } from '../utils/fakeAPI'
 import Loading from './Loading'
 
+//
+// TODO
+// Make Grid Images click-able to summary
+// update scores in database to make appear more random (less uniform)
+// deploy API
+// deploy front-end
+// proper about page
+// github code sharing
+// tooltip on probability bars
+// hyperlink to imagenet via wnid
+// correct prediction in top 1 / 2 / 3 bucket - display in summary modal page
+// save a copy of the images and store away somewhere
+
 // utility function
 function zipPredClassesScores (pred) {
   const trueClass  = pred.image.class
