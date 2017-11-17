@@ -134,10 +134,13 @@ SelectWnid.propTypes = {
 
 function PredsLoading ({loadingText, loadingImage, speed}) {
   return (
-    <div className='loading-box'>
-      <img className='loading-image' src={loadingImage} />
-      <Loading text={loadingText} speed={speed} />
-      <img className='loading-image' src={loadingImage} />
+    <div>
+      <div className='loading-box'>
+        <img className='loading-image' src={loadingImage} />
+        <Loading text={loadingText} speed={speed} />
+        <img className='loading-image' src={loadingImage} />
+      </div>
+      <footer>Badger Badger Credit to: mrweebl</footer>
     </div>
   )
 }
@@ -181,7 +184,7 @@ class FungPredict extends React.Component {
     this.updateWnid(this.state.selectedWnid)
   }
   updateWnid = async (wnid) => {
-    const delay = 500
+    const delay = 1000
     this.setState({
       selectedWnid: wnid,
       preds: null
