@@ -4,22 +4,6 @@ import { Button, Modal, OverlayTrigger, Popover, Tooltip} from 'react-bootstrap'
 import { wait, fetchPredictions } from '../utils/fakeAPI'
 import Loading from './Loading'
 
-//
-// TODO
-// done - Make Grid Images click-able to summary
-// done - hyperlink to imagenet via wnid
-// done - add text under the predictions section in modal box
-// proper about page
-
-
-// correct prediction in top 1 / 2 / 3 bucket - display in summary modal page
-// save a copy of the images and store away somewhere
-
-
-// update scores in database to make appear more random (less uniform)
-// deploy API
-// deploy front-end
-// github code sharing
 
 // utility function
 function zipPredClassesScores (pred) {
@@ -55,16 +39,6 @@ class PredItemModal extends React.Component {
     })
   }
   render = () => {
-    // const popover = (
-    //   <Popover id="modal-popover" title="popover">
-    //     very popover. such engagement
-    //   </Popover>
-    // )
-    // const tooltip = (
-    //   <Tooltip id="modal-tooltip">
-    //     wow.
-    //   </Tooltip>
-    // )
     const { pred, children } = this.props
     const { imageId, image, predictClasses, predictScores } = this.props.pred
     const { imageURL } = image
@@ -116,7 +90,7 @@ class PredItemModal extends React.Component {
 }
 
 
-
+// Not used yet - but just in case
 function PredJSON ({pred}) {
   return (
     <div>
@@ -139,6 +113,7 @@ function ItemLabel ({index}) {
 ItemLabel.PropTypes = {
   index: PropTypes.number.isRequired,
 }
+
 
 function FungPhoto ({imageURL}) {
   return (
@@ -164,6 +139,7 @@ function LinkWithTooltip ({id, tooltip, children, href, placement}) {
     </OverlayTrigger>
   )
 }
+
 
 function PredictTable({predScore, predClass, predCorrect}) {
   const {wnid, commonName, latinName, imagenetName, imagenetDescription} = predClass
@@ -287,6 +263,7 @@ function TruthTable ({pred}) {
 TruthTable.PropTypes = {
   pred: PropTypes.object.isRequired,
 }
+
 
 function PredBarPopover ({id, tooltip, children, href, placement}) {
   let myPopover = <Tooltip id={id}>{tooltip}</Tooltip>
