@@ -317,7 +317,7 @@ function PredItem({pred, index}) {
         <FungPhoto imageURL={pred.image.imageURL} />
       </PredItemModal>
       <PredItemModal pred={pred}>
-        <button className="btn cool-btn">
+        <button className="btn button-primary cool-btn">
           more Info
         </button>
       </PredItemModal>
