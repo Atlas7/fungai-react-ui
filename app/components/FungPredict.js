@@ -267,8 +267,8 @@ TruthTable.PropTypes = {
 
 function PredBar ({commonName, predScore, predCorrect}) {
   const barColor = predCorrect
-    ? "#1b8839"
-    : "#C3383C"
+    ? "#196733"
+    : "#a93337"
   const barWidth = `${predScore*100}%`
   return (
     <div className="pred-bar">

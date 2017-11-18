@@ -134,11 +134,13 @@ td, th {
   /*justify-content: space-around;*/
   justify-content: left;
 }
+
 .wnids {
   display: flex;
   justify-content: center;
   /*border-style: solid;*/
 }
+
 .wnids li {
   margin: 10px;
   font-weight: bold;
@@ -166,6 +168,7 @@ td, th {
   justify-content: space-around;
   /*background-color: #3c3f41;*/
 }
+
 .pred-item {
   background-color: #3c3f41;
   display: flex;
@@ -177,6 +180,7 @@ td, th {
   text-align: center;
   border-radius: 5%;
 }
+
 .item-label {
   background-color: transparent;
   color: #c3c3c3;
@@ -189,6 +193,7 @@ td, th {
   flex-wrap: nowrap;
   margin: 5px;
  }
+
 .pred-bar {
   background-color: transparent;
   border-style: solid;
@@ -204,18 +209,19 @@ td, th {
   background-color: #4b4b4b;
   position: relative;
   width: 200px;
-  border-bottom-left-radius: inherit;
-  border-top-left-radius: inherit;
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
 }
+
 .pred-bar-class-color {
   position: absolute;
   left: 0; top: 0;
-  /*opacity: 0.5;*/
   width: 100%;
   height: 100%;
   border-bottom-left-radius: 4px;
   border-top-left-radius: 4px;
 }
+
 .pred-bar-class-text {
   position: absolute;
   left: 0; top: 0;
@@ -225,6 +231,7 @@ td, th {
   z-index: 1;
   color: #999999;
 }
+
 .pred-score {
   background-color: #323232;
   color: #C3C3C3;
