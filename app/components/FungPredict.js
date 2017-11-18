@@ -265,46 +265,42 @@ TruthTable.PropTypes = {
 }
 
 
-function PredBarPopover ({id, tooltip, children, href, placement}) {
-  let myPopover = <Tooltip id={id}>{tooltip}</Tooltip>
+function PredBar ({commonName, predScore, predCorrect}) {
+  const barColor = predCorrect? "green" : "red"
+  const barWidth = `${predScore*100}%`
   return (
-    <OverlayTrigger
-      overlay={myTooltip}
-      placement={placement}
-      delayShow={300}
-      delayHide={150}
-    >
-      <a href={href} target="_blank">{children}</a>
-    </OverlayTrigger>
+    <div className="pred-bar">
+      <div className="pred-bar-class">
+        <div
+          className="pred-bar-class-text">
+          {commonName}
+        </div>
+        <div
+          className="pred-bar-class-color"
+          style={{
+            "backgroundColor": `${barColor}`,
+            "width": `${barWidth}`
+          }}
+        />
+      </div>
+      <div className="pred-score">{predScore}</div>
+    </div>
   )
 }
 
 
-function PredBox ({pred}) {
+function PredBars ({pred}) {
   const predObjects = zipPredClassesScores(pred)
   return (
-    <div className="pred-box">
-      {
-        predObjects.map(({predScore, predClass, predCorrect}, index) => {
-          const barColor = predCorrect? "green" : "red"
-          const barWidth = `${predScore*100}%`
-          return (
-            <div className="pred-box-item" key={index}>
-              <div className="pred-class">
-                <div className="pred-class-text">{predClass.commonName}</div>
-                <div
-                  className="pred-class-bar"
-                  style={{
-                    "backgroundColor": `${barColor}`,
-                    "width": `${barWidth}`
-                  }}
-                />
-              </div>
-              <div className="pred-score">{predScore}</div>
-            </div>
-          )
-        })
-      }
+    <div className="pred-bars">
+      {predObjects.map(({predScore, predClass, predCorrect}, index) => (
+          <PredBar
+            commonName={predClass.commonName}
+            predScore={predScore}
+            predCorrect={predCorrect}
+            key={index}
+          />
+      ))}
     </div>
   )
 }
@@ -321,7 +317,7 @@ function PredItem({pred}) {
           more Info
         </Button>
       </PredItemModal>
-      <PredBox pred={pred} />
+      <PredBars pred={pred} />
     </div>
   )
 }
