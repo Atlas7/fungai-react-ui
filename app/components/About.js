@@ -4,7 +4,7 @@ import ModalButtonExample from './ModalButtonExample'
 class About extends React.Component {
   render = () => {
     return (
-      <div>
+      <div className="sub-container">
         Hello
       </div>
     )

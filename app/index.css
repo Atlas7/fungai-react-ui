@@ -19,14 +19,22 @@ li {
 }
 
 table {
-  border: 2px solid #dddddd;
+  border: 2px solid #b0b3b6;
   width: 90%;
 }
 
+hr {
+  border-top: 1px solid #b0b3b6;
+}
+
 td, th {
-  /*border: 1px solid #dddddd;*/
+  border: 1px solid #b0b3b6;
   text-align: left;
   padding: 8px;
+}
+
+footer {
+  margin: 50px 0px 0px 0px;
 }
 
 .container {
@@ -34,9 +42,13 @@ td, th {
   min-height: 100vh;
   background-color: #272822;
   color: #b0b3b6;
-  margin: 0 auto;
+  margin: 50px auto;
+  padding: 0px;
 }
 
+.sub-container {
+  margin: 30px 50px 0px 50px;
+}
 
 .row {
   display: flex;
@@ -73,6 +85,7 @@ td, th {
 
 .nav {
   display: flex;
+  background-color: #3d3f41;
 }
 
 .nav li {
@@ -89,6 +102,9 @@ td, th {
   justify-content: space-around;
 }
 
+.intro {
+  /*margin-left: 50px;*/
+}
 
 /*center photo and crop to a square automatically */
 .fung-photo-cover {
@@ -138,7 +154,7 @@ td, th {
 .wnids {
   display: flex;
   justify-content: center;
-  /*border-style: solid;*/
+  border-bottom: 2px solid #3d3f41;
 }
 
 .wnids li {
@@ -163,7 +179,7 @@ td, th {
 .loading-box {
   display: flex;
   justify-content: space-around;;
-  margin: 50px;
+  /*margin: 50px;*/
 }
 
 .preds-grid {

@@ -400,7 +400,7 @@ PredsLoading.defaultProps = {
 
 function Intro ({wnid}) {
   return (
-    <div>
+    <div className='intro'>
       <h1>Fungi Classification</h1>
       <ul>
         <li>Ground Truth vs Prediction</li>
@@ -462,7 +462,7 @@ class FungPredict extends React.Component {
   render = () => {
     const {selectedWnid, preds, loadingText, loadingImage} = this.state
     return (
-        <div>
+        <div className='sub-container'>
           <Intro wnid={selectedWnid} />
           <SelectWnid selectedWnid={selectedWnid} onSelect={this.updateWnid}/>
           {
