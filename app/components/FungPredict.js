@@ -379,7 +379,8 @@ function PredsLoading ({loadingText, loadingImage, speed}) {
     <div>
       <div className='loading-box'>
         <img className='loading-image' src={loadingImage} />
-        <Loading text={loadingText} speed={speed} />
+        {/*<Loading text={loadingText} speed={speed} />*/}
+        <p className="loading-text">{loadingText}</p>
         <img className='loading-image' src={loadingImage} />
       </div>
       <footer>Badger Badger Credit to: mrweebl</footer>

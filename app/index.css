@@ -155,10 +155,15 @@ td, th {
   border-radius: 10%;
 }
 
+.loading-text {
+  text-align: center;
+  font-size: 35px;
+}
+
 .loading-box {
   display: flex;
-  justify-content: center;
-  margin: 20px;
+  justify-content: space-around;;
+  margin: 50px;
 }
 
 .preds-grid {
