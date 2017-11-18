@@ -50,7 +50,7 @@ class PredItemModal extends React.Component {
           </div>
         }
         {!children &&
-          <Button bsStyle="primary" bsSize="large" onClick={this.open}>
+          <Button bsStyle="primary" bsSize="xsmall" onClick={this.open}>
             more info
           </Button>
         }
@@ -151,11 +151,11 @@ function PredictTable({predScore, predClass, predCorrect}) {
         predCorrect ? {
           "borderStyle": "solid",
           "borderWidth": "10px",
-          "borderColor": "green"
+          "borderColor": "#1b8839"
         } : {
           "borderStyle": "solid",
           "borderWidth": "10px",
-          "borderColor": "red"
+          "borderColor": "#C3383C"
         }
       }
     >
@@ -228,7 +228,7 @@ function TruthTable ({pred}) {
   const { wnid, imagenetName, commonName, latinName, imagenetDescription } = image.class
   const encodedURL = encodeURI(`http://www.image-net.org/synset?wnid=${wnid}`)
   return (
-    <div className="truth-box">
+    <div className="ground-truth-table">
       <table>
         <tbody>
           <tr>
@@ -265,63 +265,63 @@ TruthTable.PropTypes = {
 }
 
 
-function PredBarPopover ({id, tooltip, children, href, placement}) {
-  let myPopover = <Tooltip id={id}>{tooltip}</Tooltip>
+function PredBar ({commonName, predScore, predCorrect}) {
+  const barColor = predCorrect
+    ? "#1b8839"
+    : "#C3383C"
+  const barWidth = `${predScore*100}%`
   return (
-    <OverlayTrigger
-      overlay={myTooltip}
-      placement={placement}
-      delayShow={300}
-      delayHide={150}
-    >
-      <a href={href} target="_blank">{children}</a>
-    </OverlayTrigger>
-  )
-}
-
-
-function PredBox ({pred}) {
-  const predObjects = zipPredClassesScores(pred)
-  return (
-    <div className="pred-box">
-      {
-        predObjects.map(({predScore, predClass, predCorrect}, index) => {
-          const barColor = predCorrect? "green" : "red"
-          const barWidth = `${predScore*100}%`
-          return (
-            <div className="pred-box-item" key={index}>
-              <div className="pred-class">
-                <div className="pred-class-text">{predClass.commonName}</div>
-                <div
-                  className="pred-class-bar"
-                  style={{
-                    "backgroundColor": `${barColor}`,
-                    "width": `${barWidth}`
-                  }}
-                />
-              </div>
-              <div className="pred-score">{predScore}</div>
-            </div>
-          )
-        })
-      }
+    <div className="pred-bar">
+      <div className="pred-bar-class">
+        <div
+          className="pred-bar-class-text">
+          {commonName}
+        </div>
+        <div
+          className="pred-bar-class-color"
+          style={{
+            "backgroundColor": `${barColor}`,
+            "width": `${barWidth}`
+          }}
+        />
+      </div>
+      <div className="pred-score">{predScore}</div>
     </div>
   )
 }
 
 
-function PredItem({pred}) {
+function PredBars ({pred}) {
+  const predObjects = zipPredClassesScores(pred)
+  return (
+    <ul className="pred-bars">
+      {predObjects.map(({predScore, predClass, predCorrect}, index) => (
+        <li key={index}>
+          <PredBar
+            commonName={predClass.commonName}
+            predScore={predScore}
+            predCorrect={predCorrect}
+          />
+        </li>
+      ))}
+    </ul>
+  )
+}
+
+
+function PredItem({pred, index}) {
   return (
     <div>
+      <ItemLabel index={index} />
       <PredItemModal pred={pred}>
         <FungPhoto imageURL={pred.image.imageURL} />
       </PredItemModal>
       <PredItemModal pred={pred}>
-        <Button bsStyle="primary" bsSize="small">
+        <button className="btn cool-btn">
           more Info
-        </Button>
+        </button>
       </PredItemModal>
-      <PredBox pred={pred} />
+      <PredBars pred={pred} />
     </div>
   )
 }
@@ -332,16 +332,13 @@ PredsGrid.PropTypes = {
 
 function PredsGrid ({preds}) {
   return (
-    <div className='preds-grid'>
-      <ul className='popular-list'>
-        {preds.map((pred, index) => (
-          <li key={pred.imageId} className='pred-item'>
-            <ItemLabel index={index} />
-            <PredItem pred={pred} />
-          </li>
-        ))}
-      </ul>
-    </div>
+    <ul className='preds-grid'>
+      {preds.map((pred, index) => (
+        <li key={pred.imageId} className='pred-item'>
+          <PredItem pred={pred} index={index} />
+        </li>
+      ))}
+    </ul>
   )
 }
 PredsGrid.PropTypes = {
@@ -362,7 +359,7 @@ function SelectWnid ({onSelect, selectedWnid}) {
           return (
             <li
               key={wnid}
-              style={wnid === selectedWnid ? {color: '#d0021b'} : null}
+              style={wnid === selectedWnid ? {color: '#638dad'} : null}
               onClick={onSelect.bind(null, wnid)}>
                 {`${commonNames}`}
             </li>
