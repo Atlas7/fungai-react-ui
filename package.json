@@ -1,7 +1,7 @@
 {
-  "name": "react-github-battle-2017",
+  "name": "fungai-react-ui",
   "version": "1.0.0",
-  "description": "ReactJS app that uses GitHub API and more",
+  "description": "A ReactJS UI for a Fungi Image Classification Project. A proof of concept",
   "main": "index.js",
   "scripts": {
     "start-app": "webpack-dev-server --open",
@@ -25,7 +25,7 @@
     ]
   },
   "author": "Johnny Chan",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "axios": "^0.17.0",
     "babel-polyfill": "^6.26.0",
