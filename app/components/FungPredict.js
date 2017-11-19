@@ -402,6 +402,7 @@ function Intro ({wnid}) {
   return (
     <div className='intro'>
       <h1>Fungi Classification</h1>
+      <p style={{"color": "red"}}>{"*** Toy prototype ReactJS UI using fake data ***"}</p>
       <ul>
         <li>Ground Truth vs Prediction</li>
         <li>Image source: Imagenet</li>
