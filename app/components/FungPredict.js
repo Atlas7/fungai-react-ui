@@ -348,7 +348,7 @@ PredsGrid.PropTypes = {
 
 function SelectWnid ({onSelect, selectedWnid}) {
   const wnids = ['all', 'n13030337', 'n13003061', 'n13040629']
-  const commonNames = ['all', 'Scarlet Elf cup', 'Fly Agaric', 'Common stinkhorn']
+  const commonNames = ['All', 'Scarlet Elf cup', 'Fly Agaric', 'Common stinkhorn']
   const wnidObjects = wnids.map((e, i) => ({
     wnid: e,
     commonNames: commonNames[i]
@@ -402,6 +402,7 @@ function Intro ({wnid}) {
   return (
     <div className='intro'>
       <h1>Fungi Classification</h1>
+      <p style={{"color": "red"}}>{"*** Toy prototype ReactJS UI using fake data ***"}</p>
       <ul>
         <li>Ground Truth vs Prediction</li>
         <li>Image source: Imagenet</li>
@@ -419,7 +420,7 @@ class FungPredict extends React.Component {
   state = {
     selectedWnid: 'all',
     preds: null,
-    loadingText: "badger badger badger badger",
+    loadingText: "Badger, badger, badger, badger",
     lyricsIndex: 0,
     loadingImage: `https://media.giphy.com/media/rF0jfK42BQWDS/giphy.gif`
   }
@@ -445,8 +446,8 @@ class FungPredict extends React.Component {
   shuffleArray = (arr) => (arr.sort(() => Math.random() - 0.5))
   updateLoadingText = () => {
     const lyrics = [
-      {text: "badger badger badger badger", image: `https://media.giphy.com/media/rF0jfK42BQWDS/giphy.gif`},
-      {text: "mushroom mushroom", image: `https://i.imgur.com/T4TJ5eb.gif`}
+      {text: "Badger, badger, badger, badger", image: `https://media.giphy.com/media/rF0jfK42BQWDS/giphy.gif`},
+      {text: "Muuushroom, mushroom!", image: `https://i.imgur.com/T4TJ5eb.gif`}
     ]
     const { lyricsIndex } = this.state
     const newLyricsIndex = this.increment(lyricsIndex) >= lyrics.length

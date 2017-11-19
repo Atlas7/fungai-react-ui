@@ -31,7 +31,7 @@ export async function wait (ms) {
 
 // image fetch. Return images array
 export async function fetchImages (wnid) {
-  const wnidFilter = (wnid === 'all')
+  const wnidFilter = (wnid.toLowerCase() === 'all')
     ? ''
     : `class.wnid=${wnid}`
   const encodedUri = `${imagesURI}?${wnidFilter}`
@@ -42,7 +42,7 @@ export async function fetchImages (wnid) {
 
 
 export async function fetchPredictions (wnid) {
-  const wnidFilter = (wnid === 'all')
+  const wnidFilter = (wnid.toLowerCase() === 'all')
     ? ''
     : `image.class.wnid=${wnid}`
   const encodedUri = `${testPredictionsURI}?${wnidFilter}`
