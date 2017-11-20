@@ -298,3 +298,20 @@ footer {
   background-color: #252621;
   margin: 10px;
 }
+
+
+/* About Page */
+
+.concept-image-container {
+  max-width: 80%;
+  display: flex;
+  flex-diretion: row;
+  justify-content: center;
+  margin: 50px auto;
+  padding: 0px;
+}
+
+.concept-image {
+  width: 100%;
+  height: 100%;
+}

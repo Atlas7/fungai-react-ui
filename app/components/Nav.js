@@ -10,10 +10,15 @@ export default function Nav () {
         </NavLink>
       </li>
       <li>
-        <NavLink activeClassName='active' to='/about'>
-          About
+        <NavLink activeClassName='active' to='/fungpredict'>
+          Prototype
         </NavLink>
       </li>
+      {/*<li>*/}
+        {/*<NavLink activeClassName='active' to='/about'>*/}
+          {/*About*/}
+        {/*</NavLink>*/}
+      {/*</li>*/}
     </ul>
   )
 }
