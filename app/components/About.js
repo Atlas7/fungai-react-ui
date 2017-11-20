@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import fungaiConcept from '../images/fungaiConcept.png'
 import intelLogo from '../images/intelLogo.png'
-
+import intelInnovatorBadge from '../images/intelInnovatorBadge.jpg'
 
 // TODO: refactor this code!!!
 // This is a quick and ugly code bashed together in a couple of hours.
@@ -45,10 +45,16 @@ function AboutIntro (props) {
       <img className="intel-logo" src={intelLogo} />
     )
   }
+  const IntelInnovatorBadge = () => {
+    return (
+      <img className="intel-innovator-badge" src={intelInnovatorBadge} />
+    )
+  }
   return (
     <div>
       <div className='partnership-banner'>
         <h4><RootLink>fungai.org</RootLink> is a deep learning project in partnership with Intel</h4>
+        {/*<IntelInnovatorBadge/>*/}
         <IntelLogo/>
       </div>
       <hr/>
