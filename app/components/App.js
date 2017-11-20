@@ -17,7 +17,7 @@ class App extends React.Component {
         <div className='container'>
           <Nav />
           <Switch>
-            <Route exact path='/' component={FungPredict} />
+            <Route exact path='/' component={About} />
             <Route path='/about' component={About} />
             <Route path='/fungpredict' component={FungPredict} />
             <Route component={PageNotFound} />
