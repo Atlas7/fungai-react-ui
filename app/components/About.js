@@ -3,6 +3,12 @@ import { Link } from 'react-router-dom'
 import fungaiConcept from '../images/fungaiConcept.png'
 import intelLogo from '../images/intelLogo.png'
 
+
+// TODO: refactor this code!!!
+// This is a quick and ugly code bashed together in a couple of hours.
+// In need of some proper designs and tidying up.
+
+
 function AboutIntro (props) {
   const RootLink = ({children}) => {
     return (
@@ -39,7 +45,6 @@ function AboutIntro (props) {
       <img className="intel-logo" src={intelLogo} />
     )
   }
-
   return (
     <div>
       <div className='partnership-banner'>
