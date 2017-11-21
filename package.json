@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "webpack-dev-server --open --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
-    "start": "npm run build && NODE_ENV=production node server.js",
+    "heroku-postbuild": "webpack -p --config ./webpack.prod.config.js --progress",
+    "start": "NODE_ENV=production node server.js",
     "test": "mocha --require babel-core/register --require ./test/testHelper.js  --recursive",
     "test:watch": "npm run test -- --watch"
   },
