@@ -67,5 +67,9 @@
     "firebase-tools": "^3.14.0",
     "mocha": "^4.0.1",
     "webpack-dev-server": "^2.9.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Atlas7/fungai-json-server-heroku"
   }
 }

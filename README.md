@@ -1,9 +1,10 @@
-A React UI (proof of concept) prototype in support of an upcoming Fungi identification project.
-Still a work in progress. Demo:
+A React UI (proof of concept) prototype in support of an upcoming Fungi identification project. ("Fungai" == FungAI)
+
+# Deployed React UI
+
+We've deployed the React App to Heroku at:
 
 [https://fungai-react-ui.herokuapp.com/](https://fungai-react-ui.herokuapp.com/)
-
-(Note: the name "Fungai" == FungAI)
 
 # A Note on API Call
 
