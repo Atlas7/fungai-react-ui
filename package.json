@@ -24,7 +24,6 @@
   "author": "Johnny Chan",
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.17.0",
     "babel-polyfill": "^6.26.0",
     "bootstrap": "^3.3.7",
     "es6-promise": "^4.1.1",
