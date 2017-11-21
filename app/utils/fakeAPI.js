@@ -5,8 +5,8 @@
 //
 
 // import Promise from 'es6-promise'
-
-const server = 'http://localhost:3000'
+const server = 'https://fungai-json-server-heroku.herokuapp.com'
+// const server = 'http://localhost:3000'
 
 const dummiesURI = `${server}/dummies`
 const classesURI = `${server}/classes`
