@@ -58,4 +58,9 @@ This will output `index.bundle.js` and `index.html` to a newly created `dist`.
 
 # Deploy to a http server
 
-This is a TODO. Some options are firebase, heroku, etc.
+Heroku, Firebase, etc.
+
+## Deploy to Heroku
+
+Use [this really handy guide](https://github.com/Atlas7/json-server-heroku) for tips on deploying to heroku.
+This is a fork to [this original GitHub repository](https://github.com/jesperorb/json-server-heroku).
