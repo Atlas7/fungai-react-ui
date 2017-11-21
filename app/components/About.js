@@ -65,7 +65,13 @@ function AboutIntro (props) {
         developing and testing out ideas, and drive the eventual outlook of the tool.</p>
       <p>This application part of the wilder <DevmeshLink />, an Intel Develoepr Mesh Project.</p>
       <ConceptImage/>
-      <p>Stay tune...</p>
+      <hr/>
+      <h4>GitHub Repositories</h4>
+      <p>This ReactJS UI: <a href="https://github.com/Atlas7/fungai-react-ui" target="_blank">fungai-react-ui</a>
+      </p>
+      <p>Fake jason-server API: <a href="https://github.com/Atlas7/fungai-json-server-heroku" target="_blank">fungai-json-server-heroku</a></p>
+      <h4>Stay Tune</h4>
+      <p>(for now) Please follow this project via my personal Twitter account <a href="https://twitter.com/jAtlas7" target="_blank">@jAtlas7</a></p>
     </div>
   )
 }

@@ -1,5 +1,7 @@
 A React UI (proof of concept) prototype in support of an upcoming Fungi identification project.
-Still a work in progress.
+Still a work in progress. Demo:
+
+[https://fungai-react-ui.herokuapp.com/](https://fungai-react-ui.herokuapp.com/)
 
 (Note: the name "Fungai" == FungAI)
 
@@ -63,4 +65,17 @@ Heroku, Firebase, etc.
 ## Deploy to Heroku
 
 Use [this really handy guide](https://github.com/alanbsmith/react-node-example) for tips on deploying
-React / Node / Webpack app to heroku.
+React / Node / Webpack app to heroku. Essentially:
+
+```
+$ heroku login
+$ heroku create -a name-of-your-app
+$ git push heroku master
+$ heroku open
+```
+
+- Note 1: Heroku by default run `npm run start`. Add a `Procfile` if you'd like this to be something else.
+- Note 2: the original `package.json` has majority of packages stored in devDependencies (instead of directly at
+dependencies), such as `babel`, `webpack`, etc. While going through the Heroku deployment exercise I've noticed
+that in order to make the heroku build work (i.e. `git push heroku master`) I had to move lots of the `devDependencies`
+packages to `dependencies`. No idea why. But this workaround does seem to work - though potentially not elegantly.
