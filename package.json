@@ -1,5 +1,5 @@
 {
-  "name": "fungai-jreact-ui",
+  "name": "fungai-react-ui",
   "version": "1.1.0",
   "description": "A ReactJS UI for a Fungi Image Classification Project. A proof of concept",
   "main": "app/index.js",
@@ -9,6 +9,10 @@
     "heroku-postbuild": "webpack -p --config ./webpack.prod.js --progress",
     "test": "mocha --require babel-core/register --require ./test/testHelper.js  --recursive",
     "test:watch": "npm run test -- --watch"
+  },
+  "engines": {
+    "node": "8.9.x",
+    "npm": "5.5.x"
   },
   "babel": {
     "presets": [
