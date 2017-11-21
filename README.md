@@ -3,6 +3,13 @@ Still a work in progress.
 
 (Note: the name "Fungai" == FungAI)
 
+# A Note on API Call
+
+The ReactJS App performs API calls against [this fake JSON API](https://fungai-json-server-heroku.herokuapp.com/)
+that I created and hosted on Heroku. First time when Heroku instance spins up from a sleep may take some time.
+After the heroku instance wakes it should be fine. This is the supporting
+[GitHub repository](https://github.com/Atlas7/fungai-json-server-heroku) of the fake json-server API.
+
 # Development Instruction
 
 To run this app locally on a macbook / laptop do the followings:
@@ -18,14 +25,6 @@ Install NPM dependencies:
 ```
 npm install
 ```
-
-Start `json-server` where a fake API is served. Essentially an entire toy database (that I created) in one `db.json`.
-
-```
-npm run start-api
-```
-
-This will start a fake API at [http://localhost:3000](http://localhost:3000).
 
 Start webpack dev server (the actuall React UI):
 
