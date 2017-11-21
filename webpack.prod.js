@@ -1,20 +1,19 @@
-const config = require('./webpack.common.js')
 const webpack = require('webpack')
+const merge = require('webpack-merge')
+const common = require('./webpack.common.js')
 
-config.plugins.push(
-  new webpack.DefinePlugin({
-    "process.env": {
-      "NODE_ENV": JSON.stringify("production")
-    }
-  })
-)
-
-config.plugins.push(
-  new webpack.optimize.UglifyJsPlugin({
-    compress: {
-      warnings: false
-    }
-  })
-)
-
-module.exports = config
+module.exports = merge(common, {
+  plugins: [
+    new webpack.optimize.UglifyJsPlugin({
+      minimize: true,
+      compress: {
+        warnings: false
+      }
+    }),
+    new webpack.DefinePlugin({
+      'process.env': {
+        'NODE_ENV': JSON.stringify('production')
+      }
+    })
+  ]
+})
