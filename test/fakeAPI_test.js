@@ -1,7 +1,8 @@
 import { assert } from 'chai'
 import { fetchResource, wait, imagesURI } from '../app/utils/fakeAPI'
 
-const server = 'http://localhost:3000'
+const server = 'https://fungai-json-server-heroku.herokuapp.com'
+// const server = 'http://localhost:3000'
 
 
 describe("fakeAPI_test.js", () => {

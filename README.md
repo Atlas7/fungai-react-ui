@@ -3,6 +3,13 @@ Still a work in progress.
 
 (Note: the name "Fungai" == FungAI)
 
+# A Note on API Call
+
+The ReactJS App performs API calls against [this fake JSON API](https://fungai-json-server-heroku.herokuapp.com/)
+that I created and hosted on Heroku. First time when Heroku instance spins up from a sleep may take some time.
+After the heroku instance wakes it should be fine. This is the supporting
+[GitHub repository](https://github.com/Atlas7/fungai-json-server-heroku) of the fake json-server API.
+
 # Development Instruction
 
 To run this app locally on a macbook / laptop do the followings:
@@ -19,18 +26,10 @@ Install NPM dependencies:
 npm install
 ```
 
-Start `json-server` where a fake API is served. Essentially an entire toy database (that I created) in one `db.json`.
+Start webpack dev server (the actuall React UI):
 
 ```
-npm run start-api
-```
-
-This will start a fake API at [http://localhost:3000](http://localhost:3000).
-
-Start webpack dev server:
-
-```
-npm run start-app
+npm run dev
 ```
 
 Navigate via a browser (I use Chrome Incognito) at [http://localhost:8080](http://localhost:8080) - yay the app
@@ -55,8 +54,13 @@ To bundle do this:
 npm run build
 ```
 
-This will output `index_bundle.js` and `index.html` to a newly created `dist`.
+This will output `index.bundle.js` and `index.html` to a newly created `dist`.
 
 # Deploy to a http server
 
-This is a TODO. Some options are firebase, heroku, etc.
+Heroku, Firebase, etc.
+
+## Deploy to Heroku
+
+Use [this really handy guide](https://github.com/alanbsmith/react-node-example) for tips on deploying
+React / Node / Webpack app to heroku.
