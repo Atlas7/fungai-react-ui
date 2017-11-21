@@ -2,14 +2,11 @@
   "name": "fungai-jreact-ui",
   "version": "1.1.0",
   "description": "A ReactJS UI for a Fungi Image Classification Project. A proof of concept",
-  "main": "index.js",
+  "main": "app/index.js",
   "scripts": {
     "start": "webpack-dev-server --open --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
     "heroku-postbuild": "webpack -p --config ./webpack.prod.js --progress",
-    "start-api": "json-server --watch fakeServer/db.json",
-    "firebase-deploy": "npm run build && firebase deploy",
-    "firebase-init": "firebase login && firebase init",
     "test": "mocha --require babel-core/register --require ./test/testHelper.js  --recursive",
     "test:watch": "npm run test -- --watch"
   },
