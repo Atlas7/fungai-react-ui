@@ -27,10 +27,10 @@ npm run start-api
 
 This will start a fake API at [http://localhost:3000](http://localhost:3000).
 
-Start webpack dev server:
+Start webpack dev server (the actuall React UI):
 
 ```
-npm run start-app
+npm run start
 ```
 
 Navigate via a browser (I use Chrome Incognito) at [http://localhost:8080](http://localhost:8080) - yay the app
@@ -55,7 +55,7 @@ To bundle do this:
 npm run build
 ```
 
-This will output `index_bundle.js` and `index.html` to a newly created `dist`.
+This will output `index.bundle.js` and `index.html` to a newly created `dist`.
 
 # Deploy to a http server
 
