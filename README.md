@@ -6,6 +6,8 @@ We've deployed the React App to Heroku at:
 
 [https://fungai-react-ui.herokuapp.com/](https://fungai-react-ui.herokuapp.com/)
 
+Custom domain name (that points to the heroku hosted app): [http://fungai.org/](http://fungai.org/)
+
 # A Note on API Call
 
 The ReactJS App performs API calls against [this fake JSON API](https://fungai-json-server-heroku.herokuapp.com/)
