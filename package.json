@@ -4,9 +4,9 @@
   "description": "A ReactJS UI for a Fungi Image Classification Project. A proof of concept",
   "main": "app/index.js",
   "scripts": {
-    "start": "webpack-dev-server --open --config webpack.dev.js",
+    "dev": "webpack-dev-server --open --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
-    "heroku-postbuild": "webpack -p --config ./webpack.prod.js --progress",
+    "start": "npm run build && NODE_ENV=production node server.js",
     "test": "mocha --require babel-core/register --require ./test/testHelper.js  --recursive",
     "test:watch": "npm run test -- --watch"
   },
@@ -31,6 +31,7 @@
     "babel-polyfill": "^6.26.0",
     "bootstrap": "^3.3.7",
     "es6-promise": "^4.1.1",
+    "express": "^4.16.2",
     "immutable": "^3.8.2",
     "isomorphic-fetch": "^2.2.1",
     "prop-types": "^15.6.0",

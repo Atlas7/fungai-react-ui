@@ -29,7 +29,7 @@ npm install
 Start webpack dev server (the actuall React UI):
 
 ```
-npm run start
+npm run dev
 ```
 
 Navigate via a browser (I use Chrome Incognito) at [http://localhost:8080](http://localhost:8080) - yay the app
@@ -62,5 +62,5 @@ Heroku, Firebase, etc.
 
 ## Deploy to Heroku
 
-Use [this really handy guide](https://github.com/Atlas7/json-server-heroku) for tips on deploying to heroku.
-This is a fork to [this original GitHub repository](https://github.com/jesperorb/json-server-heroku).
+Use [this really handy guide](https://github.com/alanbsmith/react-node-example) for tips on deploying
+React / Node / Webpack app to heroku.
