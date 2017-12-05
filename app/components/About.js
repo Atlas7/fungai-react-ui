@@ -53,16 +53,15 @@ function AboutIntro (props) {
   return (
     <div>
       <div className='partnership-banner'>
-        <h4><RootLink>fungai.org</RootLink> is a deep learning project in partnership with Intel</h4>
+        <h4><a href="http://fungai.org" target="_blank">fungai.org</a> is a deep learning project in partnership with Intel</h4>
         {/*<IntelInnovatorBadge/>*/}
         <IntelLogo/>
       </div>
       <hr/>
       <h3>A Wild Mushroom ID Machine</h3>
-      <p><RootLink>fungai.org</RootLink> assists scientists and enthusiasts to easily identify wild mushroom species from images using
+      <p><a href="http://fungai.org" target="_blank">fungai.org</a> assists scientists and enthusiasts to easily identify wild mushroom species from images using
         deep learning technologies.</p>
-      <p>This <FungPredictLink>Fungi Classification Prototype</FungPredictLink> is an initial proof of concept with the aim of
-        developing and testing out ideas, and drive the eventual outlook of the tool.</p>
+      <p>This <FungPredictLink>Fungi Classification Prototype</FungPredictLink> is an initial proof of concept demo of the Batch Classification UI part of the wider fungAI project.</p>
       <p>This application part of the wilder <DevmeshLink />, an Intel Develoepr Mesh Project.</p>
       <ConceptImage/>
       <hr/>
@@ -71,7 +70,7 @@ function AboutIntro (props) {
       </p>
       <p>Fake jason-server API: <a href="https://github.com/Atlas7/fungai-json-server-heroku" target="_blank">fungai-json-server-heroku</a></p>
       <h4>Stay Tune</h4>
-      <p>(for now) Please follow this project via my personal Twitter account <a href="https://twitter.com/jAtlas7" target="_blank">@jAtlas7</a></p>
+      <p>Please follow this project via <a href="http://fungai.org" target="_blank">the Project Blog Page</a></p>
     </div>
   )
 }
