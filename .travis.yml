@@ -1,0 +1,11 @@
+language: node_js
+node_js:
+  - "iojs"
+  - "8"
+dist: trusty
+sudo: false
+before_script:
+  - npm install
+script:
+  - npm test
+  - npm build
