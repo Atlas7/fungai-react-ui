@@ -14,11 +14,11 @@ export default function Nav () {
           Prototype
         </NavLink>
       </li>
-      {/*<li>*/}
-        {/*<NavLink activeClassName='active' to='/about'>*/}
-          {/*About*/}
-        {/*</NavLink>*/}
-      {/*</li>*/}
+      <li>
+        <a href="http://fungai.org/" target="_blank">
+          Blog
+        </a>
+      </li>
     </ul>
   )
 }
