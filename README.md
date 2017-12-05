@@ -1,12 +1,12 @@
-A React UI (proof of concept) prototype in support of an upcoming Fungi identification project. ("Fungai" == FungAI)
+# fungai-react-ui
 
-# Deployed React UI
+[![Build Status](https://travis-ci.org/Atlas7/fungai-react-ui.svg?branch=master)](https://travis-ci.org/Atlas7/fungai-react-ui)
+
+A React UI (proof of concept) prototype in support of an upcoming Fungi identification project. ("Fungai" == FungAI)
 
 We've deployed the React App to Heroku at:
 
 [https://fungai-react-ui.herokuapp.com/](https://fungai-react-ui.herokuapp.com/)
-
-Custom domain name (that points to the heroku hosted app): [http://fungai.org/](http://fungai.org/)
 
 # A Note on API Call
 
