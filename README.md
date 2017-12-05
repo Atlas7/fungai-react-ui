@@ -8,6 +8,9 @@ We've deployed the React App to Heroku at:
 
 [https://fungai-react-ui.herokuapp.com/](https://fungai-react-ui.herokuapp.com/)
 
+Note: I've now set it up so that Heroku automatically build the app based on our master branch,
+as soon as Travis CI test is complete and successful.
+
 # A Note on API Call
 
 The ReactJS App performs API calls against [this fake JSON API](https://fungai-json-server-heroku.herokuapp.com/)
